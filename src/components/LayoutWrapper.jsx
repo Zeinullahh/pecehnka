@@ -3,6 +3,7 @@
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Footer from "@/components/Footer";
+import RootFooter from "@/components/RootFooter";
 import ParallaxGlobe from "@/components/ParallaxGlobe";
 import LoadingSpinner from "@/components/LoadingSpinner";
 
@@ -45,7 +46,7 @@ export default function LayoutWrapper({ children }) {
   // Auto-hide loading after 500ms (fallback)
   useEffect(() => {
     if (isLoading) {
-      const timer = setTimeout(() => setIsLoading(false), 500);
+      const timer = setTimeout(() => setIsLoading(false), 800);
       return () => clearTimeout(timer);
     }
   }, [isLoading]);
@@ -67,7 +68,7 @@ export default function LayoutWrapper({ children }) {
             />
           </div>
         )}
-        <Footer />
+        {pathname === '/' ? <RootFooter /> : <Footer />}
       </div>
     </>
   );
