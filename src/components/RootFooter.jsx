@@ -11,7 +11,7 @@ const RootFooter = () => {
           </div>
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center text-gray-400">
             <div>
-              <span className="font-semibold text-white">Contact:</span> info@silenceai.net
+              <span className="font-semibold text-white">Contact:</span> info@silenceai.net | +77000700238
             </div>
             <div>
               <span className="font-semibold text-white">Address:</span> Media City Free Zone, Al Messaned, Sharjah, UAE
