@@ -30,7 +30,7 @@ const Modal = ({ isOpen, onClose }) => {
               </svg>
             </button>
             <div className="text-2xl font-bold mb-4">Under active development</div>
-            <p>The system is expected to be launched on September 27th</p>
+            <p>The system is expected to be launched on October 2</p>
           </motion.div>
         </motion.div>
       )}
