@@ -1,8 +1,11 @@
 "use client";
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Modal = ({ isOpen, onClose }) => {
+  const { t } = useLanguage();
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -29,8 +32,10 @@ const Modal = ({ isOpen, onClose }) => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            <div className="text-2xl font-bold mb-4">Under active development</div>
-            <p>The system is expected to be launched on October 2</p>
+            <div className="text-2xl font-bold mb-4">
+              {t("modal.title", "Under active development")}
+            </div>
+            <p>{t("modal.body", "The system is expected to be launched on October 10")}</p>
           </motion.div>
         </motion.div>
       )}

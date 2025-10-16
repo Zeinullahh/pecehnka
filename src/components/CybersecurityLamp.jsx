@@ -2,8 +2,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { LampContainer } from "./ui/lamp";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function CybersecurityLamp() {
+  const { t } = useLanguage();
+
   return (
     <LampContainer>
       <motion.h2
@@ -16,7 +19,7 @@ export function CybersecurityLamp() {
         }}
         className="mt-8 bg-gradient-to-br from-pink-400 to-purple-600 py-4 bg-clip-text text-center text-4xl font-bold tracking-tight text-transparent md:text-5xl"
       >
-        Reality of Cyberattacks
+        {t("lamp.title", "Reality of Cyberattacks")}
       </motion.h2>
     </LampContainer>
   );

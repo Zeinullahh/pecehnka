@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import PolicySidebar from '@/components/PolicySidebar';
 import BackToTopButton from '@/components/BackToTopButton';
 import Modal from '@/components/Modal';
+import PolicyNotice from '@/components/PolicyNotice';
 
 const TermsOfService = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,6 +34,7 @@ const TermsOfService = () => {
           <PolicySidebar sections={sections} />
         </div>
         <main className="flex-grow">
+          <PolicyNotice />
           <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
           <div className="space-y-8">
             <section id="right-to-use">
@@ -112,7 +114,7 @@ const TermsOfService = () => {
           </section>
             <section id="indemnity">
               <h2 className="text-2xl font-semibold mb-4">8. Indemnity</h2>
-            <p className="mb-4"><strong>8.1 Your Indemnity:</strong> You shall defend, indemnify, and hold harmless Silence AI, its Affiliates, and each of their respective officers, directors, employees, consultants, agents, successors, and assigns from and against all losses, liabilities, damages, costs, and expenses (including reasonable attorneys’ fees) incurred in connection with any third-party claim, demand, or action arising out of or related to: (a) your fraud, gross negligence, or willful misconduct; or (b) your breach of Section 2 (Restrictions on Use).</p>
+            <p className="mb-4"><strong>8.1 Your Indemnity:</strong> You shall defend, indemnify, and hold harmless Silence AI, its Affiliates, and each of their respective officers, directors, employees, consultants, agents, successors, and assigns from and against all losses, liabilities, damages, costs, and expenses (including reasonable attorneys’ fees) incurred in connection with any third-party claim, demand, or action arising out of or related to: (a) your fraud, gross negligence, or willful misconduct; or (b) your breach of Section 2 (Restrictions on Use); or (c) Customer Data, Customer’s use of the Services, or Customer’s violation of applicable law.</p>
             <p className="mb-4"><strong>8.2 No Indemnity by Silence AI:</strong> To the maximum extent permitted by applicable law, Silence AI, its Affiliates, and their respective employees, agents, and subcontractors shall have no obligation to indemnify, defend, or hold you harmless from any third-party claims, including but not to claims alleging infringement, misappropriation, or other violation of intellectual property rights. You acknowledge and agree that you are solely responsible for your own legal compliance and any third-party claims arising from your use of the Services.</p>
             <p className="mb-4"><strong>8.3 Claims Process:</strong> If either party becomes aware of a claim or legal action related to this Agreement, that party will notify the other party promptly. Silence AI has no obligation to assume control of, participate in, or fund the defense of any claim brought against you. The party seeking indemnification shall cooperate with the other party at the indemnitor’s expense to the extent reasonably requested.</p>
             <p className="mb-4"><strong>8.4 Service Changes:</strong> If any portion of the Services is, or in Silence AI’s opinion is likely to be, claimed to infringe or otherwise violate a third-party right, Silence AI may, at its sole discretion and without obligation: (a) make commercially reasonable changes to the Services to avoid infringement; or (b) terminate the Agreement upon written notice and refund any prepaid fees for Services not yet provided. Silence AI shall have no further liability or obligation in connection with such claims.</p>

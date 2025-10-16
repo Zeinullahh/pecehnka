@@ -6,12 +6,15 @@ import Footer from "@/components/Footer";
 import RootFooter from "@/components/RootFooter";
 import ParallaxGlobe from "@/components/ParallaxGlobe";
 import LoadingSpinner from "@/components/LoadingSpinner";
+import { LanguageProvider } from "@/contexts/LanguageContext";
+import CookieConsent from "@/components/CookieConsent";
 
 export default function LayoutWrapper({ children }) {
   const pathname = usePathname();
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   const isPolicyPage = pathname.startsWith('/policies');
+  const isAffiliatePage = pathname.startsWith('/affiliate');
 
   // Handle page navigation loading
   useEffect(() => {
@@ -52,14 +55,14 @@ export default function LayoutWrapper({ children }) {
   }, [isLoading]);
 
   return (
-    <>
+    <LanguageProvider>
       <LoadingSpinner isLoading={isLoading} />
-      {!isPolicyPage && <ParallaxGlobe />}
+      {!isPolicyPage && !isAffiliatePage && <ParallaxGlobe />}
       <div className={!isPolicyPage ? "pt-20" : ""}>
         {children}
       </div>
       <div className={isPolicyPage ? "bg-black" : "relative w-full"}>
-        {!isPolicyPage && (
+        {!isPolicyPage && !isAffiliatePage && (
           <div className="absolute inset-0 -z-10">
             <img
               src="/moonrise.webp"
@@ -68,8 +71,9 @@ export default function LayoutWrapper({ children }) {
             />
           </div>
         )}
-        {pathname === '/' ? <RootFooter /> : <Footer />}
+        {pathname === '/' ? <RootFooter /> : !isAffiliatePage && <Footer />}
       </div>
-    </>
+      <CookieConsent />
+    </LanguageProvider>
   );
 }

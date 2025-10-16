@@ -1,0 +1,248 @@
+{
+  "languageSelector": {
+    "triggerLabel": "Dili seçin",
+    "menuLabel": "Dil seç"
+  },
+  "header": {
+    "nav": {
+      "main": "Əsas səhifə",
+      "mail": "Poçt",
+      "affiliate": "Tərəfdaş proqramı",
+      "instructions": "Təlimatlar"
+    },
+    "login": "Daxil ol"
+  },
+  "hero": {
+    "headline": "AI-SOC 1: kibertəhlükəsizlik artıq nə bahalıdır, nə də mürəkkəb",
+    "subheading": "AI əsaslı, bütün komponentləri birləşdirən kibertəhlükəsizlik sistemi:",
+    "playgroundHeading": "60 saniyəlik tur",
+    "bullets": {
+      "web": "Veb hücumlara qarşı real vaxtda qoruma",
+      "email": "E-poçt hücumlarına qarşı müdafiə",
+      "vulnerability": "Zəiflik axtarıcısı"
+    },
+    "buttons": {
+      "connect": "4 dəqiqəyə qoşul",
+      "tour": "90 saniyəlik tura bax"
+    },
+    "tooltips": {
+      "web": {
+        "title": "Veb hücumlara qarşı müdafiə",
+        "content": "Sistem biznes məntiqi zəiflikləri istisna olmaqla, DDoS, SQLi və digər bütün veb hücumlarını bloklayır"
+      },
+      "email": {
+        "title": "E-poçt hücumlarına qarşı müdafiə",
+        "content": "Sistem fishing, zərərli əlavələr, təhlükəli linklər daxil olmaqla bütün e-poçt hücumlarına qarşı qoruyur"
+      },
+      "vulnerability": {
+        "title": "Zəiflik axtarıcısı",
+        "content": "Sistem tətbiqin kodundakı zəiflikləri və sayt/API ilə dinamik qarşılıqlı əlaqə sayəsində, intellektual modulun dəstəyi ilə aşkar edir"
+      }
+    }
+  },
+  "playground": {
+    "options": {
+      "globeShield": "Veb təhlükəsizliyi və trafik idarəetməsi",
+      "emailSecurity": "E-poçt təhlükəsizliyi",
+      "vulnerabilityFinder": "Zəiflik axtarışı"
+    }
+  },
+  "cookie": {
+    "title": "Texniki kukilər barədə bildiriş",
+    "description": "Bu sayt növbəti səfərdə bildiriş yenidən görünməsin deyə, dil seçimini yadda saxlamaq üçün yalnız birinci tərəf texniki kukilərindən istifadə edir. İzləmə və ya üçüncü tərəf kukiləri tətbiq olunmur.",
+    "more": "Ətraflı məlumat üçün",
+    "link": "Kuki siyasətimizə baxın",
+    "ok": "OK"
+  },
+  "pricing": {
+    "title": "Qiymətlər",
+    "tooltips": {
+      "cmcGlobal": {
+        "title": "Qlobal trafik monitorinqi olan CMC",
+        "content": "Mərkəzləşdirilmiş İdarəetmə Konsolu (CMC) digər təhlükəsizlik sistemləri ilə inteqrasiya olunur və Global Shield və Security Tester ilə eyni domen və interfeysdən istifadə edir. Buradan ölkələri qara siyahıya sala, portları bağlaya və digər əməliyyatları apara bilərsiniz"
+      },
+      "countryBlacklisting": {
+        "title": "Ölkə üzrə bloklama",
+        "content": "Xüsusi bir ölkədən gələn trafikin hamısını dayandırın"
+      },
+      "portManagement": {
+        "title": "Portların idarə edilməsi",
+        "content": "Hücum səthini azaltmaq üçün istifadə olunmayan portları bağlayın; məsələn, SSH lazım deyilsə 22-ci portu deaktiv edin"
+      },
+      "cmcEmail": {
+        "title": "CMC-də inkişaf etmiş e-poçt vizuallaşdırması",
+        "content": "CMC digər təhlükəsizlik sistemləri ilə birlikdə işləyir və əlavə etdiyiniz bütün korporativ istifadəçilər üçün e-poçt axınını izləməyə imkan verir"
+      },
+      "dynamicVulnerability": {
+        "title": "Dinamik zəiflik axtarıcısı",
+        "content": "Saytınızla birbaşa qarşılıqlı əlaqə quraraq, süni intellekt sistemi dəstəyi ilə zəiflikləri aşkar edir"
+      },
+      "codeAnalyzer": {
+        "title": "Kod analizatoru",
+        "content": "VS Code əlavəsi vasitəsilə kod bazasındakı təhlükəsizlik problemlərini əvvəlcədən tapır və düzəltməyə kömək edir"
+      },
+      "intelligenceReport": {
+        "title": "Kəşfiyyat hesabatı",
+        "content": "Hədəfiniz barədə açıq portlar, çalışan xidmətlər, subdomenlər və tədbir tələb edən digər həssas məlumatlarla bağlı ətraflı məlumat yaradır"
+      },
+      "fullVulnerability": {
+        "title": "TAM zəiflik yoxlanışı",
+        "content": "Tam yoxlama həm dinamik, həm də kod bazası skanını əhatə edir"
+      }
+    },
+    "plans": {
+      "globalShield": {
+        "title": "Veb təhlükəsizliyi və trafik idarəetməsi",
+        "price": "$0.06/GB",
+        "description": "Limit yoxdur\nƏlavə ödəniş yoxdur",
+        "button": "Veb tətbiqləri və API-ləri qoruyun",
+        "features": {
+          "webProtection": "Biznes məntiqi istismarları istisna olmaqla bütün veb hücumlarından müdafiə",
+          "ddosProtection": "Canlı DDoS qoruması",
+          "cmc": "Qlobal trafik monitorinqi olan CMC",
+          "country": "Ölkə bloklama funksiyası",
+          "port": "Portları bağlama funksiyası"
+        }
+      },
+      "emailProtector": {
+        "title": "E-poçt təhlükəsizliyi",
+        "price": "$10/ay/hesab",
+        "description": "Günə 10 e-poçt\nƏlavə e-poçt: hər biri $0.035",
+        "button": "E-poçtu qoruyun",
+        "features": {
+          "cmcEmail": "CMC-də ən qabaqcıl e-poçt axını vizuallaşdırıcısı",
+          "visibility": "CMC daxilində bütün hesabların göndərilən və qəbul edilən e-poçtlarına tam baxış, avtomatik təhdid sinfi ilə",
+          "webClient": "Təhlükəsiz webmail müştərisi",
+          "phishing": "Phishing-ə qarşı müdafiə",
+          "malware": "Zərərli əlavələri skan etmə",
+          "links": "Təhlükəli linklərin aşkarlanması",
+          "spam": "Spam filtrləmə",
+          "fakeSender": "Saxta göndəriciyə qarşı qoruma"
+        }
+      },
+      "securityTester": {
+        "title": "Zəiflik axtarıcısı",
+        "price": "$25/ay",
+        "description": "Ayda 50-ə qədər TAM yoxlama\nƏlavə tam yoxlama: hər biri $0.5",
+        "button": "Testə başla",
+        "features": {
+          "dynamic": "Dinamik zəiflik axtarışı",
+          "codeAnalyzer": "Kod analizatoru",
+          "reports": "Asan başa düşülən təhlükəsizlik hesabatları",
+          "intelligence": "Kəşfiyyat hesabatı"
+        }
+      }
+    }
+  },
+  "solution": {
+    "sectionTitle": "Həllimiz",
+    "sectionSubtitle": "4 dəqiqəyə hazır olur və hər bir IT mütəxəssisi tərəfindən, kibertəhlükəsizlik biliyi olmadan istifadə oluna bilər. Biz inkişaf etmiş vizuallaşdırma və əlçatan qiymət təklif edirik.",
+    "cards": {
+      "globalShield": {
+        "title": "Global Shield - CIA səviyyəli trafik monitorinqi",
+        "description": "İnteraktiv 3D qlobusumuz veb trafikinizi gözoxşayan şəkildə göstərir: saniyəyə sorğular, aktiv istifadəçilər və həcmi (baytlarla).",
+        "bullets": {
+          "one": "Sadə qurulum: IP və domeninizi göstərin.",
+          "two": "DNS-ə əlavə etmək üçün agent IP-si əldə edin.",
+          "three": "Tam qorunma üçün portları bağlayın."
+        }
+      },
+      "emailProtector": {
+        "title": "Email Protector - dünyanın ilk AI əsaslı e-poçt qorunması",
+        "description": "AI ilə işləyən ilk kommersiya e-poçt təhlükəsizlik sistemi. Vektor görünüşü e-poçt axınını izləməyi və təhdidləri müəyyənləşdirməyi asanlaşdırır.",
+        "bullets": {
+          "one": "Spoofing, spam, phishing və malware-i aşkarlayır.",
+          "two": "Adminlər qoruma üçün e-poçt hesabları əlavə edə bilər.",
+          "three": "Ən qabaqcıl kommersiya e-poçt axını vizuallaşdırıcısı."
+        }
+      },
+      "securityTester": {
+        "title": "Security Tester - növbəti nəsil zəiflik testi",
+        "description": "Sistem tam təhlükəsizlik yoxlamaları üçün birdəfəlik token (OTT) təqdim edir. Brauzer və ya VS Code genişlənməsi vasitəsilə qoşulun.",
+        "bullets": {
+          "one": "CMC-də təhlükəsizlik sahəsini və hədəfi müəyyən edin.",
+          "two": "OTT-ni daxil edib yoxlamanı başladın.",
+          "three": "Kəşfiyyata əsaslanan risk analizi."
+        }
+      }
+    },
+    "cmc": {
+      "title": "Mərkəzləşdirilmiş İdarəetmə Konsolu (CMC)",
+      "description": "Üç komponent də birləşdirilmiş konsol vasitəsilə idarə olunur; bu, mərkəzləşdirilmiş vizuallaşdırma, asan konfiqurasiya və monitorinq, həmçinin əhatəli təhlükəsizlik hesabatları təqdim edir."
+    }
+  },
+  "insights": {
+    "items": [
+      {
+        "title": "39 saniyə",
+        "description": "Hər 39 saniyədən bir haker hücumu baş verir"
+      },
+      {
+        "title": "20 milyon DDoS hücumu",
+        "description": "Təkcə 2025-ci ilin I rübündə 20,5 milyon DDoS hücumu qeydə alınıb"
+      },
+      {
+        "title": "Hər gün",
+        "description": "Hər gün 30 000 sayt sındırılır"
+      }
+    ]
+  },
+  "floatingText": {
+    "headline": "Hakerlərin necə düşündüyünü kəşf edin",
+    "description": "Həqiqi hücum metodları və kibertəhlükələr barədə gündəlik araşdırmalarımızı izləyin"
+  },
+  "modal": {
+    "title": "Aktiv inkişaf mərhələsindədir",
+    "body": "Sistemin 10 oktyabrda istifadəyə verilməsi planlaşdırılır"
+  },
+  "lamp": {
+    "title": "Kiberhücumların reallığı"
+  },
+  "stickySolution": {
+    "webSecurity": {
+      "title": "Veb təhlükəsizlik sistemi: sayt/API 2 dəqiqədə qoşula bilər",
+      "description": "DDoS, SQLi kimi veb hücumlarından qoruma. Portları bağlama imkanı var; 22-ci port istifadə olunmadıqda bağlamaq yaxşı təcrübədir"
+    },
+    "ciaMonitoring": {
+      "title": "CIA səviyyəli trafik monitorinqi",
+      "description": "İnteraktiv 3D qlobus sorğular, istifadəçilər və həcm üzrə trafiki göstərir və istifadəçi sayının dəyişmə tarixçəsini izləməyə imkan verir"
+    },
+    "userGrowth": {
+      "title": "İstifadəçi artımı haqqında faydalı məlumatlar",
+      "description": "İstifadəçi sayındakı dəyişikliklərin tarixçəsini görmək imkanı"
+    },
+    "aiEmailProtection": {
+      "title": "Dünyanın ilk AI əsaslı e-poçt müdafiəsi: e-poçt şəbəkəsi 2 dəqiqədə qoşulur",
+      "description": "CMC administratorlara əlavə olunan hesablar üçün göndərilən və qəbul olunan bütün e-poçtlara tam nəzarət verir və spoofing, spam, phishing, təhlükəli linklər, malware kimi təhdidləri avtomatik təsnif edir."
+    },
+    "emailVisualization": {
+      "title": "Göndərilən və qəbul olunan e-poçtların vizuallaşdırılması",
+      "description": "CMC daxilində ən inkişaf etmiş kommersiya e-poçt axını vizuallaşdırıcısı"
+    },
+    "secureWebmail": {
+      "title": "Təhlükəsiz webmail müştərisi",
+      "description": "Admin tərəfindən əlavə olunan hesablar üçün spoofing, spam, phishing və malware təhlükələrini aşkar edən ən təhlükəsiz webmail müştərisi"
+    },
+    "aiVulnerability": {
+      "title": "AI əsaslı zəiflik testeri: 1 dəqiqədə hazır",
+      "description": "İnsanlardan 10 000 dəfə sürətli. Server tənzimləməsi, kod, DNS və e-poçt şəbəkəsindəki zəiflikləri aşkarlayır."
+    },
+    "intelligenceInsights": {
+      "title": "Kəşfiyyata əsaslanan analitika",
+      "description": "Sistem subdomenləri, açıq portları və orada çalışan xidmətləri aşkar edə bilir"
+    }
+  },
+  "footer": {
+    "contactLabel": "Əlaqə:",
+    "contactValue": "info@silenceai.net",
+    "addressLabel": "Ünvan:",
+    "addressValue": "Media City Free Zone, Al Messaned, Sharjah, UAE",
+    "links": {
+      "termsUse": "İstifadə şərtləri",
+      "termsService": "Xidmət şərtləri",
+      "privacy": "Məxfilik siyasəti",
+      "cookies": "Kuki siyasəti"
+    },
+    "copyright": "© {year} Silence AI. Bütün hüquqlar qorunur."
+  }
+}

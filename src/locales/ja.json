@@ -1,0 +1,248 @@
+{
+  "languageSelector": {
+    "triggerLabel": "言語を選択",
+    "menuLabel": "言語を選んでください"
+  },
+  "header": {
+    "nav": {
+      "main": "ホーム",
+      "mail": "メール",
+      "affiliate": "アフィリエイト",
+      "instructions": "手順"
+    },
+    "login": "ログイン"
+  },
+  "hero": {
+    "headline": "AI-SOC 1：サイバーセキュリティはもう高価でも複雑でもない",
+    "subheading": "AIを基盤にしたオールインワンのサイバーセキュリティシステムが提供するもの：",
+    "playgroundHeading": "60秒ツアー",
+    "bullets": {
+      "web": "リアルタイムのWeb攻撃防御",
+      "email": "メール攻撃からの防御",
+      "vulnerability": "脆弱性ファインダー"
+    },
+    "buttons": {
+      "connect": "4分で接続",
+      "tour": "90秒ツアーを見る"
+    },
+    "tooltips": {
+      "web": {
+        "title": "Web攻撃防御",
+        "content": "本システムはビジネスロジックの脆弱性を除き、DDoSやSQLiなどあらゆるWeb攻撃に対応します"
+      },
+      "email": {
+        "title": "メール攻撃防御",
+        "content": "フィッシング、マルウェア添付、危険なリンクなど、すべてのメール攻撃から守ります"
+      },
+      "vulnerability": {
+        "title": "脆弱性ファインダー",
+        "content": "アプリケーションコードやWeb/APIとの動的なやり取りを通じて脆弱性を特定し、インテリジェンス機能も活用します"
+      }
+    }
+  },
+  "playground": {
+    "options": {
+      "globeShield": "Webセキュリティとトラフィック管理",
+      "emailSecurity": "メールセキュリティ",
+      "vulnerabilityFinder": "脆弱性ファインダー"
+    }
+  },
+  "cookie": {
+    "title": "技術Cookieに関する通知",
+    "description": "当サイトでは、言語設定を保持し次回以降にこの通知を表示しないようにするため、当社が設定した技術Cookieのみを使用しています。トラッキングCookieや第三者Cookieは使用していません。",
+    "more": "詳しくは",
+    "link": "Cookieポリシー",
+    "ok": "OK"
+  },
+  "pricing": {
+    "title": "料金",
+    "tooltips": {
+      "cmcGlobal": {
+        "title": "グローバルトラフィック監視付きCMC",
+        "content": "集中管理コンソール（CMC）は他のセキュリティシステムとシームレスに連携し、Global ShieldやSecurity Testerと同じドメインとインターフェイスを共有します。ここから国別ブロックやポート遮断などを実行できます"
+      },
+      "countryBlacklisting": {
+        "title": "国別ブロック",
+        "content": "特定の国からのトラフィックをすべて遮断します"
+      },
+      "portManagement": {
+        "title": "ポート管理",
+        "content": "未使用ポートを閉じて攻撃面を減らします。例：SSHが不要な場合はポート22を無効化する"
+      },
+      "cmcEmail": {
+        "title": "高度なメールフロー可視化付きCMC",
+        "content": "CMCは他のセキュリティシステムと連携し、追加した全社ユーザーのメールフローを監視・確認できます"
+      },
+      "dynamicVulnerability": {
+        "title": "動的脆弱性検出",
+        "content": "Webサイトとの対話を通じて脆弱性を検出し、インテリジェンスシステムも活用します"
+      },
+      "codeAnalyzer": {
+        "title": "コードアナライザー",
+        "content": "VS Codeプラグインを通じてコードベースのセキュリティ問題を直接検出し、リリース前に修正できます"
+      },
+      "intelligenceReport": {
+        "title": "インテリジェンスレポート",
+        "content": "対象について詳細な洞察を提供：開いているポート、稼働中のサービス、サブドメインなど"
+      },
+      "fullVulnerability": {
+        "title": "完全な脆弱性チェック",
+        "content": "完全チェックには動的スキャンとコードスキャンの両方が含まれます"
+      }
+    },
+    "plans": {
+      "globalShield": {
+        "title": "Webセキュリティとトラフィック管理",
+        "price": "$0.06/GB",
+        "description": "無制限\n追加料金なし",
+        "button": "WebアプリとAPIを保護",
+        "features": {
+          "webProtection": "ビジネスロジック以外のすべてのWeb攻撃を防御",
+          "ddosProtection": "リアルタイムDDoS防御",
+          "cmc": "グローバルトラフィック監視付きCMC",
+          "country": "国別ブロック機能",
+          "port": "ポート遮断機能"
+        }
+      },
+      "emailProtector": {
+        "title": "メールセキュリティ",
+        "price": "$10/月/アカウント",
+        "description": "1日10通まで\n追加メール: 1通あたり$0.035",
+        "button": "メールを保護",
+        "features": {
+          "cmcEmail": "最先端のメールフロー可視化を備えたCMC",
+          "visibility": "送受信メールを完全に可視化し、自動で脅威分類",
+          "webClient": "安全なWebメールクライアント",
+          "phishing": "フィッシング防御",
+          "malware": "マルウェア添付のスキャン",
+          "links": "危険なリンクの検出",
+          "spam": "スパムフィルタ",
+          "fakeSender": "なりすまし送信者の防止"
+        }
+      },
+      "securityTester": {
+        "title": "脆弱性ファインダー",
+        "price": "$25/月",
+        "description": "月50回までの完全チェック\n追加チェック: 1回$0.5",
+        "button": "テストを開始",
+        "features": {
+          "dynamic": "動的脆弱性検出",
+          "codeAnalyzer": "コードアナライザー",
+          "reports": "分かりやすいセキュリティレポート",
+          "intelligence": "インテリジェンスレポート"
+        }
+      }
+    }
+  },
+  "solution": {
+    "sectionTitle": "私たちのソリューション",
+    "sectionSubtitle": "4分で導入完了。サイバーセキュリティの専門知識がなくてもIT担当者なら誰でも利用できます。高度な可視化とコスト効率を提供します。",
+    "cards": {
+      "globalShield": {
+        "title": "Global Shield - CIAレベルのトラフィック監視",
+        "description": "インタラクティブな3Dグローブが、秒間リクエスト数、アクティブユーザー数、バイト量を鮮明に表示します。",
+        "bullets": {
+          "one": "設定は簡単：IPとドメインを指定するだけ。",
+          "two": "DNSに追加するエージェントIPを受け取る。",
+          "three": "ポートを閉じて露出をゼロに。"
+        }
+      },
+      "emailProtector": {
+        "title": "Email Protector - 世界初のAIメール防御",
+        "description": "世界初のAIを活用した商用メール防御システム。ベクタービューによりメールフローを時系列で追跡し、脅威を特定しやすくします。",
+        "bullets": {
+          "one": "スプーフィング、スパム、フィッシング、マルウェアを検知。",
+          "two": "管理者は保護対象のメールアカウントを追加可能。",
+          "three": "市場で最も高度なメールフロー可視化。"
+        }
+      },
+      "securityTester": {
+        "title": "Security Tester - 次世代の脆弱性テスト",
+        "description": "システムはワンタイムトークン（OTT）を発行し、ブラウザまたはVS Code拡張からフルカバレッジのチェックを実施できます。",
+        "bullets": {
+          "one": "CMCでスコープとターゲットを設定。",
+          "two": "OTTを貼り付けてチェック開始。",
+          "three": "インテリジェンス主導のリスク洞察。"
+        }
+      }
+    },
+    "cmc": {
+      "title": "集中管理コンソール（CMC）",
+      "description": "3つのコンポーネントを統合コンソールで管理し、集中可視化・容易な設定と監視・包括的なセキュリティレポートを提供します。"
+    }
+  },
+  "insights": {
+    "items": [
+      {
+        "title": "39秒",
+        "description": "39秒ごとにハッカー攻撃が発生"
+      },
+      {
+        "title": "2,000万件のDDoS攻撃",
+        "description": "2025年第1四半期だけで2,050万件のDDoS攻撃"
+      },
+      {
+        "title": "毎日",
+        "description": "毎日3万件のWebサイトが侵害されています"
+      }
+    ]
+  },
+  "floatingText": {
+    "headline": "ハッカーの思考を知る",
+    "description": "実際の攻撃手法と脅威に関する日々のリサーチをチェック"
+  },
+  "modal": {
+    "title": "開発中",
+    "body": "システムは10月10日のリリースを予定しています"
+  },
+  "lamp": {
+    "title": "サイバー攻撃の現実"
+  },
+  "stickySolution": {
+    "webSecurity": {
+      "title": "Webセキュリティシステム：サイト/APIは2分で接続",
+      "description": "DDoSやSQLiなどのWeb攻撃を防御。ポート22を使用しない場合に閉じるのは良い運用です。"
+    },
+    "ciaMonitoring": {
+      "title": "CIAレベルのトラフィック監視",
+      "description": "インタラクティブ3Dグローブでリクエスト数、ユーザー数、ボリューム、履歴を表示。"
+    },
+    "userGrowth": {
+      "title": "ユーザー増加に関する有益な洞察",
+      "description": "ユーザー数の推移を確認"
+    },
+    "aiEmailProtection": {
+      "title": "世界初のAIメール防御：ネットワークは2分で接続",
+      "description": "CMCは管理者に、追加したアカウントの送受信メールを完全に可視化し、スプーフィング・スパム・フィッシング・危険リンク・マルウェアを自動分類します。"
+    },
+    "emailVisualization": {
+      "title": "送受信メールの可視化",
+      "description": "商用で最も高度なメールフロー可視化を備えたCMC"
+    },
+    "secureWebmail": {
+      "title": "安全なWebメールクライアント",
+      "description": "管理者が追加したアカウント向けの高セキュリティWebメールで、スプーフィングやスパム、フィッシング、マルウェアを検知します。"
+    },
+    "aiVulnerability": {
+      "title": "AI脆弱性テスター：1分で稼働",
+      "description": "人間の1万倍の速度でサーバー構成、コード、DNS、メールネットワークの脆弱性を検出します。"
+    },
+    "intelligenceInsights": {
+      "title": "インテリジェンスから得られる洞察",
+      "description": "サブドメインや開放ポート、そのポートで稼働するサービスを特定"
+    }
+  },
+  "footer": {
+    "contactLabel": "連絡先：",
+    "contactValue": "info@silenceai.net",
+    "addressLabel": "住所：",
+    "addressValue": "Media City Free Zone, Al Messaned, Sharjah, UAE",
+    "links": {
+      "termsUse": "利用規約",
+      "termsService": "サービス規約",
+      "privacy": "プライバシーポリシー",
+      "cookies": "Cookieポリシー"
+    },
+    "copyright": "© {year} Silence AI. 無断複写・転載を禁じます。"
+  }
+}

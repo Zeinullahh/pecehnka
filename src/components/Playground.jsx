@@ -1,43 +1,63 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const Playground = () => {
-  const [selectedOption, setSelectedOption] = useState('Email Security');
+const underlineVariants = {
+  hidden: { scaleX: 0, opacity: 0 },
+  visible: { scaleX: 1, opacity: 1 },
+};
+
+const Playground = React.forwardRef((_, ref) => {
+  const [selectedOption, setSelectedOption] = useState("emailSecurity");
+  const [hoveredOption, setHoveredOption] = useState(null);
+  const { t } = useLanguage();
+
+  const options = ["globeShield", "emailSecurity", "vulnerabilityFinder"];
 
   return (
-    <div className="bg-black rounded-lg glass-card w-full h-full flex flex-col p-0">
-      {/* Outer container with adjusted height - includes buttons and inner card */}
-      <div className="w-full aspect-[4/2.8] flex flex-col rounded-lg border-0">
-        <div className="flex justify-center space-x-4 p-4 mt-4">
-          <button
-            onClick={() => setSelectedOption('Globe Shield')}
-            className={`px-4 py-2 rounded-lg card-glow-purple cursor-pointer ${selectedOption === 'Globe Shield' ? 'bg-[#FF00B7] text-white' : 'bg-[rgba(0,0,0,0.6)] text-gray-400'}`}
-          >
-            Globe Shield
-          </button>
-          <button
-            onClick={() => setSelectedOption('Email Security')}
-            className={`px-4 py-2 rounded-lg card-glow-purple cursor-pointer ${selectedOption === 'Email Security' ? 'bg-[#FF00B7] text-white' : 'bg-[rgba(0,0,0,0.6)] text-gray-400'}`}
-          >
-            Email Security
-          </button>
-          <button
-            onClick={() => setSelectedOption('Vulnerability Finder')}
-            className={`px-4 py-2 rounded-lg card-glow-purple cursor-pointer ${selectedOption === 'Vulnerability Finder' ? 'bg-[#FF00B7] text-white' : 'bg-[rgba(0,0,0,0.6)] text-gray-400'}`}
-          >
-            Vulnerability Finder
-          </button>
-        </div>
-        
-        {/* Container for inner black card, positioned closer to buttons */}
-        <div className="relative flex-1 mt-4">
-          {/* Inner rectangle with 16:9 aspect ratio - completely black, same width as outer */}
-          <div className="absolute top-0 left-0 w-full aspect-video bg-black rounded-lg">
+    <div className="relative w-full" ref={ref}>
+      <div className="card-chopped relative z-20 -mt-3 sm:-mt-6 rounded-[28px] border border-white/20 bg-black/50 backdrop-blur-md shadow-[0_18px_55px_rgba(0,0,0,0.4)]">
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/10 via-white/0 to-black/20" />
+        <div className="relative flex flex-col gap-3 px-5 pt-4 pb-9 sm:px-9 sm:pt-6 sm:pb-11">
+          <div className="flex items-end justify-between gap-1.5 pb-1 text-center">
+            {options.map((optionKey) => {
+              const isActive = selectedOption === optionKey;
+              const isHovered = hoveredOption === optionKey;
+              return (
+                <button
+                  key={optionKey}
+                  onClick={() => setSelectedOption(optionKey)}
+                  onMouseEnter={() => setHoveredOption(optionKey)}
+                  onMouseLeave={() => setHoveredOption(null)}
+                  className="relative flex min-h-[3.25rem] flex-1 min-w-0 flex-col items-center justify-start gap-1 px-2 pt-1 pb-3 text-center text-xs sm:text-sm font-semibold leading-tight text-white transition-colors duration-200 whitespace-normal break-words"
+                >
+                  <span className="block">{t(`playground.options.${optionKey}`, optionKey)}</span>
+                  <motion.span
+                    layoutId="playground-underline"
+                    className="absolute bottom-0 left-0 right-0 mx-auto h-[2px] w-full max-w-[92%] rounded-full bg-white"
+                    variants={underlineVariants}
+                    initial={false}
+                    animate={isActive || isHovered ? "visible" : "hidden"}
+                    transition={{ duration: 0.25, ease: "easeOut" }}
+                    style={{ originX: 0, originY: 0.5 }}
+                  />
+                </button>
+              );
+            })}
+          </div>
+          <div className="relative mt-3 sm:mt-5 -mx-5 sm:-mx-9 -mb-9 sm:-mb-11">
+            <div className="aspect-video w-full rounded-2xl border border-white/10 bg-black shadow-[0_28px_65px_rgba(0,0,0,0.55)]"></div>
           </div>
         </div>
       </div>
+      <div className="pointer-events-none absolute inset-0 z-10 translate-y-5 sm:translate-y-8">
+        <div className="rounded-[28px] border border-white/10 bg-black/60 opacity-55 blur-sm" />
+      </div>
     </div>
   );
-};
+});
+
+Playground.displayName = "Playground";
 
 export default Playground;

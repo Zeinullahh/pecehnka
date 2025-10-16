@@ -62,13 +62,13 @@ export const StickyScroll = ({
       className="w-full"
       ref={ref}
     >
-      <div className="relative mx-auto grid max-w-7xl grid-cols-12 gap-10 p-10">
+      <div className="relative mx-auto grid max-w-7xl grid-cols-12 gap-6 md:gap-10 px-4 py-12 sm:px-8 lg:px-10 lg:py-16">
         <div className="col-span-12 lg:col-span-5">
           {content.map((item, index) => (
             <div
               key={item.title + index}
               ref={(el) => (contentRefs.current[index] = el)}
-              className="my-40"
+              className="my-16 md:my-24 lg:my-40"
             >
               <motion.h2
                 initial={{
@@ -90,7 +90,7 @@ export const StickyScroll = ({
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
                 transition={{ duration: 0.2 }}
-                className="text-kg mt-10 max-w-sm text-slate-300"
+                className="text-base md:text-lg mt-6 md:mt-10 max-w-lg text-slate-300"
               >
                 {item.description}
               </motion.p>

@@ -2,9 +2,10 @@
 import React from "react";
 import { FloatingDock } from "./ui/floating-dock";
 import { IconBrandX, IconBrandYoutube, IconBrandInstagram, IconBrandLinkedin } from "@tabler/icons-react";
-import { TextGenerateEffect } from "./ui/text-generate-effect.jsx";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function FloatingText({ className }) {
+  const { t } = useLanguage();
   const links = [
     {
       title: "X",
@@ -35,12 +36,19 @@ export function FloatingText({ className }) {
       href: "https://www.instagram.com/silenceai_en/",
     },
   ];
-  const text1 = "Discover how hackers think";
-  const text2 = "Follow us for daily research on real attack methods and cyber threats";
+  const text1 = t("floatingText.headline", "Discover how hackers think");
+  const text2 = t(
+    "floatingText.description",
+    "Follow us for daily research on real attack methods and cyber threats"
+  );
   return (
     <div className={`flex flex-col items-center justify-center w-full ${className}`}>
-      <TextGenerateEffect words={text1} className="text-white text-3xl font-bold tracking-tighter sm:text-5xl" />
-      <TextGenerateEffect words={text2} className="text-white mb-4 text-lg" />
+      <p className="text-white text-3xl font-bold tracking-tighter sm:text-5xl text-center">
+        {text1}
+      </p>
+      <p className="text-white mb-4 text-lg text-center">
+        {text2}
+      </p>
       <FloatingDock
         items={links}
       />

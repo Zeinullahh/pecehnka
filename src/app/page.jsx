@@ -8,17 +8,21 @@ import Insights from '@/components/Insights.jsx';
 import Modal from '@/components/Modal.jsx';
 import { FloatingText } from '@/components/FloatingText.jsx';
 import { CybersecurityLamp } from '@/components/CybersecurityLamp.jsx';
+import Spotlights from '@/components/Spotlights.jsx';
 import BackToTopButton from '@/components/BackToTopButton';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { t } = useLanguage();
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center p-1">
+      <main className="relative flex min-h-screen flex-col items-center p-1 pt-8 md:pt-16">
+        <Spotlights />
         <div className="w-full max-w-7xl mx-auto">
           <Header onOpenModal={openModal} />
           <Hero onOpenModal={openModal} />
@@ -28,13 +32,13 @@ const Home = () => {
         <div className="w-full max-w-7xl mx-auto">
           <Insights />
         </div>
-        <div className="w-full mt-24">
+        <div className="w-full mt-24 px-4 sm:px-0">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-white">
-              Our Solution
+              {t('solution.sectionTitle', 'Our Solution')}
             </h2>
             <p className="mt-4 text-lg text-slate-300">
-              Ready in 4 minutes and usable by any IT professional—no cybersecurity expertise required.
+              {t('solution.sectionSubtitle', 'Ready in 4 minutes and usable by any IT professional—no cybersecurity expertise required. We offer advanced visualization and affordability.')}
             </p>
           </div>
           <StickyScrollSolution />

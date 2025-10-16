@@ -192,6 +192,348 @@
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
+.pricing-card {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+
+.affiliate-card {
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid transparent;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 18px 44px rgba(6, 12, 30, 0.45);
+  --affiliate-glow-top: rgba(255, 0, 183, 0.92);
+  --affiliate-glow-bottom: rgba(32, 140, 255, 0.78);
+  --affiliate-glow-left: rgba(255, 0, 183, 0.86);
+  --affiliate-glow-right: rgba(32, 140, 255, 0.7);
+  --affiliate-glow-core: rgba(255, 255, 255, 0.35);
+  --affiliate-glow-opacity: 0.7;
+  --affiliate-glow-hover-opacity: 0.97;
+  --affiliate-border-start: rgba(255, 0, 183, 0.58);
+  --affiliate-border-end: rgba(32, 140, 255, 0.36);
+  --affiliate-border-hover-opacity: 0.65;
+  transition:
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+.affiliate-card::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: inherit;
+  pointer-events: none;
+  padding: 4px;
+  background:
+    radial-gradient(120% 70% at 50% -28%, var(--affiliate-glow-core) 0%, var(--affiliate-glow-top) 38%, transparent 72%),
+    radial-gradient(120% 70% at 50% 128%, var(--affiliate-glow-core) 0%, var(--affiliate-glow-bottom) 38%, transparent 72%),
+    radial-gradient(70% 120% at -28% 50%, var(--affiliate-glow-core) 0%, var(--affiliate-glow-left) 38%, transparent 72%),
+    radial-gradient(70% 120% at 128% 50%, var(--affiliate-glow-core) 0%, var(--affiliate-glow-right) 38%, transparent 72%);
+  mix-blend-mode: screen;
+  opacity: var(--affiliate-glow-opacity);
+  filter: blur(20px);
+  transition: opacity 0.35s ease;
+  -webkit-mask:
+    linear-gradient(#000 0 0) padding-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) padding-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+}
+
+.affiliate-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    var(--affiliate-border-start),
+    var(--affiliate-border-end)
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.35s ease;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  z-index: 1;
+}
+
+.group:hover .affiliate-card {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow:
+    -16px -16px 48px rgba(255, 0, 183, 0.26),
+    16px 16px 52px rgba(32, 140, 255, 0.18),
+    0 26px 60px rgba(6, 12, 30, 0.65);
+}
+
+.group:hover .affiliate-card::after {
+  opacity: var(--affiliate-border-hover-opacity);
+  transform: scale(1.01);
+}
+
+.group:hover .affiliate-card::before {
+  opacity: var(--affiliate-glow-hover-opacity);
+}
+
+.affiliate-card--hero {
+  --affiliate-glow-top: rgba(255, 0, 183, 0.98);
+  --affiliate-glow-bottom: rgba(55, 255, 139, 0.82);
+  --affiliate-glow-left: rgba(255, 0, 183, 0.9);
+  --affiliate-glow-right: rgba(55, 255, 139, 0.68);
+  --affiliate-glow-core: rgba(255, 255, 255, 0.45);
+  --affiliate-glow-opacity: 0.76;
+  --affiliate-glow-hover-opacity: 0.99;
+  --affiliate-border-end: rgba(55, 255, 139, 0.32);
+  --affiliate-border-hover-opacity: 0.7;
+}
+
+.affiliate-card--default {
+  --affiliate-glow-top: rgba(255, 0, 183, 0.94);
+  --affiliate-glow-bottom: rgba(32, 140, 255, 0.76);
+  --affiliate-glow-left: rgba(255, 0, 183, 0.86);
+  --affiliate-glow-right: rgba(32, 140, 255, 0.66);
+  --affiliate-glow-core: rgba(255, 255, 255, 0.32);
+  --affiliate-glow-opacity: 0.72;
+  --affiliate-glow-hover-opacity: 0.97;
+  --affiliate-border-hover-opacity: 0.55;
+}
+
+.affiliate-subcard {
+  position: relative;
+  background: rgba(0, 0, 0, 0.86);
+  border: 1px solid transparent;
+  border-radius: 18px;
+  --affiliate-inner-glow-size: 160px;
+  --affiliate-inner-glow-top: rgba(255, 0, 183, 0.34);
+  --affiliate-inner-glow-bottom: rgba(32, 140, 255, 0.24);
+  --affiliate-inner-glow-left: rgba(255, 0, 183, 0.26);
+  --affiliate-inner-glow-right: rgba(32, 140, 255, 0.18);
+  --affiliate-inner-glow-opacity: 0.35;
+  --affiliate-inner-glow-hover-opacity: 0.72;
+  --affiliate-inner-border-start: rgba(255, 0, 183, 0.3);
+  --affiliate-inner-border-end: rgba(32, 140, 255, 0.22);
+  --affiliate-inner-border-hover-opacity: 0.35;
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.affiliate-subcard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-sizing: border-box;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    140deg,
+    var(--affiliate-inner-border-start),
+    var(--affiliate-inner-border-end)
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+}
+
+.affiliate-subcard::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: var(--affiliate-inner-glow-opacity);
+  transition: opacity 0.35s ease;
+  padding: 3px;
+  background:
+    radial-gradient(110% 70% at 50% -24%, rgba(255, 255, 255, 0.3) 0%, var(--affiliate-inner-glow-top) 38%, transparent 72%),
+    radial-gradient(110% 70% at 50% 124%, rgba(255, 255, 255, 0.28) 0%, var(--affiliate-inner-glow-bottom) 38%, transparent 72%),
+    radial-gradient(70% 110% at -24% 50%, rgba(255, 255, 255, 0.28) 0%, var(--affiliate-inner-glow-left) 38%, transparent 72%),
+    radial-gradient(70% 110% at 124% 50%, rgba(255, 255, 255, 0.28) 0%, var(--affiliate-inner-glow-right) 38%, transparent 72%);
+  mix-blend-mode: screen;
+  filter: blur(16px);
+  -webkit-mask:
+    linear-gradient(#000 0 0) padding-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) padding-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+}
+
+.group:hover .affiliate-subcard::before {
+  opacity: var(--affiliate-inner-border-hover-opacity);
+}
+
+.group:hover .affiliate-subcard::after {
+  opacity: var(--affiliate-inner-glow-hover-opacity);
+}
+
+.affiliate-subcard--hero {
+  --affiliate-inner-glow-size: 180px;
+  --affiliate-inner-glow-top: rgba(255, 0, 183, 0.46);
+  --affiliate-inner-glow-bottom: rgba(55, 255, 139, 0.34);
+  --affiliate-inner-glow-left: rgba(255, 0, 183, 0.4);
+  --affiliate-inner-glow-right: rgba(55, 255, 139, 0.28);
+  --affiliate-inner-glow-opacity: 0.45;
+  --affiliate-inner-glow-hover-opacity: 0.85;
+  --affiliate-inner-border-end: rgba(55, 255, 139, 0.32);
+  --affiliate-inner-border-hover-opacity: 0.48;
+}
+
+.affiliate-subcard--default {
+  --affiliate-inner-glow-size: 150px;
+  --affiliate-inner-glow-top: rgba(255, 0, 183, 0.38);
+  --affiliate-inner-glow-bottom: rgba(32, 140, 255, 0.26);
+  --affiliate-inner-glow-left: rgba(255, 0, 183, 0.32);
+  --affiliate-inner-glow-right: rgba(32, 140, 255, 0.22);
+  --affiliate-inner-glow-opacity: 0.3;
+  --affiliate-inner-glow-hover-opacity: 0.68;
+  --affiliate-inner-border-hover-opacity: 0.38;
+}
+
+.edge-glow-card--default {
+  --edge-glow-spotlight-primary: rgba(255, 0, 183, 0.2);
+  --edge-glow-spotlight-secondary: rgba(32, 140, 255, 0.16);
+}
+
+.edge-glow-card--hero {
+  --edge-glow-spotlight-primary: rgba(255, 0, 183, 0.28);
+  --edge-glow-spotlight-secondary: rgba(55, 255, 139, 0.2);
+}
+
+.affiliate-metric-row {
+  background: rgba(0, 0, 0, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+.affiliate-metric-icon {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.affiliate-card > *,
+.affiliate-subcard > * {
+  position: relative;
+  z-index: 2;
+}
+
+.affiliate-graph {
+  position: relative;
+  background: radial-gradient(circle at 20% 0%, rgba(255, 0, 183, 0.18), transparent 55%),
+    radial-gradient(circle at 85% 120%, rgba(55, 255, 139, 0.2), transparent 65%),
+    rgba(0, 0, 0, 0.85);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.affiliate-graph::before {
+  content: "";
+  position: absolute;
+  inset: 12px 12px 14px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to top, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.affiliate-graph-line {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: affiliate-graph-draw 4.5s ease-in-out infinite alternate;
+}
+
+.affiliate-graph-node {
+  fill: rgba(255, 255, 255, 0.9);
+  stroke: rgba(255, 255, 255, 0.3);
+  stroke-width: 2;
+  opacity: 0.85;
+}
+
+.affiliate-graph-label {
+  font-size: 10px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  fill: rgba(255, 255, 255, 0.55);
+}
+
+.affiliate-graph-pulse {
+  fill: rgba(55, 255, 139, 0.95);
+  filter: drop-shadow(0 0 14px rgba(55, 255, 139, 0.75));
+  animation: affiliate-graph-pulse 2.8s ease-in-out infinite;
+}
+
+@keyframes affiliate-graph-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes affiliate-graph-pulse {
+  0%,
+  100% {
+    transform: scale(0.85);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+.hero-spotlight {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 999px;
+  filter: blur(120px);
+  opacity: 0.65;
+  mix-blend-mode: screen;
+  z-index: 0;
+}
+
+.hero-spotlight--pink {
+  width: 360px;
+  height: 360px;
+  top: -160px;
+  left: -140px;
+  background: radial-gradient(circle, rgba(255, 0, 183, 0.75), transparent 70%);
+}
+
+.hero-spotlight--cyan {
+  width: 380px;
+  height: 380px;
+  bottom: -140px;
+  right: -120px;
+  background: radial-gradient(circle, rgba(55, 255, 139, 0.7), transparent 70%);
+}
+
 .glass-card-glow {
   position: relative;
   background: rgba(255, 255, 255, 0.1);
@@ -233,6 +575,10 @@
 
 .modal-card {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card-chopped {
+  clip-path: inset(12px 0 0 0 round 28px);
 }
 
 .bg-\[\#C5C5C5\]:hover {
@@ -314,4 +660,123 @@
 /* Globe glow effect */
 .globe-glow {
   filter: drop-shadow(0 0 15px rgba(255, 0, 183, 0.7)) drop-shadow(0 0 30px rgba(255, 0, 183, 0.5));
+}
+
+.edge-glow {
+  position: relative;
+  isolation: isolate;
+  --cursor-x: 50%;
+  --cursor-y: 50%;
+  --glow-opacity: 0;
+}
+
+.edge-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      140px circle at var(--cursor-x, 50%) var(--cursor-y, 50%),
+      var(--edge-glow-color, rgba(255, 0, 183, 0.85)) 0%,
+      var(--edge-glow-color, rgba(255, 0, 183, 0.85)) 45%,
+      transparent 72%
+    );
+  mask-image: radial-gradient(farthest-side, transparent 68%, black 92%);
+  -webkit-mask-image: radial-gradient(farthest-side, transparent 68%, black 92%);
+  mix-blend-mode: screen;
+  opacity: var(--glow-opacity, 0);
+  transition: opacity 0.25s ease;
+}
+
+.edge-glow-static {
+  position: relative;
+  isolation: isolate;
+}
+
+.edge-glow-static::before,
+.edge-glow-static::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.edge-glow-static::before {
+  background:
+    linear-gradient(
+      to right,
+      transparent 0%,
+      var(--edge-glow-top, var(--edge-glow-color, rgba(255, 0, 183, 0.9))) 30%,
+      var(--edge-glow-top, var(--edge-glow-color, rgba(255, 0, 183, 0.9))) 70%,
+      transparent 100%
+    ) top/100% 2px no-repeat,
+    linear-gradient(
+      to right,
+      transparent 0%,
+      var(--edge-glow-bottom, var(--edge-glow-secondary, rgba(0, 191, 255, 0.7))) 30%,
+      var(--edge-glow-bottom, var(--edge-glow-secondary, rgba(0, 191, 255, 0.7))) 70%,
+      transparent 100%
+    ) bottom/100% 2px no-repeat,
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      var(--edge-glow-left, var(--edge-glow-color, rgba(255, 0, 183, 0.9))) 30%,
+      var(--edge-glow-left, var(--edge-glow-color, rgba(255, 0, 183, 0.9))) 70%,
+      transparent 100%
+    ) left/2px 100% no-repeat,
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      var(--edge-glow-right, var(--edge-glow-secondary, rgba(0, 191, 255, 0.7))) 30%,
+      var(--edge-glow-right, var(--edge-glow-secondary, rgba(0, 191, 255, 0.7))) 70%,
+      transparent 100%
+    ) right/2px 100% no-repeat;
+}
+
+.edge-glow-static::after {
+  background: none;
+}
+
+.edge-glow-static:hover::before,
+.edge-glow-static:hover::after {
+  opacity: 1;
+}
+
+.edge-glow-static.no-hover-glow::before,
+.edge-glow-static.no-hover-glow::after,
+.edge-glow-static.no-hover-glow:hover::before,
+.edge-glow-static.no-hover-glow:hover::after {
+  opacity: 0;
+  transition: none;
+}
+
+.edge-glow-static-spotlight::after {
+  background:
+    radial-gradient(
+      220px circle at 12% 18%,
+      var(--edge-glow-spotlight-primary, rgba(255, 0, 183, 0.28)),
+      transparent 72%
+    ),
+    radial-gradient(
+      220px circle at 88% 82%,
+      var(--edge-glow-spotlight-secondary, rgba(0, 191, 255, 0.2)),
+      transparent 72%
+    );
+  opacity: 1;
+}
+
+.edge-glow-card--default.edge-glow-static-spotlight::after,
+.edge-glow-card--hero.edge-glow-static-spotlight::after {
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.group:hover .edge-glow-card--default.edge-glow-static-spotlight::after,
+.group:hover .edge-glow-card--hero.edge-glow-static-spotlight::after {
+  opacity: 1;
 }
