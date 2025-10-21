@@ -12,6 +12,92 @@
     },
     "login": "Entrar"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Junte-se ao programa de parceiros da Silence AI",
+      "title": "Transforme convites em receita.",
+      "cta": "Participar do programa parceiro",
+      "earnings": "$2,940.00",
+      "growth": "+18% em relação ao mês anterior",
+      "snapshot": {
+        "label": "Visão em tempo real",
+        "caption": "O desempenho é atualizado a cada 60 segundos e os pagamentos confirmados são sincronizados imediatamente."
+      },
+      "graph": {
+        "label": "Tendência de receita",
+        "title": "Crescimento da receita de indicações",
+        "window": "Últimos 30 dias",
+        "label0": "Semana 1",
+        "label1": "Semana 2",
+        "label2": "Semana 3",
+        "label3": "Semana 4",
+        "label4": "Semana 5",
+        "label5": "Semana 6",
+        "label6": "Hoje"
+      },
+      "metric": {
+        "conversion": "Ativações",
+        "conversionChange": "24 novas equipes neste mês",
+        "pending": "Recompensas pendentes",
+        "pendingChange": "Saques processados em até 2 dias úteis"
+      }
+    },
+    "howItWorks": {
+      "title": "Como funciona",
+      "create": {
+        "title": "Crie seu link",
+        "description": "Gere um link de indicação ou código promocional exclusivo no painel da Silence AI."
+      },
+      "share": {
+        "title": "Compartilhe",
+        "description": "Convide equipes por e-mail, LinkedIn e comunidades. Acompanhe o desempenho em tempo real."
+      },
+      "earn": {
+        "title": "Ganhe",
+        "description": "Receba comissão assim que os clientes indicados ativarem a proteção Silence AI."
+      }
+    },
+    "commission": {
+      "heading": "Recompensas de saldo",
+      "highlight": {
+        "label": "Por que os parceiros adoram"
+      },
+      "reward": {
+        "title": "10% de recompensa em cada recarga de saldo",
+        "description": "Quando a equipe convidada recarrega a carteira Silence AI, 10% do valor líquido é creditado diretamente para você."
+      },
+      "settlement": {
+        "title": "Liquidação em tempo real",
+        "description": "As recompensas são lançadas no saldo do parceiro em até um minuto após a transação — sem fila de aprovação manual."
+      },
+      "withdrawal": {
+        "title": "Saques concluídos em 2 dias úteis",
+        "description": "Os pedidos de saque são revisados automaticamente e chegam à sua conta bancária em até dois dias úteis."
+      },
+      "sample": {
+        "label": "Exemplos de recarga",
+        "caption": "Os ganhos do parceiro crescem a cada recarga — sem redefinir níveis e sem mapear produtos.",
+        "topup": "$250 recarga → $25 recompensa",
+        "topupHigher": "$1,000 recarga → $100 recompensa"
+      },
+      "note": "A comissão é calculada sobre o valor líquido após as taxas de processamento de pagamento."
+    },
+    "faq": {
+      "title": "Perguntas e respostas",
+      "payments": {
+        "question": "Como recebo os pagamentos?",
+        "answer": "Adicione o número do seu cartão VISA ou Mastercard no perfil. Os pagamentos podem ser transferidos diretamente para esse cartão."
+      },
+      "discounts": {
+        "question": "Os clientes indicados recebem desconto?",
+        "answer": "Não. Os clientes indicados não recebem desconto nas compras; somente o parceiro ganha comissão por indicações bem-sucedidas."
+      },
+      "statistics": {
+        "question": "Quando verei minhas estatísticas de indicação?",
+        "answer": "Assim que um usuário se registrar com seu código ou link, o e-mail e a recompensa correspondente aparecerão no painel."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: a cibersegurança deixou de ser cara e complicada",
     "subheading": "O sistema de cibersegurança tudo-em-um baseado em IA que combina:",

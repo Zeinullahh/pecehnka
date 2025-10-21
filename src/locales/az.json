@@ -12,6 +12,92 @@
     },
     "login": "Daxil ol"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Silence AI Tərəfdaş Proqramına qoşulun",
+      "title": "Dəvətnamələri gəlirə çevirin.",
+      "cta": "Tərəfdaş proqramına qoşulun",
+      "earnings": "$2,940.00",
+      "growth": "+18% keçən ayla müqayisədə",
+      "snapshot": {
+        "label": "Canlı xülasə",
+        "caption": "Performans hər 60 saniyədən bir yenilənir, təsdiqlənmiş ödənişlər dərhal sinxronlaşır."
+      },
+      "graph": {
+        "label": "Gəlir tendensiyası",
+        "title": "Tövsiyə gəlirinin artımı",
+        "window": "Son 30 gün",
+        "label0": "1-ci həftə",
+        "label1": "2-ci həftə",
+        "label2": "3-cü həftə",
+        "label3": "4-cü həftə",
+        "label4": "5-ci həftə",
+        "label5": "6-cı həftə",
+        "label6": "Bu gün"
+      },
+      "metric": {
+        "conversion": "Aktivasiyalar",
+        "conversionChange": "Bu ay 24 yeni komanda",
+        "pending": "Gözləyən mükafatlar",
+        "pendingChange": "Nağdlaşdırmalar 2 iş günü ərzində emal olunur"
+      }
+    },
+    "howItWorks": {
+      "title": "Necə işləyir",
+      "create": {
+        "title": "Linkinizi yaradın",
+        "description": "Silence AI panelində unikal yönləndirmə linki və ya promo kod yaradın."
+      },
+      "share": {
+        "title": "Paylaşın",
+        "description": "Komandaları e-poçt, LinkedIn və icmalar vasitəsilə dəvət edin. Performansı real vaxtda izləyin."
+      },
+      "earn": {
+        "title": "Qazanın",
+        "description": "Tövsiyə etdiyiniz müştərilər Silence AI mühafizəsini aktiv etdikdən dərhal sonra komissiya qazanın."
+      }
+    },
+    "commission": {
+      "heading": "Balans mükafatları",
+      "highlight": {
+        "label": "Tərəfdaşların bu sistemi sevməsinin səbəbi"
+      },
+      "reward": {
+        "title": "Hər balans doldurmasına 10% mükafat",
+        "description": "Dəvət etdiyiniz komanda Silence AI cüzdanını dolduranda, xalis məbləğin 10%-i dərhal sizə köçürülür."
+      },
+      "settlement": {
+        "title": "Reall vaxtda uçotda əks olunma",
+        "description": "Əməliyyat təsdiqləndikdən sonra mükafatlar bir dəqiqə ərzində tərəfdaş balansınıza yazılır — əl təsdiqi tələb olunmur."
+      },
+      "withdrawal": {
+        "title": "Nağdlaşdırmalar 2 iş günündə tamamlanır",
+        "description": "Göndərilən çıxarış sorğuları avtomatik yoxlanılır və iki iş günü ərzində bank hesabınıza çatır."
+      },
+      "sample": {
+        "label": "Balans doldurma nümunələri",
+        "caption": "Hər doldurma ilə tərəfdaş gəliri artır — səviyyələr sıfırlanmır, məhsul uyğunlaşdırması tələb olunmur.",
+        "topup": "$250 doldurma → $25 mükafat",
+        "topupHigher": "$1,000 doldurma → $100 mükafat"
+      },
+      "note": "Komissiya ödəniş emalı haqları çıxdıqdan sonra xalis məbləğdən hesablanır."
+    },
+    "faq": {
+      "title": "Suallar və cavablar",
+      "payments": {
+        "question": "Ödənişləri necə alım?",
+        "answer": "Profilinizə VISA və ya Mastercard nömrənizi əlavə edə bilərsiniz. Ödənişlər göstərilən karta birbaşa köçürülə bilər."
+      },
+      "discounts": {
+        "question": "Tövsiyə olunan müştərilər endirim alır?",
+        "answer": "Xeyr. Tövsiyə olunan müştərilər alışlarında endirim almırlar. Yalnız tərəfdaş uğurlu yönləndirmələrdən komissiya qazanır."
+      },
+      "statistics": {
+        "question": "Referal statistikamı nə vaxt görəcəyəm?",
+        "answer": "İstifadəçi promo kodunuz və ya yönləndirmə linkinizlə qeydiyyatdan keçən kimi, onun e-poçtu və müvafiq mükafatı panelinizdə görünəcək."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: kibertəhlükəsizlik artıq nə bahalıdır, nə də mürəkkəb",
     "subheading": "AI əsaslı, bütün komponentləri birləşdirən kibertəhlükəsizlik sistemi:",

@@ -12,6 +12,92 @@
     },
     "login": "Login"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Gakktu í samstarfsáætlun Silence AI",
+      "title": "Umbreyttu boðum í tekjur.",
+      "cta": "Skráðu þig í samstarfsáætlun",
+      "earnings": "$2,940.00",
+      "growth": "+18% miðað við síðasta mánuð",
+      "snapshot": {
+        "label": "Bein yfirlit",
+        "caption": "Frammistöðugögn uppfærast á 60 sekúndna fresti og staðfestar greiðslur samstillast samstundis."
+      },
+      "graph": {
+        "label": "Þróun tekna",
+        "title": "Vöxtur tilvísanatekna",
+        "window": "Síðustu 30 dagar",
+        "label0": "Vika 1",
+        "label1": "Vika 2",
+        "label2": "Vika 3",
+        "label3": "Vika 4",
+        "label4": "Vika 5",
+        "label5": "Vika 6",
+        "label6": "Í dag"
+      },
+      "metric": {
+        "conversion": "Virkjanir",
+        "conversionChange": "24 ný lið í þessum mánuði",
+        "pending": "Ógreiddar umbunir",
+        "pendingChange": "Úttektir afgreiddar innan 2 virkra daga"
+      }
+    },
+    "howItWorks": {
+      "title": "Hvernig þetta virkar",
+      "create": {
+        "title": "Búðu til tengilinn þinn",
+        "description": "Búðu til einstakan tilvísunartengil eða afsláttarkóða í Silence AI stjórnborðinu þínu."
+      },
+      "share": {
+        "title": "Deildu",
+        "description": "Bjóðaðu liðum með tölvupósti, á LinkedIn og í samfélögum. Fylgstu með frammistöðu í rauntíma."
+      },
+      "earn": {
+        "title": "Þénaðu",
+        "description": "Þú færð þóknun um leið og viðskiptavinir sem þú vísar á virkja Silence AI vörnin."
+      }
+    },
+    "commission": {
+      "heading": "Jafnvægisumbunir",
+      "highlight": {
+        "label": "Af hverju samstarfsaðilar kunna að meta þetta"
+      },
+      "reward": {
+        "title": "10% umbun fyrir hverja inneign",
+        "description": "Þegar boðið lið hleður Silence AI veskið sitt fær þú 10% af nettóupphæðinni samstundis."
+      },
+      "settlement": {
+        "title": "Rauntíma bókun í höfuðbók",
+        "description": "Umbanir bætast á samstarfsreikninginn innan einnar mínútu eftir að færslan klárast — engin handvirk samþykkt."
+      },
+      "withdrawal": {
+        "title": "Úttektir ljúka á 2 virkum dögum",
+        "description": "Úttektarbeiðnir eru yfirfarnar sjálfkrafa og berast inn á bankareikninginn innan tveggja virkra daga."
+      },
+      "sample": {
+        "label": "Dæmi um inneign",
+        "caption": "Tekjur samstarfsaðila aukast með hverri inneign — engar stigendurstillingar né vörukortlagning.",
+        "topup": "$250 inneign → $25 umbun",
+        "topupHigher": "$1,000 inneign → $100 umbun"
+      },
+      "note": "Þóknunin er reiknuð af nettóupphæðinni eftir greiðslugjöld."
+    },
+    "faq": {
+      "title": "Spurningar og svör",
+      "payments": {
+        "question": "Hvernig fæ ég greitt?",
+        "answer": "Bættu VISA- eða Mastercard-númerinu við prófílinn þinn. Úttektir er hægt að færa beint á tilgreinda kortið."
+      },
+      "discounts": {
+        "question": "Fá viðskiptavinir sem ég vísa til afslátt?",
+        "answer": "Nei. Viðskiptavinir sem þú vísar til fá ekki afslátt af kaupum sínum; aðeins samstarfsaðilinn fær þóknun af vel heppnuðum tilvísunum."
+      },
+      "statistics": {
+        "question": "Hvenær sé ég tilvísunartölfræðina mína?",
+        "answer": "Um leið og notandi skráir sig með kóðanum eða tenglinum þínum birtast netfang hans og umbunin í stjórnborðinu."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore",
     "subheading": "The all in one, AI-based cybersecurity system that combines:",

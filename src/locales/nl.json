@@ -12,6 +12,92 @@
     },
     "login": "Inloggen"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Doe mee aan het partnerprogramma van Silence AI",
+      "title": "Maak van uitnodigingen inkomsten.",
+      "cta": "Doe mee aan het partnerprogramma",
+      "earnings": "$2,940.00",
+      "growth": "+18% t.o.v. vorige maand",
+      "snapshot": {
+        "label": "Live overzicht",
+        "caption": "Prestatiecijfers worden elke 60 seconden bijgewerkt en bevestigde uitbetalingen worden direct gesynchroniseerd."
+      },
+      "graph": {
+        "label": "Inkomstentrend",
+        "title": "Groei van verwijzingsinkomsten",
+        "window": "Laatste 30 dagen",
+        "label0": "Week 1",
+        "label1": "Week 2",
+        "label2": "Week 3",
+        "label3": "Week 4",
+        "label4": "Week 5",
+        "label5": "Week 6",
+        "label6": "Vandaag"
+      },
+      "metric": {
+        "conversion": "Activaties",
+        "conversionChange": "24 nieuwe teams deze maand",
+        "pending": "In afwachting zijnde beloningen",
+        "pendingChange": "Uitbetalingen worden binnen 2 werkdagen verwerkt"
+      }
+    },
+    "howItWorks": {
+      "title": "Hoe het werkt",
+      "create": {
+        "title": "Maak je link aan",
+        "description": "Genereer een unieke verwijzingslink of promotiecode in je Silence AI-dashboard."
+      },
+      "share": {
+        "title": "Deel",
+        "description": "Nodig teams uit via e-mail, LinkedIn en communities. Volg de prestaties in realtime."
+      },
+      "earn": {
+        "title": "Verdien",
+        "description": "Ontvang commissie zodra je doorverwezen klanten Silence AI-beveiliging activeren."
+      }
+    },
+    "commission": {
+      "heading": "Saldo-beloningen",
+      "highlight": {
+        "label": "Daarom waarderen partners het"
+      },
+      "reward": {
+        "title": "10% beloning op elke saldo-opwaardering",
+        "description": "Wanneer een uitgenodigd team zijn Silence AI-portemonnee opwaardeert, gaat 10% van het nettobedrag direct naar jou."
+      },
+      "settlement": {
+        "title": "Realtime verwerking",
+        "description": "Beloningen worden binnen een minuut na afronding van de transactie toegevoegd aan je partnerbalans—zonder handmatige goedkeuring."
+      },
+      "withdrawal": {
+        "title": "Uitbetalingen binnen 2 werkdagen",
+        "description": "Ingediende uitbetalingsverzoeken worden automatisch gecontroleerd en bereikt je bankrekening binnen twee werkdagen."
+      },
+      "sample": {
+        "label": "Voorbeelden van opwaarderingen",
+        "caption": "Partnerinkomsten groeien bij elke opwaardering—geen terugzetting van niveaus en geen productmapping nodig.",
+        "topup": "$250 opwaardering → $25 beloning",
+        "topupHigher": "$1,000 opwaardering → $100 beloning"
+      },
+      "note": "De commissie wordt berekend over het nettobedrag na betalingsverwerkingskosten."
+    },
+    "faq": {
+      "title": "Vragen & antwoorden",
+      "payments": {
+        "question": "Hoe ontvang ik betalingen?",
+        "answer": "Voeg je VISA- of Mastercardnummer toe aan je profiel. Uitbetalingen kunnen rechtstreeks naar de opgegeven kaart worden overgemaakt."
+      },
+      "discounts": {
+        "question": "Krijgen doorverwezen klanten korting?",
+        "answer": "Nee. Doorverwezen klanten ontvangen geen korting op hun aankopen; alleen de partner verdient commissie op succesvolle verwijzingen."
+      },
+      "statistics": {
+        "question": "Wanneer zie ik mijn verwijzingsstatistieken?",
+        "answer": "Zodra een gebruiker zich registreert met jouw promo code of verwijzingslink, verschijnen hun e-mailadres en bijbehorende beloning in je dashboard."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: cybersecurity is niet langer duur of ingewikkeld",
     "subheading": "Het alles-in-één cyberbeveiligingssysteem op basis van AI dat het volgende combineert:",

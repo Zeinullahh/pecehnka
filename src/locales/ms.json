@@ -12,6 +12,92 @@
     },
     "login": "Log masuk"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Sertai Program Rakan Kongsi Silence AI",
+      "title": "Tukar jemputan kepada pendapatan.",
+      "cta": "Sertai program rakan kongsi",
+      "earnings": "$2,940.00",
+      "growth": "+18% berbanding bulan lalu",
+      "snapshot": {
+        "label": "Tinjauan langsung",
+        "caption": "Prestasi dikemas kini setiap 60 saat dan pembayaran yang disahkan diselaraskan serta-merta."
+      },
+      "graph": {
+        "label": "Trend pendapatan",
+        "title": "Pertumbuhan pendapatan rujukan",
+        "window": "30 hari terakhir",
+        "label0": "Minggu 1",
+        "label1": "Minggu 2",
+        "label2": "Minggu 3",
+        "label3": "Minggu 4",
+        "label4": "Minggu 5",
+        "label5": "Minggu 6",
+        "label6": "Hari ini"
+      },
+      "metric": {
+        "conversion": "Pengaktifan",
+        "conversionChange": "24 pasukan baharu bulan ini",
+        "pending": "Ganjaran tertunda",
+        "pendingChange": "Pengeluaran diproses dalam 2 hari bekerja"
+      }
+    },
+    "howItWorks": {
+      "title": "Cara ia berfungsi",
+      "create": {
+        "title": "Cipta pautan anda",
+        "description": "Jana pautan rujukan atau kod promo unik dalam papan pemuka Silence AI anda."
+      },
+      "share": {
+        "title": "Kongsi",
+        "description": "Jemput pasukan melalui emel, LinkedIn dan komuniti. Jejaki prestasi secara masa nyata."
+      },
+      "earn": {
+        "title": "Jana pendapatan",
+        "description": "Terima komisen sebaik sahaja pelanggan rujukan anda mengaktifkan perlindungan Silence AI."
+      }
+    },
+    "commission": {
+      "heading": "Ganjaran baki",
+      "highlight": {
+        "label": "Mengapa rakan kongsi menyukainya"
+      },
+      "reward": {
+        "title": "Ganjaran 10% bagi setiap tambah nilai baki",
+        "description": "Apabila pasukan jemputan menambah nilai dompet Silence AI, 10% daripada jumlah bersih dikreditkan terus kepada anda."
+      },
+      "settlement": {
+        "title": "Penyelesaian buku besar masa nyata",
+        "description": "Ganjaran dimasukkan ke dalam baki rakan kongsi anda dalam masa seminit selepas transaksi selesai—tanpa giliran kelulusan manual."
+      },
+      "withdrawal": {
+        "title": "Pengeluaran siap dalam 2 hari bekerja",
+        "description": "Permintaan pengeluaran disemak secara automatik dan masuk ke akaun bank anda dalam tempoh dua hari bekerja."
+      },
+      "sample": {
+        "label": "Contoh tambah nilai",
+        "caption": "Pendapatan rakan kongsi meningkat dengan setiap tambah nilai—tiada tetapan semula peringkat atau pemetaan produk.",
+        "topup": "$250 tambah nilai → $25 ganjaran",
+        "topupHigher": "$1,000 tambah nilai → $100 ganjaran"
+      },
+      "note": "Komisen dikira daripada jumlah bersih selepas caj pemprosesan pembayaran."
+    },
+    "faq": {
+      "title": "Soalan & jawapan",
+      "payments": {
+        "question": "Bagaimana saya menerima pembayaran?",
+        "answer": "Tambahkan nombor kad VISA atau Mastercard anda dalam profil. Pembayaran boleh dipindahkan terus ke kad tersebut."
+      },
+      "discounts": {
+        "question": "Adakah pelanggan rujukan mendapat diskaun?",
+        "answer": "Tidak. Pelanggan yang dirujuk tidak menerima diskaun ke atas pembelian mereka; hanya rakan kongsi mendapat komisen daripada rujukan yang berjaya."
+      },
+      "statistics": {
+        "question": "Bilakah saya akan melihat statistik rujukan saya?",
+        "answer": "Sebaik sahaja pengguna mendaftar menggunakan kod promo atau pautan rujukan anda, emel dan ganjaran berkaitan akan dipaparkan dalam papan pemuka anda."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: keselamatan siber kini tidak mahal dan tidak rumit lagi",
     "subheading": "Sistem keselamatan siber serba lengkap berasaskan AI yang menggabungkan:",

@@ -12,6 +12,92 @@
     },
     "login": "Login"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Pievienojieties Silence AI partnerprogrammā",
+      "title": "Pārvērtiet ielūgumus ienākumos.",
+      "cta": "Pievienoties partnerprogrammai",
+      "earnings": "$2,940.00",
+      "growth": "+18% salīdzinājumā ar iepriekšējo mēnesi",
+      "snapshot": {
+        "label": "Tiešsaistes momentuzņēmums",
+        "caption": "Veiktspējas dati tiek atjaunināti ik pēc 60 sekundēm, bet apstiprinātie maksājumi tiek sinhronizēti nekavējoties."
+      },
+      "graph": {
+        "label": "Ienākumu tendence",
+        "title": "Ieteikumu ieņēmumu izaugsme",
+        "window": "Pēdējās 30 dienas",
+        "label0": "1. nedēļa",
+        "label1": "2. nedēļa",
+        "label2": "3. nedēļa",
+        "label3": "4. nedēļa",
+        "label4": "5. nedēļa",
+        "label5": "6. nedēļa",
+        "label6": "Šodien"
+      },
+      "metric": {
+        "conversion": "Aktivācijas",
+        "conversionChange": "Šomēnes 24 jaunas komandas",
+        "pending": "Gaidošās atlīdzības",
+        "pendingChange": "Izmaksas tiek apstrādātas 2 darba dienu laikā"
+      }
+    },
+    "howItWorks": {
+      "title": "Kā tas darbojas",
+      "create": {
+        "title": "Izveidojiet savu saiti",
+        "description": "Silence AI vadības panelī ģenerējiet unikālu ieteikumu saiti vai promo kodu."
+      },
+      "share": {
+        "title": "Dalieties",
+        "description": "Ielūdziet komandas e-pastā, LinkedIn un kopienās. Sekojiet līdzi rezultātiem reāllaikā."
+      },
+      "earn": {
+        "title": "Pelna",
+        "description": "Saņemiet komisiju uzreiz pēc tam, kad jūsu ieteiktie klienti aktivizē Silence AI aizsardzību."
+      }
+    },
+    "commission": {
+      "heading": "Saldo atlīdzības",
+      "highlight": {
+        "label": "Kāpēc partneriem tas patīk"
+      },
+      "reward": {
+        "title": "10% atlīdzība par katru saldo papildinājumu",
+        "description": "Kad uzaicinātā komanda papildina Silence AI maku, 10% no neto summas nekavējoties tiek ieskaitīti jums."
+      },
+      "settlement": {
+        "title": "Reāllaika uzskaite",
+        "description": "Atlīdzības tiek iegrāmatotas partnera atlikumā minūtes laikā pēc darījuma — bez manuālas apstiprināšanas."
+      },
+      "withdrawal": {
+        "title": "Izmaksas 2 darba dienās",
+        "description": "Izmaksu pieprasījumi tiek pārbaudīti automātiski un nonāk jūsu bankas kontā divu darba dienu laikā."
+      },
+      "sample": {
+        "label": "Papildinājumu piemēri",
+        "caption": "Partnera ieņēmumi aug ar katru papildinājumu — nav līmeņu atiestatīšanas un produktu kartēšanas.",
+        "topup": "$250 papildinājums → $25 atlīdzība",
+        "topupHigher": "$1,000 papildinājums → $100 atlīdzība"
+      },
+      "note": "Komisija tiek aprēķināta no neto summas pēc maksājumu apstrādes maksām."
+    },
+    "faq": {
+      "title": "Jautājumi un atbildes",
+      "payments": {
+        "question": "Kā es saņemu maksājumus?",
+        "answer": "Profilā pievienojiet savu VISA vai Mastercard kartes numuru. Atlīdzības var pārskaitīt tieši uz norādīto karti."
+      },
+      "discounts": {
+        "question": "Vai ieteiktie klienti saņem atlaides?",
+        "answer": "Nē. Ieteiktie klienti nesaņem atlaides pirkumiem; komisiju saņem tikai partneris par sekmīgiem ieteikumiem."
+      },
+      "statistics": {
+        "question": "Kad es redzēšu savas ieteikumu statistikas?",
+        "answer": "Tiklīdz lietotājs reģistrējas ar jūsu promo kodu vai ieteikumu saiti, viņa e-pasts un attiecīgā atlīdzība parādās jūsu panelī."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore",
     "subheading": "The all in one, AI-based cybersecurity system that combines:",

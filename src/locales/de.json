@@ -12,6 +12,92 @@
     },
     "login": "Anmelden"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Treten Sie dem Silence AI Partnerprogramm bei",
+      "title": "Verwandeln Sie Einladungen in Einnahmen.",
+      "cta": "Partnerprogramm beitreten",
+      "earnings": "$2,940.00",
+      "growth": "+18 % im Vergleich zum Vormonat",
+      "snapshot": {
+        "label": "Live-Überblick",
+        "caption": "Leistungsdaten werden alle 60 Sekunden aktualisiert, bestätigte Auszahlungen werden sofort synchronisiert."
+      },
+      "graph": {
+        "label": "Einnahmentrend",
+        "title": "Wachstum der Empfehlungsumsätze",
+        "window": "Letzte 30 Tage",
+        "label0": "Woche 1",
+        "label1": "Woche 2",
+        "label2": "Woche 3",
+        "label3": "Woche 4",
+        "label4": "Woche 5",
+        "label5": "Woche 6",
+        "label6": "Heute"
+      },
+      "metric": {
+        "conversion": "Aktivierungen",
+        "conversionChange": "24 neue Teams in diesem Monat",
+        "pending": "Ausstehende Belohnungen",
+        "pendingChange": "Auszahlungen werden innerhalb von 2 Werktagen bearbeitet"
+      }
+    },
+    "howItWorks": {
+      "title": "So funktioniert es",
+      "create": {
+        "title": "Erstellen Sie Ihren Link",
+        "description": "Erstellen Sie im Silence AI Dashboard einen einzigartigen Empfehlungslink oder Promo-Code."
+      },
+      "share": {
+        "title": "Teilen",
+        "description": "Laden Sie Teams per E-Mail, LinkedIn und Communities ein. Verfolgen Sie die Ergebnisse in Echtzeit."
+      },
+      "earn": {
+        "title": "Verdienen",
+        "description": "Erhalten Sie Provision, sobald Ihre empfohlenen Kunden den Schutz von Silence AI aktivieren."
+      }
+    },
+    "commission": {
+      "heading": "Saldo-Belohnungen",
+      "highlight": {
+        "label": "Darum lieben Partner es"
+      },
+      "reward": {
+        "title": "10 % Belohnung für jede Saldoaufladung",
+        "description": "Wenn ein eingeladenes Team sein Silence AI Wallet auflädt, werden 10 % des Nettobetrags sofort Ihnen gutgeschrieben."
+      },
+      "settlement": {
+        "title": "Buchung in Echtzeit",
+        "description": "Belohnungen erscheinen innerhalb einer Minute nach Abschluss der Transaktion auf Ihrem Partnerkonto – ohne manuelle Freigabe."
+      },
+      "withdrawal": {
+        "title": "Auszahlungen in 2 Werktagen",
+        "description": "Auszahlungsanfragen werden automatisch geprüft und erreichen Ihr Bankkonto innerhalb von zwei Werktagen."
+      },
+      "sample": {
+        "label": "Beispiel-Aufladungen",
+        "caption": "Partnergewinne wachsen mit jeder Aufladung – keine Zurücksetzung der Stufen, kein Produktmapping erforderlich.",
+        "topup": "$250 Aufladung → $25 Belohnung",
+        "topupHigher": "$1,000 Aufladung → $100 Belohnung"
+      },
+      "note": "Die Provision wird aus dem Nettobetrag nach Abzug der Zahlungsgebühren berechnet."
+    },
+    "faq": {
+      "title": "Fragen & Antworten",
+      "payments": {
+        "question": "Wie erhalte ich Zahlungen?",
+        "answer": "Fügen Sie in Ihrem Profil Ihre VISA- oder Mastercard-Nummer hinzu. Auszahlungen können direkt auf die angegebene Karte erfolgen."
+      },
+      "discounts": {
+        "question": "Erhalten empfohlene Kunden Rabatte?",
+        "answer": "Nein. Empfohlene Kunden erhalten keine Rabatte auf ihre Einkäufe; nur der Partner verdient Provision bei erfolgreichen Empfehlungen."
+      },
+      "statistics": {
+        "question": "Wann sehe ich meine Empfehlungsstatistiken?",
+        "answer": "Sobald sich ein Nutzer mit Ihrem Promo-Code oder Link registriert, erscheinen seine E-Mail-Adresse und die zugehörige Belohnung im Dashboard."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: Cybersicherheit ist weder teuer noch kompliziert",
     "subheading": "Das All-in-One-Cybersicherheitssystem auf KI-Basis vereint:",

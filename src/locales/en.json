@@ -12,6 +12,92 @@
     },
     "login": "Login"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Join Silence AI's Affiliate Program",
+      "title": "Turn invitations into income.",
+      "cta": "Join partnership program",
+      "earnings": "$2,940.00",
+      "growth": "+18% vs. last month",
+      "snapshot": {
+        "label": "Live snapshot",
+        "caption": "Performance updates every 60 seconds, with confirmed payouts syncing instantly."
+      },
+      "graph": {
+        "label": "Earnings trend",
+        "title": "Referral revenue growth",
+        "window": "Last 30 days",
+        "label0": "Week 1",
+        "label1": "Week 2",
+        "label2": "Week 3",
+        "label3": "Week 4",
+        "label4": "Week 5",
+        "label5": "Week 6",
+        "label6": "Today"
+      },
+      "metric": {
+        "conversion": "Activations",
+        "conversionChange": "24 new teams this month",
+        "pending": "Pending rewards",
+        "pendingChange": "Withdrawals processed within 2 business days"
+      }
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "create": {
+        "title": "Create your link",
+        "description": "Generate a unique referral link or promo code inside your Silence AI dashboard."
+      },
+      "share": {
+        "title": "Share",
+        "description": "Invite teams through email, LinkedIn, and communities. Track performance in real time."
+      },
+      "earn": {
+        "title": "Earn",
+        "description": "Receive commissions as soon as your referred customers activate their Silence AI protection."
+      }
+    },
+    "commission": {
+      "heading": "Balance Rewards",
+      "highlight": {
+        "label": "Why partners love it"
+      },
+      "reward": {
+        "title": "10% reward on every balance top-up",
+        "description": "Whenever an invited team recharges their Silence AI wallet, 10% of the net amount is credited to you instantly."
+      },
+      "settlement": {
+        "title": "Realtime ledger settlement",
+        "description": "Rewards post to your partner balance within a minute after the transaction clears—no manual approval queue."
+      },
+      "withdrawal": {
+        "title": "Withdrawals clear in 2 business days",
+        "description": "Submitted payout requests are reviewed automatically and land in your bank account within two business days."
+      },
+      "sample": {
+        "label": "Example Top-ups",
+        "caption": "Affiliate earnings scale with every recharge—no tier resets or product mapping.",
+        "topup": "$250 top-up → $25 reward",
+        "topupHigher": "$1,000 top-up → $100 reward"
+      },
+      "note": "Commission is calculated from the net top-up amount after payment processing fees."
+    },
+    "faq": {
+      "title": "Questions & answers",
+      "payments": {
+        "question": "How do I receive payments?",
+        "answer": "You can add your VISA or Mastercard account number in your profile. Payouts can be withdrawn directly to the specified card."
+      },
+      "discounts": {
+        "question": "Do referred customers receive any discounts?",
+        "answer": "No. Referred customers do not receive discounts on their purchases. Only the affiliate partner earns a commission from successful referrals."
+      },
+      "statistics": {
+        "question": "When will I see my referral statistics?",
+        "answer": "Once a user registers using your promo code or referral link, their email address will appear in your dashboard along with the corresponding reward from the invitation."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore",
     "subheading": "The all in one, AI-based cybersecurity system that combines:",

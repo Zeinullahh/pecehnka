@@ -12,6 +12,92 @@
     },
     "login": "Giriş yap"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Silence AI ortaklık programına katılın",
+      "title": "Daveti gelire dönüştürün.",
+      "cta": "Ortaklık programına katıl",
+      "earnings": "$2,940.00",
+      "growth": "+18% geçen aya göre",
+      "snapshot": {
+        "label": "Canlı özet",
+        "caption": "Performans her 60 saniyede güncellenir ve onaylanan ödemeler anında senkronize edilir."
+      },
+      "graph": {
+        "label": "Gelir trendi",
+        "title": "Yönlendirme gelirindeki artış",
+        "window": "Son 30 gün",
+        "label0": "1. hafta",
+        "label1": "2. hafta",
+        "label2": "3. hafta",
+        "label3": "4. hafta",
+        "label4": "5. hafta",
+        "label5": "6. hafta",
+        "label6": "Bugün"
+      },
+      "metric": {
+        "conversion": "Aktivasyon",
+        "conversionChange": "Bu ay 24 yeni ekip",
+        "pending": "Bekleyen ödüller",
+        "pendingChange": "Ödemeler 2 iş günü içinde işlenir"
+      }
+    },
+    "howItWorks": {
+      "title": "Nasıl çalışır",
+      "create": {
+        "title": "Bağlantınızı oluşturun",
+        "description": "Silence AI panonuzda benzersiz bir yönlendirme bağlantısı veya promosyon kodu oluşturun."
+      },
+      "share": {
+        "title": "Paylaşın",
+        "description": "Ekipleri e-posta, LinkedIn ve topluluklar üzerinden davet edin. Performansı gerçek zamanlı izleyin."
+      },
+      "earn": {
+        "title": "Kazanın",
+        "description": "Yönlendirdiğiniz müşteriler Silence AI korumasını etkinleştirir etmez komisyon alın."
+      }
+    },
+    "commission": {
+      "heading": "Bakiye ödülleri",
+      "highlight": {
+        "label": "Ortakların neden sevdiği"
+      },
+      "reward": {
+        "title": "Her bakiye yüklemesine %10 ödül",
+        "description": "Davet ettiğiniz ekip Silence AI cüzdanını doldurduğunda net tutarın %10'u anında size aktarılır."
+      },
+      "settlement": {
+        "title": "Gerçek zamanlı muhasebe",
+        "description": "Ödüller işlem tamamlandıktan sonra bir dakika içinde ortak bakiyenize yansır—manuel onay kuyruğu yok."
+      },
+      "withdrawal": {
+        "title": "Ödemeler 2 iş gününde tamamlanır",
+        "description": "Çekim talepleri otomatik olarak incelenir ve iki iş günü içinde banka hesabınıza ulaşır."
+      },
+      "sample": {
+        "label": "Yükleme örnekleri",
+        "caption": "Her yükleme ile ortak gelirleri artar—seviye sıfırlaması veya ürün eşlemesi gerekmez.",
+        "topup": "$250 yükleme → $25 ödül",
+        "topupHigher": "$1,000 yükleme → $100 ödül"
+      },
+      "note": "Komisyon, ödeme işleme ücretleri düşüldükten sonra net tutar üzerinden hesaplanır."
+    },
+    "faq": {
+      "title": "Sıkça sorulan sorular",
+      "payments": {
+        "question": "Ödemeleri nasıl alırım?",
+        "answer": "Profilinize VISA veya Mastercard numaranızı ekleyin. Ödemeler doğrudan bu karta aktarılabilir."
+      },
+      "discounts": {
+        "question": "Yönlendirilen müşteriler indirim alır mı?",
+        "answer": "Hayır. Yönlendirilen müşteriler alışverişlerinde indirim almaz; yalnızca ortak, başarılı yönlendirmeler için komisyon kazanır."
+      },
+      "statistics": {
+        "question": "Yönlendirme istatistiklerimi ne zaman görürüm?",
+        "answer": "Bir kullanıcı promosyon kodunuzu veya bağlantınızı kullanarak kaydolduğunda, e-postası ve ilgili ödül panelinizde görünür."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: Siber güvenlik artık ne pahalı ne de karmaşık",
     "subheading": "Yapay zeka tabanlı, hepsi bir arada siber güvenlik sistemi şunları birleştirir:",

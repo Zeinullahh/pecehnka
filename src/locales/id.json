@@ -12,6 +12,92 @@
     },
     "login": "Masuk"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Bergabung dengan Program Mitra Silence AI",
+      "title": "Ubah undangan menjadi pendapatan.",
+      "cta": "Gabung program kemitraan",
+      "earnings": "$2,940.00",
+      "growth": "+18% dibanding bulan lalu",
+      "snapshot": {
+        "label": "Tinjauan langsung",
+        "caption": "Kinerja diperbarui setiap 60 detik dan pembayaran yang dikonfirmasi tersinkron secara instan."
+      },
+      "graph": {
+        "label": "Tren pendapatan",
+        "title": "Pertumbuhan pendapatan rujukan",
+        "window": "30 hari terakhir",
+        "label0": "Minggu 1",
+        "label1": "Minggu 2",
+        "label2": "Minggu 3",
+        "label3": "Minggu 4",
+        "label4": "Minggu 5",
+        "label5": "Minggu 6",
+        "label6": "Hari ini"
+      },
+      "metric": {
+        "conversion": "Aktivasi",
+        "conversionChange": "24 tim baru bulan ini",
+        "pending": "Hadiah tertunda",
+        "pendingChange": "Penarikan diproses dalam 2 hari kerja"
+      }
+    },
+    "howItWorks": {
+      "title": "Cara kerjanya",
+      "create": {
+        "title": "Buat tautan Anda",
+        "description": "Buat tautan rujukan atau kode promo unik di dasbor Silence AI Anda."
+      },
+      "share": {
+        "title": "Bagikan",
+        "description": "Undang tim melalui email, LinkedIn, dan komunitas. Pantau performa secara real time."
+      },
+      "earn": {
+        "title": "Dapatkan",
+        "description": "Terima komisi segera setelah pelanggan rujukan Anda mengaktifkan perlindungan Silence AI."
+      }
+    },
+    "commission": {
+      "heading": "Reward saldo",
+      "highlight": {
+        "label": "Mengapa partner menyukainya"
+      },
+      "reward": {
+        "title": "Bonus 10% pada setiap top-up saldo",
+        "description": "Saat tim undangan mengisi ulang dompet Silence AI, 10% dari nilai bersih langsung dikreditkan kepada Anda."
+      },
+      "settlement": {
+        "title": "Pencatatan buku besar real time",
+        "description": "Reward masuk ke saldo mitra Anda dalam satu menit setelah transaksi selesai—tanpa antrean persetujuan manual."
+      },
+      "withdrawal": {
+        "title": "Penarikan selesai dalam 2 hari kerja",
+        "description": "Permintaan penarikan ditinjau otomatis dan tiba di rekening bank Anda dalam dua hari kerja."
+      },
+      "sample": {
+        "label": "Contoh top-up",
+        "caption": "Pendapatan mitra bertambah setiap kali isi saldo—tanpa reset level ataupun pemetaan produk.",
+        "topup": "$250 top-up → $25 reward",
+        "topupHigher": "$1,000 top-up → $100 reward"
+      },
+      "note": "Komisi dihitung dari jumlah bersih setelah biaya pemrosesan pembayaran."
+    },
+    "faq": {
+      "title": "Pertanyaan & jawaban",
+      "payments": {
+        "question": "Bagaimana saya menerima pembayaran?",
+        "answer": "Tambahkan nomor kartu VISA atau Mastercard Anda di profil. Pembayaran dapat ditarik langsung ke kartu tersebut."
+      },
+      "discounts": {
+        "question": "Apakah pelanggan rujukan mendapat diskon?",
+        "answer": "Tidak. Pelanggan rujukan tidak mendapat diskon; hanya mitra yang menerima komisi dari rujukan yang berhasil."
+      },
+      "statistics": {
+        "question": "Kapan saya melihat statistik rujukan?",
+        "answer": "Begitu pengguna mendaftar dengan kode promo atau tautan rujukan Anda, alamat email dan reward terkait muncul di dasbor Anda."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: keamanan siber kini tidak mahal dan tidak rumit",
     "subheading": "Sistem keamanan siber berbasis AI serba lengkap yang menggabungkan:",

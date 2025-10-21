@@ -11,6 +11,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const AffiliatePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [activeFaq, setActiveFaq] = useState(null);
   const { t } = useLanguage();
 
   const openModal = () => setIsModalOpen(true);
@@ -51,7 +52,7 @@ const AffiliatePage = () => {
           key: "pending",
           label: t("affiliate.hero.metric.pending", "Pending rewards"),
           value: "$480",
-          change: t("affiliate.hero.metric.pendingChange", "Withdrawl is being handled in 2 business days"),
+          change: t("affiliate.hero.metric.pendingChange", "Withdrawals processed within 2 business days"),
           valueClass: "text-[#37FF8B]",
           icon: (
             <svg
@@ -194,6 +195,8 @@ const AffiliatePage = () => {
         {
           key: "reward",
           title: t("affiliate.commission.reward.title", "10% reward on every balance top-up"),
+          accent: "#FF00B7",
+          accentGlow: "rgba(255,0,183,0.35)",
           description: t(
             "affiliate.commission.reward.description",
             "Whenever an invited team recharges their Silence AI wallet, 10% of the net amount is credited to you instantly."
@@ -223,9 +226,11 @@ const AffiliatePage = () => {
         {
           key: "settlement",
           title: t("affiliate.commission.settlement.title", "Realtime ledger settlement"),
+          accent: "#00BFFF",
+          accentGlow: "rgba(0,191,255,0.32)",
           description: t(
             "affiliate.commission.settlement.description",
-            "Rewards post to your partner balance as soon as the transaction clears—no manual approval queue."
+            "Rewards post to your partner balance within a minute after the transaction clears—no manual approval queue."
           ),
           icon: (
             <svg
@@ -252,11 +257,13 @@ const AffiliatePage = () => {
           ),
         },
         {
-          key: "visibility",
-          title: t("affiliate.commission.visibility.title", "Full top-up visibility"),
+          key: "withdrawal",
+          title: t("affiliate.commission.withdrawal.title", "Withdrawals clear in 2 business days"),
+          accent: "#37FF8B",
+          accentGlow: "rgba(55,255,139,0.28)",
           description: t(
-            "affiliate.commission.visibility.description",
-            "Dashboard exports list each refill, payment method, and reward amount so finance teams can reconcile effortlessly."
+            "affiliate.commission.withdrawal.description",
+            "Submitted payout requests are reviewed automatically and land in your bank account within two business days."
           ),
           icon: (
             <svg
@@ -265,14 +272,33 @@ const AffiliatePage = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <rect
+                x="12"
+                y="8"
+                width="24"
+                height="32"
+                rx="4"
+                stroke="currentColor"
+                strokeWidth="3"
+              />
               <path
-                d="M6 24C10 16 16.8 12 24 12C31.2 12 38 16 42 24C38 32 31.2 36 24 36C16.8 36 10 32 6 24Z"
+                d="M18 8V4M30 8V4"
                 stroke="currentColor"
                 strokeWidth="3"
                 strokeLinecap="round"
-                strokeLinejoin="round"
               />
-              <circle cx="24" cy="24" r="6" stroke="currentColor" strokeWidth="3" />
+              <path
+                d="M18 22H30"
+                stroke="currentColor"
+                strokeWidth="3"
+                strokeLinecap="round"
+              />
+              <path
+                d="M24 16V28"
+                stroke="currentColor"
+                strokeWidth="3"
+                strokeLinecap="round"
+              />
             </svg>
           ),
         },
@@ -311,6 +337,16 @@ const AffiliatePage = () => {
       ],
     }),
     [t]
+  );
+
+  const faqAccentPalette = useMemo(
+    () => [
+      { color: "#FF00B7", glow: "rgba(255,0,183,0.35)" },
+      { color: "#00BFFF", glow: "rgba(0,191,255,0.32)" },
+      { color: "#37FF8B", glow: "rgba(55,255,139,0.28)" },
+      { color: "#FFB800", glow: "rgba(255,184,0,0.35)" },
+    ],
+    []
   );
 
   const heroGlowPalette = useMemo(
@@ -373,13 +409,14 @@ const AffiliatePage = () => {
               mode="static"
               spotlight
               {...heroGlowPalette}
-              outerClassName="group no-hover-glow rounded-[32px] relative z-10 edge-glow-card--hero"
+              outerClassName="group relative z-10 rounded-[34px] p-[2px] edge-glow-card--hero"
+              innerClassName="affiliate-card affiliate-card--hero rounded-[30px]"
             >
-              <div className="affiliate-card affiliate-card--hero flex flex-col gap-8 rounded-[28px] p-10 lg:flex-row lg:items-stretch">
+              <div className="flex flex-col gap-8 rounded-[26px] p-10 lg:flex-row lg:items-stretch">
                 <div className="affiliate-subcard affiliate-subcard--hero flex w-full flex-col justify-between gap-6 rounded-2xl p-6 lg:max-w-[320px]">
                   <div>
-                    <p className="text-xs uppercase tracking-[0.3em] text-white/55">
-                      {t("affiliate.hero.snapshot", "Live snapshot")}
+                      <p className="text-xs uppercase tracking-[0.3em] text-white/55">
+                        {t("affiliate.hero.snapshot.label", "Live snapshot")}
                     </p>
                     <h2 className="mt-3 text-4xl font-bold text-white">
                       {t("affiliate.hero.earnings", "$2,940.00")}
@@ -513,16 +550,10 @@ const AffiliatePage = () => {
           </section>
 
           <section className="space-y-8">
-            <div className="space-y-3">
+            <div className="space-y-3 text-center">
               <h2 className="text-3xl font-semibold text-white sm:text-4xl">
                 {t("affiliate.howItWorks.title", "How it works")}
               </h2>
-              <p className="max-w-3xl text-white/60">
-                {t(
-                  "affiliate.howItWorks.subtitle",
-                  "Launch your referral funnel in minutes."
-                )}
-              </p>
             </div>
             <div className="grid gap-6 md:grid-cols-3">
               {howItWorksSteps.map((step) => (
@@ -531,13 +562,22 @@ const AffiliatePage = () => {
                   mode="static"
                   spotlight
                   {...defaultGlowPalette}
-                  outerClassName="group no-hover-glow rounded-[28px] relative z-10 edge-glow-card--default"
+                  outerClassName="group relative z-10 rounded-[30px] p-[2px] edge-glow-card--default"
+                  innerClassName="affiliate-card affiliate-card--default rounded-[26px]"
                 >
-                  <div className="affiliate-card affiliate-card--default flex h-full flex-col gap-6 rounded-[24px] p-8">
-                    <div className="affiliate-subcard affiliate-subcard--default flex h-16 w-16 items-center justify-center rounded-2xl">
+
+                  <div
+                    className="relative flex h-full flex-col gap-5 overflow-hidden rounded-[22px] border border-white/12 p-8 text-center"
+                    style={{
+                      boxShadow: "0 18px 45px rgba(5,12,32,0.55)",
+                      background: "linear-gradient(150deg, rgba(3,6,14,0.96), rgba(1,2,6,0.98))",
+                    }}
+                  >
+                    <div className="pointer-events-none absolute inset-0 rounded-[22px] opacity-0 transition-opacity duration-500 group-hover:opacity-100" style={{ background: "radial-gradient(90% 130% at 20% -10%, rgba(255, 0, 119, 0.2) 0%, transparent 70%)" }} />
+                    <div className="relative mx-auto flex h-14 w-14 items-center justify-center rounded-[20px] bg-black/60 ring-2 ring-white/10 shadow-[0_12px_30px_rgba(5,12,32,0.6)]">
                       {step.icon}
                     </div>
-                    <div className="affiliate-subcard affiliate-subcard--default flex-1 space-y-2 rounded-2xl p-5 text-left">
+                    <div className="relative space-y-3">
                       <h3 className="text-xl font-semibold text-white">
                         {step.title}
                       </h3>
@@ -549,141 +589,92 @@ const AffiliatePage = () => {
             </div>
           </section>
 
-          <section className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
-            <EdgeGlowCard
-              mode="static"
-              spotlight
-              {...defaultGlowPalette}
-              outerClassName="group no-hover-glow rounded-[28px] relative z-10 edge-glow-card--default"
-            >
-              <div className="affiliate-card affiliate-card--default flex h-full flex-col gap-6 rounded-[24px] p-8">
-                <div className="affiliate-subcard affiliate-subcard--default space-y-3 rounded-2xl p-6">
-                  <div className="inline-flex rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.25em] text-white/60">
-                    {t("affiliate.commission.tagline", "Balance Rewards")}
-                  </div>
-                  <h3 className="text-2xl font-semibold text-white">
-                    {t(
-                      "affiliate.commission.title",
-                      "Top-ups that credit your partner wallet automatically"
-                    )}
-                  </h3>
-                  <p className="text-sm text-white/60">
-                    {t(
-                      "affiliate.commission.description",
-                      "Invited companies load funds into a shared balance before using Silence AI modules. Every refill pushes 10% of the net value straight to you."
-                    )}
-                  </p>
-                </div>
-                <div className="affiliate-subcard affiliate-subcard--default rounded-2xl p-6">
-                  <div className="grid gap-5 md:grid-cols-3">
-                    {topUpHighlights.map((item) => (
-                      <div key={item.key} className="flex flex-col gap-3">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-black/55 shadow-[0_18px_40px_rgba(9,18,40,0.45)]">
-                          {item.icon}
-                        </div>
-                        <h4 className="text-sm font-semibold uppercase tracking-[0.25em] text-white">
-                          {item.title}
-                        </h4>
-                        <p className="text-sm text-white/60">{item.description}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="affiliate-subcard affiliate-subcard--default rounded-2xl p-6">
-                  <div className="flex flex-col gap-4 text-sm text-white/70 md:flex-row md:items-center md:justify-between">
-                    <div>
-                      <p className="text-xs uppercase tracking-[0.3em] text-white/40">
-                        {t("affiliate.commission.sample.label", "Example Top-ups")}
-                      </p>
-                      <p className="mt-1 text-sm text-white/60">
-                        {t(
-                          "affiliate.commission.sample.caption",
-                          "Affiliate earnings scale with every recharge—no tier resets or product mapping."
-                        )}
-                      </p>
+          <section className="flex flex-col gap-6">
+            <div className="space-y-3 text-center">
+              <h3 className="text-3xl font-semibold text-white sm:text-4xl">
+                {t("affiliate.commission.heading", "Balance Rewards")}
+              </h3>
+            </div>
+            <div className="grid gap-6 md:grid-cols-3">
+              {topUpHighlights.map((item) => (
+                <EdgeGlowCard
+                  key={item.key}
+                  mode="static"
+                  spotlight
+                  {...defaultGlowPalette}
+                  outerClassName="group relative z-10 rounded-[30px] p-[2px] edge-glow-card--default"
+                  innerClassName="affiliate-card affiliate-card--default rounded-[26px]"
+                >
+                  <div
+                    className="relative flex h-full flex-col gap-5 overflow-hidden rounded-[22px] border border-white/12 p-8"
+                    style={{
+                      boxShadow: "0 18px 45px rgba(5,12,32,0.55)",
+                      background: "linear-gradient(150deg, rgba(2,5,12,0.97), rgba(0,1,4,0.98))",
+                    }}
+                  >
+                    <div className="pointer-events-none absolute inset-0 rounded-[22px] opacity-0 transition-opacity duration-500 group-hover:opacity-100" style={{ background: `radial-gradient(90% 130% at 20% -10%, ${item.accent}3d 0%, transparent 70%)` }} />
+                    <div className="relative flex h-14 w-14 items-center justify-center rounded-[20px] bg-black/60 ring-2 ring-white/10 shadow-[0_12px_30px_rgba(5,12,32,0.6)]">
+                      {item.icon}
                     </div>
-                    <div className="flex flex-wrap items-center gap-4 text-sm font-medium text-white">
-                      <div className="rounded-full border border-white/15 bg-black/50 px-4 py-2 shadow-[0_0_25px_rgba(255,0,183,0.25)]">
-                        {t("affiliate.commission.sample.topup", "$250 top-up → $25 reward")}
-                      </div>
-                      <div className="rounded-full border border-white/15 bg-black/50 px-4 py-2 shadow-[0_0_25px_rgba(55,255,139,0.25)]">
-                        {t("affiliate.commission.sample.topupHigher", "$1,000 top-up → $100 reward")}
-                      </div>
+                    <div className="relative space-y-3">
+                      <p className="text-[0.7rem] font-medium uppercase tracking-[0.35em] text-white/45">
+                        {t("affiliate.commission.highlight.label", "Why partners love it")}
+                      </p>
+                      <h4 className="text-lg font-semibold uppercase tracking-[0.25em] text-white">
+                        {item.title}
+                      </h4>
+                      <p className="text-sm text-white/65">{item.description}</p>
                     </div>
                   </div>
-                </div>
-                <div className="affiliate-subcard affiliate-subcard--default text-xs text-white/60 rounded-2xl p-4">
-                  {t(
-                    "affiliate.commission.note",
-                    "Commission is calculated from the net top-up amount after payment processing fees."
-                  )}
-                </div>
-              </div>
-            </EdgeGlowCard>
+                </EdgeGlowCard>
+              ))}
+            </div>
 
             <EdgeGlowCard
               mode="static"
               spotlight
               {...defaultGlowPalette}
-              outerClassName="group no-hover-glow rounded-[28px] relative z-10 edge-glow-card--default"
+              outerClassName="group relative z-10 rounded-[30px] p-[2px] edge-glow-card--default"
+              innerClassName="affiliate-card affiliate-card--default rounded-[26px]"
             >
-              <div className="affiliate-card affiliate-card--default flex h-full flex-col gap-6 rounded-[24px] p-8">
-                <div className="affiliate-subcard affiliate-subcard--default space-y-3 rounded-2xl p-6">
-                  <div className="inline-flex rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.25em] text-white/60">
-                    {t("affiliate.payment.tagline", "Payouts")}
+              <div
+                className="relative flex flex-col gap-6 overflow-hidden rounded-[22px] border border-white/12 p-8"
+                style={{
+                  boxShadow: "0 18px 45px rgba(5,12,32,0.55)",
+                  background: "linear-gradient(150deg, rgba(2,5,12,0.97), rgba(0,1,4,0.98))",
+                }}
+              >
+                <div className="relative flex flex-col gap-6 text-sm text-white/70 md:flex-row md:items-center md:justify-between">
+                  <div className="max-w-md space-y-3">
+                    <p className="text-xs uppercase tracking-[0.35em] text-white/35">
+                      {t("affiliate.commission.sample.label", "Example Top-ups")}
+                    </p>
+                    <p className="text-sm text-white/60">
+                      {t(
+                        "affiliate.commission.sample.caption",
+                        "Affiliate earnings scale with every recharge—no tier resets or product mapping."
+                      )}
+                    </p>
                   </div>
-                  <h3 className="text-2xl font-semibold text-white">
-                    {t("affiliate.payment.title", "Processing withdrawals within 2 business days.")}
-                  </h3>
-                  <p className="text-sm text-white/60">
+                  <div className="flex flex-wrap items-center gap-4 text-sm font-medium text-white">
+                    <div className="group relative overflow-hidden rounded-full border border-white/15 px-5 py-2 shadow-[0_0_30px_rgba(55,255,139,0.3)]">
+                      <span className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-r from-[#37FF8B]/50 via-transparent to-[#00331C]/70 opacity-80 transition-opacity duration-300 group-hover:opacity-100" />
+                      <span className="relative z-10">
+                        {t("affiliate.commission.sample.topup", "$250 top-up → $25 reward")}
+                      </span>
+                    </div>
+                    <div className="group relative overflow-hidden rounded-full border border-white/15 px-5 py-2 shadow-[0_0_30px_rgba(55,255,139,0.3)]">
+                      <span className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-r from-[#37FF8B]/50 via-transparent to-[#00331C]/70 opacity-80 transition-opacity duration-300 group-hover:opacity-100" />
+                      <span className="relative z-10">
+                        {t("affiliate.commission.sample.topupHigher", "$1,000 top-up → $100 reward")}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="text-xs text-white/55 md:text-right">
                     {t(
-                      "affiliate.payment.description",
-                      "Initiate a withdrawal request anytime. Our finance team verifies and releases funds swiftly, so you get paid without delays."
+                      "affiliate.commission.note",
+                      "Commission is calculated from the net top-up amount after payment processing fees."
                     )}
-                  </p>
-                </div>
-                <div className="affiliate-subcard affiliate-subcard--default flex flex-col gap-4 rounded-2xl p-6 text-sm text-white/70">
-                  <div className="affiliate-subcard affiliate-subcard--default flex items-start gap-3 rounded-2xl p-4">
-                    <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[#37FF8B] shadow-[0_0_12px_rgba(55,255,139,0.8)]" />
-                    <div>
-                      <p className="font-semibold text-white">
-                        {t("affiliate.payment.step.review.title", "Automated review")}
-                      </p>
-                      <p>
-                        {t(
-                          "affiliate.payment.step.review.copy",
-                          "Transactions are validated instantly with built-in fraud filters."
-                        )}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="affiliate-subcard affiliate-subcard--default flex items-start gap-3 rounded-2xl p-4">
-                    <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[#00BFFF] shadow-[0_0_12px_rgba(0,191,255,0.8)]" />
-                    <div>
-                      <p className="font-semibold text-white">
-                        {t("affiliate.payment.step.processing.title", "Processing window")}
-                      </p>
-                      <p>
-                        {t(
-                          "affiliate.payment.step.processing.copy",
-                          "We finalize payouts within two business days after the request is approved."
-                        )}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="affiliate-subcard affiliate-subcard--default flex items-start gap-3 rounded-2xl p-4">
-                    <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[#FF00B7] shadow-[0_0_12px_rgba(255,0,183,0.8)]" />
-                    <div>
-                      <p className="font-semibold text-white">
-                        {t("affiliate.payment.step.transfer.title", "Direct-to-card transfer")}
-                      </p>
-                      <p>
-                        {t(
-                          "affiliate.payment.step.transfer.copy",
-                          "Receive funds on your VISA or Mastercard with transparent status tracking."
-                        )}
-                      </p>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -691,41 +682,73 @@ const AffiliatePage = () => {
           </section>
 
           <section className="space-y-8">
-            <div className="space-y-3">
+            <div className="space-y-3 text-center">
               <h2 className="text-3xl font-semibold text-white sm:text-4xl">
                 {t("affiliate.faq.title", "Questions & answers")}
               </h2>
-              <p className="max-w-3xl text-white/60">
-                {t(
-                  "affiliate.faq.subtitle",
-                  "Straightforward terms that keep your revenue predictable. Need more details? Contact our partner success team anytime."
-                )}
-              </p>
             </div>
-            <EdgeGlowCard
-              mode="static"
-              spotlight
-              {...defaultGlowPalette}
-              outerClassName="group no-hover-glow rounded-[28px] relative z-10 edge-glow-card--default"
-            >
-              <div className="affiliate-card affiliate-card--default flex flex-col gap-6 rounded-[24px] p-8">
-                <div className="space-y-6">
-                  {faqs.map((item, index) => (
-                    <div key={item.question} className="space-y-4">
-                      <div className="affiliate-subcard affiliate-subcard--default rounded-2xl p-6 text-white/70">
-                        <p className="text-base font-semibold text-white">
-                          {item.question}
-                        </p>
-                        <p className="mt-3 text-sm">{item.answer}</p>
+            <div className="flex flex-col gap-6">
+              {faqs.map((item, index) => {
+                const accent = faqAccentPalette[index % faqAccentPalette.length];
+                const isOpen = activeFaq === index;
+
+                return (
+                  <div key={item.question}>
+                    <EdgeGlowCard
+                      mode="static"
+                      spotlight
+                      {...defaultGlowPalette}
+                      outerClassName="group relative z-10 rounded-[30px] p-[2px] edge-glow-card--default"
+                      innerClassName="affiliate-card affiliate-card--default rounded-[26px]"
+                    >
+                      <div
+                        className="relative overflow-hidden rounded-[22px] border border-white/12 p-6"
+                        style={{
+                          boxShadow: isOpen ? `0 24px 60px ${accent.glow}` : "0 18px 45px rgba(5,12,32,0.55)",
+                          background: "linear-gradient(150deg, rgba(2,5,12,0.97), rgba(0,1,4,0.98))",
+                        }}
+                      >
+                        <div
+                          className={`pointer-events-none absolute inset-0 rounded-[22px] transition-opacity duration-500 ${
+                            isOpen ? "opacity-90" : "opacity-0"
+                          } group-hover:opacity-100`}
+                          style={{
+                            background: `radial-gradient(90% 130% at 20% -10%, ${accent.color}33 0%, transparent 70%)`,
+                          }}
+                        />
+                        <div className="relative z-10 flex flex-col gap-2">
+                          <button
+                            type="button"
+                            onClick={() => setActiveFaq(isOpen ? null : index)}
+                            aria-expanded={isOpen}
+                            aria-controls={`faq-panel-${index}`}
+                            className="flex w-full items-center justify-between gap-4 text-left text-white transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+                          >
+                            <span className="text-base font-semibold sm:text-lg">{item.question}</span>
+                            <span
+                              className={`flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white text-xl leading-none transition-transform duration-300 ${
+                                isOpen ? "rotate-45" : ""
+                              }`}
+                            >
+                              +
+                            </span>
+                          </button>
+                          <div
+                            id={`faq-panel-${index}`}
+                            className={`overflow-hidden text-sm text-white/65 transition-all duration-500 ease-out ${
+                              isOpen ? "opacity-100 pt-4" : "opacity-0"
+                            }`}
+                            style={{ maxHeight: isOpen ? "240px" : "0px" }}
+                          >
+                            <p>{item.answer}</p>
+                          </div>
+                        </div>
                       </div>
-                      {index !== faqs.length - 1 && (
-                        <div className="h-px w-full bg-white/10" />
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </EdgeGlowCard>
+                    </EdgeGlowCard>
+                  </div>
+                );
+              })}
+            </div>
           </section>
         </div>
       </main>

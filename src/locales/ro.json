@@ -12,6 +12,92 @@
     },
     "login": "Autentificare"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Alătură-te programului de parteneriat Silence AI",
+      "title": "Transformă invitațiile în venituri.",
+      "cta": "Intră în programul de parteneriat",
+      "earnings": "$2,940.00",
+      "growth": "+18% față de luna trecută",
+      "snapshot": {
+        "label": "Vedere în timp real",
+        "caption": "Performanța se actualizează la fiecare 60 de secunde, iar plățile confirmate se sincronizează instantaneu."
+      },
+      "graph": {
+        "label": "Tendința veniturilor",
+        "title": "Creșterea veniturilor din recomandări",
+        "window": "Ultimele 30 de zile",
+        "label0": "Săptămâna 1",
+        "label1": "Săptămâna 2",
+        "label2": "Săptămâna 3",
+        "label3": "Săptămâna 4",
+        "label4": "Săptămâna 5",
+        "label5": "Săptămâna 6",
+        "label6": "Astăzi"
+      },
+      "metric": {
+        "conversion": "Activări",
+        "conversionChange": "24 de echipe noi în această lună",
+        "pending": "Recompense în așteptare",
+        "pendingChange": "Retragerile sunt procesate în 2 zile lucrătoare"
+      }
+    },
+    "howItWorks": {
+      "title": "Cum funcționează",
+      "create": {
+        "title": "Creează-ți linkul",
+        "description": "Generează un link de recomandare sau un cod promoțional unic în panoul Silence AI."
+      },
+      "share": {
+        "title": "Distribuie",
+        "description": "Invită echipe prin email, LinkedIn și comunități. Urmărește performanța în timp real."
+      },
+      "earn": {
+        "title": "Câștigă",
+        "description": "Primește comision imediat ce clienții recomandați activează protecția Silence AI."
+      }
+    },
+    "commission": {
+      "heading": "Recompense de balans",
+      "highlight": {
+        "label": "De ce partenerilor le place"
+      },
+      "reward": {
+        "title": "10% recompensă la fiecare alimentare",
+        "description": "Când echipa invitată își reîncarcă portofelul Silence AI, 10% din valoarea netă se creditează imediat la tine."
+      },
+      "settlement": {
+        "title": "Înregistrare în timp real",
+        "description": "Recompensele apar în soldul de partener în mai puțin de un minut după tranzacție — fără coadă de aprobare manuală."
+      },
+      "withdrawal": {
+        "title": "Plăți în 2 zile lucrătoare",
+        "description": "Cererea de retragere este verificată automat și ajunge în contul tău bancar în cel mult două zile lucrătoare."
+      },
+      "sample": {
+        "label": "Exemple de alimentare",
+        "caption": "Veniturile partenerilor cresc cu fiecare alimentare — fără resetarea nivelurilor și fără cartografierea produselor.",
+        "topup": "$250 alimentare → $25 recompensă",
+        "topupHigher": "$1,000 alimentare → $100 recompensă"
+      },
+      "note": "Comisionul se calculează din valoarea netă după taxele de procesare a plății."
+    },
+    "faq": {
+      "title": "Întrebări și răspunsuri",
+      "payments": {
+        "question": "Cum primesc plățile?",
+        "answer": "Adaugă în profil numărul cardului VISA sau Mastercard. Plățile pot fi transferate direct către acel card."
+      },
+      "discounts": {
+        "question": "Clienții recomandați primesc reduceri?",
+        "answer": "Nu. Clienții recomandați nu primesc reduceri pentru cumpărăturile lor; doar partenerul primește comision pentru recomandări reușite."
+      },
+      "statistics": {
+        "question": "Când voi vedea statisticile de recomandări?",
+        "answer": "De îndată ce un utilizator se înregistrează cu codul sau linkul tău, emailul și recompensa aferentă apar în panou."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: securitatea cibernetică nu mai este scumpă sau complicată",
     "subheading": "Platforma completă de securitate cibernetică bazată pe AI care combină:",

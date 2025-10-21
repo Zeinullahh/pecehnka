@@ -12,6 +12,92 @@
     },
     "login": "Connexion"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Rejoignez le programme partenaire de Silence AI",
+      "title": "Transformez vos invitations en revenus.",
+      "cta": "Rejoindre le programme partenaire",
+      "earnings": "$2,940.00",
+      "growth": "+18 % par rapport au mois dernier",
+      "snapshot": {
+        "label": "Vue en direct",
+        "caption": "Les performances sont mises à jour toutes les 60 secondes et les paiements confirmés sont synchronisés instantanément."
+      },
+      "graph": {
+        "label": "Tendance des revenus",
+        "title": "Croissance des revenus de parrainage",
+        "window": "30 derniers jours",
+        "label0": "Semaine 1",
+        "label1": "Semaine 2",
+        "label2": "Semaine 3",
+        "label3": "Semaine 4",
+        "label4": "Semaine 5",
+        "label5": "Semaine 6",
+        "label6": "Aujourd'hui"
+      },
+      "metric": {
+        "conversion": "Activations",
+        "conversionChange": "24 nouvelles équipes ce mois-ci",
+        "pending": "Récompenses en attente",
+        "pendingChange": "Les retraits sont traités sous 2 jours ouvrés"
+      }
+    },
+    "howItWorks": {
+      "title": "Comment ça marche",
+      "create": {
+        "title": "Créez votre lien",
+        "description": "Générez un lien de parrainage ou un code promo unique dans votre tableau de bord Silence AI."
+      },
+      "share": {
+        "title": "Partagez",
+        "description": "Invitez des équipes par e-mail, sur LinkedIn ou via vos communautés. Suivez les performances en temps réel."
+      },
+      "earn": {
+        "title": "Gagnez",
+        "description": "Percevez votre commission dès que vos clients parrainés activent la protection Silence AI."
+      }
+    },
+    "commission": {
+      "heading": "Récompenses de solde",
+      "highlight": {
+        "label": "Pourquoi les partenaires adorent ça"
+      },
+      "reward": {
+        "title": "10 % de récompense sur chaque recharge de solde",
+        "description": "Dès qu'une équipe invitée recharge son portefeuille Silence AI, 10 % du montant net vous est versé instantanément."
+      },
+      "settlement": {
+        "title": "Règlement du grand livre en temps réel",
+        "description": "Les récompenses sont créditées sur votre solde partenaire en moins d'une minute après la transaction, sans file d'attente manuelle."
+      },
+      "withdrawal": {
+        "title": "Retraits traités en 2 jours ouvrés",
+        "description": "Les demandes de retrait sont vérifiées automatiquement et arrivent sur votre compte bancaire sous deux jours ouvrés."
+      },
+      "sample": {
+        "label": "Exemples de rechargement",
+        "caption": "Les gains partenaires augmentent à chaque recharge — pas de réinitialisation de palier ni d'association produit nécessaire.",
+        "topup": "$250 de recharge → $25 de récompense",
+        "topupHigher": "$1,000 de recharge → $100 de récompense"
+      },
+      "note": "La commission est calculée sur le montant net après déduction des frais de traitement."
+    },
+    "faq": {
+      "title": "Questions & réponses",
+      "payments": {
+        "question": "Comment recevoir mes paiements ?",
+        "answer": "Ajoutez votre numéro de carte VISA ou Mastercard dans votre profil. Les paiements peuvent être retirés directement vers la carte indiquée."
+      },
+      "discounts": {
+        "question": "Les clients parrainés bénéficient-ils de réductions ?",
+        "answer": "Non. Les clients parrainés ne bénéficient d'aucune réduction sur leurs achats ; seul le partenaire touche une commission sur les parrainages réussis."
+      },
+      "statistics": {
+        "question": "Quand verrai-je mes statistiques de parrainage ?",
+        "answer": "Dès qu'un utilisateur s'inscrit avec votre code promo ou votre lien de parrainage, son adresse e-mail et la récompense associée apparaissent dans votre tableau de bord."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1 : la cybersécurité n'est plus ni coûteuse ni compliquée",
     "subheading": "La plateforme de cybersécurité tout-en-un, basée sur l'IA, qui combine :",

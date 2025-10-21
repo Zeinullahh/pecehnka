@@ -12,6 +12,92 @@
     },
     "login": "Accedi"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Unisciti al programma di affiliazione di Silence AI",
+      "title": "Trasforma gli inviti in guadagni.",
+      "cta": "Partecipa al programma partner",
+      "earnings": "$2,940.00",
+      "growth": "+18% rispetto al mese scorso",
+      "snapshot": {
+        "label": "Panoramica live",
+        "caption": "Le prestazioni si aggiornano ogni 60 secondi e i pagamenti confermati vengono sincronizzati all’istante."
+      },
+      "graph": {
+        "label": "Trend dei ricavi",
+        "title": "Crescita dei ricavi da referral",
+        "window": "Ultimi 30 giorni",
+        "label0": "Settimana 1",
+        "label1": "Settimana 2",
+        "label2": "Settimana 3",
+        "label3": "Settimana 4",
+        "label4": "Settimana 5",
+        "label5": "Settimana 6",
+        "label6": "Oggi"
+      },
+      "metric": {
+        "conversion": "Attivazioni",
+        "conversionChange": "24 nuovi team questo mese",
+        "pending": "Ricompense in sospeso",
+        "pendingChange": "I prelievi vengono elaborati in 2 giorni lavorativi"
+      }
+    },
+    "howItWorks": {
+      "title": "Come funziona",
+      "create": {
+        "title": "Crea il tuo link",
+        "description": "Genera un link di referral o un codice promo univoco dal tuo dashboard Silence AI."
+      },
+      "share": {
+        "title": "Condividi",
+        "description": "Invita i team via e-mail, LinkedIn e community. Monitora le prestazioni in tempo reale."
+      },
+      "earn": {
+        "title": "Guadagna",
+        "description": "Ricevi la commissione non appena i clienti che hai invitato attivano la protezione Silence AI."
+      }
+    },
+    "commission": {
+      "heading": "Ricompense saldo",
+      "highlight": {
+        "label": "Perché i partner lo adorano"
+      },
+      "reward": {
+        "title": "Ricompensa del 10% su ogni ricarica",
+        "description": "Quando il team invitato ricarica il proprio wallet Silence AI, il 10% dell’importo netto viene accreditato subito a te."
+      },
+      "settlement": {
+        "title": "Registrazione in tempo reale",
+        "description": "Le ricompense vengono registrate sul saldo partner entro un minuto dal completamento della transazione, senza approvazioni manuali."
+      },
+      "withdrawal": {
+        "title": "Prelievi completati in 2 giorni lavorativi",
+        "description": "Le richieste di prelievo vengono verificate automaticamente e accreditate sul tuo conto bancario entro due giorni lavorativi."
+      },
+      "sample": {
+        "label": "Esempi di ricarica",
+        "caption": "I guadagni dei partner crescono con ogni ricarica—nessun reset dei livelli e nessun mapping dei prodotti.",
+        "topup": "$250 ricarica → $25 ricompensa",
+        "topupHigher": "$1,000 ricarica → $100 ricompensa"
+      },
+      "note": "La commissione viene calcolata sull’importo netto al netto delle commissioni di elaborazione del pagamento."
+    },
+    "faq": {
+      "title": "Domande e risposte",
+      "payments": {
+        "question": "Come ricevo i pagamenti?",
+        "answer": "Aggiungi il numero della tua carta VISA o Mastercard nel profilo. I pagamenti possono essere trasferiti direttamente su quella carta."
+      },
+      "discounts": {
+        "question": "I clienti invitati ricevono uno sconto?",
+        "answer": "No. I clienti invitati non ricevono sconti sui loro acquisti; solo il partner guadagna la commissione dalle segnalazioni riuscite."
+      },
+      "statistics": {
+        "question": "Quando posso vedere le statistiche delle mie segnalazioni?",
+        "answer": "Non appena un utente si registra con il tuo codice promo o link di referral, la sua e-mail e la ricompensa associata compaiono nel tuo dashboard."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: la sicurezza informatica non è più costosa né complicata",
     "subheading": "La piattaforma di cybersecurity tutto-in-uno basata su AI che combina:",

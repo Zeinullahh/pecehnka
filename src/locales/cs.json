@@ -12,6 +12,92 @@
     },
     "login": "Přihlásit se"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Přidejte se k partnerskému programu Silence AI",
+      "title": "Proměňte pozvánky v příjmy.",
+      "cta": "Vstupte do partnerského programu",
+      "earnings": "$2,940.00",
+      "growth": "+18 % oproti minulému měsíci",
+      "snapshot": {
+        "label": "Živý přehled",
+        "caption": "Výsledky se aktualizují každých 60 sekund a potvrzené platby se ihned synchronizují."
+      },
+      "graph": {
+        "label": "Trend příjmů",
+        "title": "Růst příjmů z doporučení",
+        "window": "Posledních 30 dní",
+        "label0": "Týden 1",
+        "label1": "Týden 2",
+        "label2": "Týden 3",
+        "label3": "Týden 4",
+        "label4": "Týden 5",
+        "label5": "Týden 6",
+        "label6": "Dnes"
+      },
+      "metric": {
+        "conversion": "Aktivace",
+        "conversionChange": "24 nových týmů tento měsíc",
+        "pending": "Čekající odměny",
+        "pendingChange": "Výplaty se zpracují do 2 pracovních dnů"
+      }
+    },
+    "howItWorks": {
+      "title": "Jak to funguje",
+      "create": {
+        "title": "Vytvořte svůj odkaz",
+        "description": "Vytvořte v řídicím panelu Silence AI jedinečný referral odkaz nebo promo kód."
+      },
+      "share": {
+        "title": "Sdílejte",
+        "description": "Pozvěte týmy e-mailem, přes LinkedIn i komunity a sledujte výkon v reálném čase."
+      },
+      "earn": {
+        "title": "Vydělávejte",
+        "description": "Získejte provizi okamžitě poté, co doporučený zákazník aktivuje ochranu Silence AI."
+      }
+    },
+    "commission": {
+      "heading": "Odměny za zůstatek",
+      "highlight": {
+        "label": "Proč to partneři milují"
+      },
+      "reward": {
+        "title": "10% odměna za každé dobití",
+        "description": "Jakmile pozvaný tým dobijí svou Silence AI peněženku, 10 % čisté částky jde okamžitě vám."
+      },
+      "settlement": {
+        "title": "Zúčtování v reálném čase",
+        "description": "Odměny se připisují na partnerský zůstatek do jedné minuty po dokončení transakce – bez ručního schvalování."
+      },
+      "withdrawal": {
+        "title": "Výplaty do 2 pracovních dnů",
+        "description": "Žádosti o výplatu se zpracují automaticky a prostředky dorazí na váš účet do dvou pracovních dnů."
+      },
+      "sample": {
+        "label": "Příklady dobití",
+        "caption": "Příjem partnera roste s každým dalším dobitím – bez restartu úrovní a bez mapování produktů.",
+        "topup": "$250 dobití → $25 odměna",
+        "topupHigher": "$1,000 dobití → $100 odměna"
+      },
+      "note": "Provize se počítá z čisté částky po odečtení poplatků za zpracování platby."
+    },
+    "faq": {
+      "title": "Otázky a odpovědi",
+      "payments": {
+        "question": "Jak obdržím platby?",
+        "answer": "Do profilu si můžete přidat číslo karty VISA nebo Mastercard. Výplaty lze převést přímo na uvedenou kartu."
+      },
+      "discounts": {
+        "question": "Získají doporučení zákazníci slevu?",
+        "answer": "Ne. Doporučení zákazníci nedostávají slevu na své nákupy. Provizi z úspěšných doporučení získává pouze partner."
+      },
+      "statistics": {
+        "question": "Kdy uvidím statistiky doporučení?",
+        "answer": "Jakmile se uživatel zaregistruje pomocí vašeho promo kódu nebo referral odkazu, jeho e-mail i odpovídající odměna se zobrazí v nástěnce."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: Kybernetická bezpečnost už není drahá ani složitá",
     "subheading": "Komplexní systém kybernetické bezpečnosti založený na AI, který kombinuje:",

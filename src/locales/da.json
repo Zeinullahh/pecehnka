@@ -12,6 +12,92 @@
     },
     "login": "Log ind"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Deltag i Silence AI's partnerprogram",
+      "title": "Gør invitationer til indtægter.",
+      "cta": "Deltag i partnerprogrammet",
+      "earnings": "$2,940.00",
+      "growth": "+18 % sammenlignet med sidste måned",
+      "snapshot": {
+        "label": "Live overblik",
+        "caption": "Ydelsen opdateres hvert 60. sekund, og bekræftede udbetalinger synkroniseres med det samme."
+      },
+      "graph": {
+        "label": "Indtægtstendens",
+        "title": "Vækst i henvisningsindtægter",
+        "window": "Seneste 30 dage",
+        "label0": "Uge 1",
+        "label1": "Uge 2",
+        "label2": "Uge 3",
+        "label3": "Uge 4",
+        "label4": "Uge 5",
+        "label5": "Uge 6",
+        "label6": "I dag"
+      },
+      "metric": {
+        "conversion": "Aktiveringer",
+        "conversionChange": "24 nye teams denne måned",
+        "pending": "Afventende belønninger",
+        "pendingChange": "Udbetalinger behandles inden for 2 arbejdsdage"
+      }
+    },
+    "howItWorks": {
+      "title": "Sådan fungerer det",
+      "create": {
+        "title": "Opret dit link",
+        "description": "Generér et unikt henvisningslink eller kampagnekode i dit Silence AI-dashboard."
+      },
+      "share": {
+        "title": "Del",
+        "description": "Invitér teams via e-mail, LinkedIn og fællesskaber. Følg resultaterne i realtid."
+      },
+      "earn": {
+        "title": "Tjen penge",
+        "description": "Modtag provision, så snart dine henviste kunder aktiverer Silence AI-beskyttelsen."
+      }
+    },
+    "commission": {
+      "heading": "Balancerewards",
+      "highlight": {
+        "label": "Derfor elsker partnere det"
+      },
+      "reward": {
+        "title": "10 % belønning på hver balanceopfyldning",
+        "description": "Når et inviteret team fylder deres Silence AI-tegnebog op, får du straks 10 % af nettobeløbet."
+      },
+      "settlement": {
+        "title": "Bogføring i realtid",
+        "description": "Belønninger bogføres på din partnerkonto inden for ét minut efter, at transaktionen er afsluttet – ingen manuel godkendelse nødvendig."
+      },
+      "withdrawal": {
+        "title": "Udbetalinger på 2 arbejdsdage",
+        "description": "Indsendte udbetalingsanmodninger valideres automatisk og når din bankkonto inden for to arbejdsdage."
+      },
+      "sample": {
+        "label": "Eksempler på top-ups",
+        "caption": "Partnerindtægter vokser med hver opfyldning – uden nulstilling af niveauer og uden produktmapping.",
+        "topup": "$250 opfyldning → $25 belønning",
+        "topupHigher": "$1,000 opfyldning → $100 belønning"
+      },
+      "note": "Provision beregnes ud fra nettobeløbet efter betalingsgebyrer."
+    },
+    "faq": {
+      "title": "Spørgsmål og svar",
+      "payments": {
+        "question": "Hvordan modtager jeg betalinger?",
+        "answer": "Tilføj dit VISA- eller Mastercard-nummer i din profil. Udbetalinger kan sendes direkte til det angivne kort."
+      },
+      "discounts": {
+        "question": "Får henviste kunder rabat?",
+        "answer": "Nej. Henviste kunder får ikke rabat på deres køb. Kun partneren tjener provision på succesfulde henvisninger."
+      },
+      "statistics": {
+        "question": "Hvornår ser jeg henvisningsstatistikker?",
+        "answer": "Så snart en bruger registrerer sig med din kampagnekode eller dit link, vises deres e-mail og tilknyttede belønning i dit dashboard."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: Cybersikkerhed er hverken dyr eller kompliceret længere",
     "subheading": "Det komplette AI-baserede cybersikkerhedssystem, der kombinerer:",

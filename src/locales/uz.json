@@ -12,6 +12,92 @@
     },
     "login": "Kirish"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Silence AI hamkorlik dasturiga qo‘shiling",
+      "title": "Takliflarni daromadga aylantiring.",
+      "cta": "Hamkorlik dasturiga qo‘shilish",
+      "earnings": "$2,940.00",
+      "growth": "+18% o‘tgan oyga nisbatan",
+      "snapshot": {
+        "label": "Jonli ko‘rsatkichlar",
+        "caption": "Har 60 soniyada yangilanadi va tasdiqlangan to‘lovlar darhol sinxronlanadi."
+      },
+      "graph": {
+        "label": "Daromad tendensiyasi",
+        "title": "Tavsiyalardan olinadigan daromad o‘sishi",
+        "window": "Oxirgi 30 kun",
+        "label0": "1-hafta",
+        "label1": "2-hafta",
+        "label2": "3-hafta",
+        "label3": "4-hafta",
+        "label4": "5-hafta",
+        "label5": "6-hafta",
+        "label6": "Bugun"
+      },
+      "metric": {
+        "conversion": "Faollashtirishlar",
+        "conversionChange": "Bu oyda 24 ta yangi jamoa",
+        "pending": "Kutilayotgan mukofotlar",
+        "pendingChange": "To‘lovlar 2 ish kuni ichida ko‘rib chiqiladi"
+      }
+    },
+    "howItWorks": {
+      "title": "Qanday ishlaydi",
+      "create": {
+        "title": "Havolangizni yarating",
+        "description": "Silence AI boshqaruv panelida noyob tavsiya havolasi yoki promo-kod yarating."
+      },
+      "share": {
+        "title": "Ulashish",
+        "description": "Jamoalarni email, LinkedIn va hamjamiyatlar orqali taklif qiling. Natijalarni real vaqt rejimida kuzating."
+      },
+      "earn": {
+        "title": "Daromad oling",
+        "description": "Siz tavsiya qilgan mijozlar Silence AI himoyasini yoqqan zahoti komissiya oling."
+      }
+    },
+    "commission": {
+      "heading": "Balans mukofotlari",
+      "highlight": {
+        "label": "Hamkorlar nega buni yoqtiradi"
+      },
+      "reward": {
+        "title": "Har bir balans to‘ldirishga 10% mukofot",
+        "description": "Taklif qilingan jamoa Silence AI hamyonini to‘ldirganda, sof summaning 10% darhol sizga o‘tkaziladi."
+      },
+      "settlement": {
+        "title": "Real vaqt rejimidagi buxgalteriya",
+        "description": "Tranzaksiya tugaganidan keyin bir daqiqa ichida mukofotlar hamkor balansiga yoziladi—qo‘lda tasdiqlash navbati yo‘q."
+      },
+      "withdrawal": {
+        "title": "To‘lovlar 2 ish kunida",
+        "description": "To‘lovni yechib olish so‘rovlari avtomatik ko‘rib chiqiladi va ikki ish kuni ichida bank hisobingizga yetib boradi."
+      },
+      "sample": {
+        "label": "To‘ldirish misollari",
+        "caption": "Har bir to‘ldirish bilan hamkor daromadi ortadi — darajalarni tiklash yoki mahsulotni moslashtirish shart emas.",
+        "topup": "$250 to‘ldirish → $25 mukofot",
+        "topupHigher": "$1,000 to‘ldirish → $100 mukofот"
+      },
+      "note": "Komissiya to‘lovni qayta ishlash to‘lovlari chegirib tashlanganidan keyingi sof summadan hisoblanadi."
+    },
+    "faq": {
+      "title": "Savol-javoblar",
+      "payments": {
+        "question": "To‘lovlarni qanday olaman?",
+        "answer": "Profilingizga VISA yoki Mastercard raqamingizni qo‘shing. To‘lovlar ko‘rsatilgan kartaga bevosita o‘tkaziladi."
+      },
+      "discounts": {
+        "question": "Taklif qilingan mijozlarga chegirma beriladimi?",
+        "answer": "Yo‘q. Taklif qilingan mijozlar xaridlariga chegirma olmaydi; muvaffaqiyatli tavsiyalar uchun komissiyani faqat hamkor oladi."
+      },
+      "statistics": {
+        "question": "Tavsiyalar statistikasi qachon ko‘rinadi?",
+        "answer": "Foydalanuvchi promo-kod yoki havolangiz orqali ro‘yxatdan o‘tgach, uning elektron pochtasi va tegishli mukofoti panelingizда ko‘rinadi."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: Kiberxavfsizlik endi qimmat ham emas, murakkab ham emas",
     "subheading": "Barcha qismlarni birlashtirgan, sun’iy intellektga asoslangan kiberxavfsizlik tizimi:",

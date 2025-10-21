@@ -12,6 +12,92 @@
     },
     "login": "Login"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Csatlakozz a Silence AI partnerprogramjához",
+      "title": "Változtasd a meghívásokat bevétellé.",
+      "cta": "Csatlakozás a partnerprogramhoz",
+      "earnings": "$2,940.00",
+      "growth": "+18% az előző hónaphoz képest",
+      "snapshot": {
+        "label": "Élő áttekintés",
+        "caption": "A teljesítményadatok 60 másodpercenként frissülnek, a jóváhagyott kifizetések pedig azonnal szinkronizálódnak."
+      },
+      "graph": {
+        "label": "Bevételi trend",
+        "title": "Ajánlásokból származó bevétel növekedése",
+        "window": "Elmúlt 30 nap",
+        "label0": "1. hét",
+        "label1": "2. hét",
+        "label2": "3. hét",
+        "label3": "4. hét",
+        "label4": "5. hét",
+        "label5": "6. hét",
+        "label6": "Ma"
+      },
+      "metric": {
+        "conversion": "Aktiválások",
+        "conversionChange": "24 új csapat ebben a hónapban",
+        "pending": "Függő jutalmak",
+        "pendingChange": "A kifizetések 2 munkanapon belül feldolgozásra kerülnek"
+      }
+    },
+    "howItWorks": {
+      "title": "Működés",
+      "create": {
+        "title": "Hozd létre a linkedet",
+        "description": "Hozz létre egy egyedi ajánlói linket vagy promóciós kódot a Silence AI irányítópulton."
+      },
+      "share": {
+        "title": "Oszd meg",
+        "description": "Hívd meg a csapatokat e-mailben, LinkedInen és közösségeidben. Kövesd az eredményeket valós időben."
+      },
+      "earn": {
+        "title": "Keress",
+        "description": "Szerezz jutalékot, amint az általad ajánlott ügyfelek aktiválják a Silence AI védelmet."
+      }
+    },
+    "commission": {
+      "heading": "Egyenlegjutalmak",
+      "highlight": {
+        "label": "Miért szeretik a partnerek"
+      },
+      "reward": {
+        "title": "10% jutalom minden egyenlegfeltöltésre",
+        "description": "Amikor a meghívott csapat feltölti Silence AI pénztárcáját, a nettó összeg 10%-a azonnal jóváírásra kerül számodra."
+      },
+      "settlement": {
+        "title": "Főkönyvi rendezés valós időben",
+        "description": "A jutalmak egy percen belül megjelennek a partner egyenlegén – nincs szükség kézi jóváhagyásra."
+      },
+      "withdrawal": {
+        "title": "Kifizetések 2 munkanapon belül",
+        "description": "A kifizetési kérelmek automatikusan ellenőrzésre kerülnek, és két munkanapon belül megérkeznek a bankszámládra."
+      },
+      "sample": {
+        "label": "Feltöltési példák",
+        "caption": "A partnerbevétel minden feltöltéssel nő – nincs szintnullázás és nincs terméktérképezés.",
+        "topup": "$250 feltöltés → $25 jutalom",
+        "topupHigher": "$1,000 feltöltés → $100 jutalom"
+      },
+      "note": "A jutalék a fizetésfeldolgozási díjak levonása utáni nettó összegből kerül kiszámításra."
+    },
+    "faq": {
+      "title": "Kérdések és válaszok",
+      "payments": {
+        "question": "Hogyan kapom meg a kifizetéseket?",
+        "answer": "A profilodban add hozzá VISA vagy Mastercard kártyaszámodat. A kifizetések közvetlenül a megadott kártyára utalhatók."
+      },
+      "discounts": {
+        "question": "Kapnak kedvezményt az ajánlott ügyfelek?",
+        "answer": "Nem. Az ajánlott ügyfelek nem kapnak kedvezményt vásárlásaikra; jutalékot csak a partner kap a sikeres ajánlások után."
+      },
+      "statistics": {
+        "question": "Mikor látom az ajánlási statisztikáimat?",
+        "answer": "Amint egy felhasználó a promókódoddal vagy ajánlói linkeddel regisztrál, e-mail címe és a kapcsolódó jutalom megjelenik a vezérlőpulton."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore",
     "subheading": "The all in one, AI-based cybersecurity system that combines:",

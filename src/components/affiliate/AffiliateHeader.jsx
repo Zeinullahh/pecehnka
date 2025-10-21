@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import GlowButton from "@/components/GlowButton";
 import LanguageSelector from "@/components/LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useRouter } from "next/navigation";
 
 const SCROLL_THRESHOLD = 10;
 
@@ -15,6 +16,7 @@ const AffiliateHeader = ({ onOpenModal }) => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useLanguage();
+  const router = useRouter();
 
   useEffect(() => {
     const handleResize = () => {
@@ -37,6 +39,11 @@ const AffiliateHeader = ({ onOpenModal }) => {
   }, []);
 
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
+
+  const handleGoToAdmin = () => {
+    router.push("/affiliate-admin");
+    setIsMobileMenuOpen(false);
+  };
 
   const widthTarget = isDesktop
     ? isCondensed
@@ -106,6 +113,12 @@ const AffiliateHeader = ({ onOpenModal }) => {
                     </button>
                   )
                 )}
+                <div className="pt-4 flex flex-col gap-4">
+                  <LanguageSelector align="left" />
+                  <GlowButton onClick={handleGoToAdmin} className="w-full">
+                    {t("header.login", "Login")}
+                  </GlowButton>
+                </div>
               </nav>
             </motion.div>
           </motion.div>
@@ -205,7 +218,7 @@ const AffiliateHeader = ({ onOpenModal }) => {
               transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
             >
               <LanguageSelector />
-              <GlowButton onClick={onOpenModal}>
+              <GlowButton onClick={handleGoToAdmin}>
                 {t("header.login", "Login")}
               </GlowButton>
             </motion.div>

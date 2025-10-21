@@ -12,6 +12,92 @@
     },
     "login": "Đăng nhập"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Tham gia chương trình đối tác của Silence AI",
+      "title": "Biến lời mời thành doanh thu.",
+      "cta": "Tham gia chương trình đối tác",
+      "earnings": "$2,940.00",
+      "growth": "+18% so với tháng trước",
+      "snapshot": {
+        "label": "Tổng quan trực tiếp",
+        "caption": "Hiệu suất được cập nhật mỗi 60 giây và các khoản chi trả đã xác nhận được đồng bộ ngay lập tức."
+      },
+      "graph": {
+        "label": "Xu hướng doanh thu",
+        "title": "Tăng trưởng doanh thu từ giới thiệu",
+        "window": "30 ngày gần đây",
+        "label0": "Tuần 1",
+        "label1": "Tuần 2",
+        "label2": "Tuần 3",
+        "label3": "Tuần 4",
+        "label4": "Tuần 5",
+        "label5": "Tuần 6",
+        "label6": "Hôm nay"
+      },
+      "metric": {
+        "conversion": "Kích hoạt",
+        "conversionChange": "24 đội ngũ mới trong tháng này",
+        "pending": "Phần thưởng đang chờ",
+        "pendingChange": "Thanh toán xử lý trong 2 ngày làm việc"
+      }
+    },
+    "howItWorks": {
+      "title": "Cách hoạt động",
+      "create": {
+        "title": "Tạo liên kết của bạn",
+        "description": "Tạo liên kết giới thiệu hoặc mã khuyến mãi độc quyền trong bảng điều khiển Silence AI."
+      },
+      "share": {
+        "title": "Chia sẻ",
+        "description": "Mời các đội ngũ qua email, LinkedIn và cộng đồng. Theo dõi hiệu suất theo thời gian thực."
+      },
+      "earn": {
+        "title": "Kiếm tiền",
+        "description": "Nhận hoa hồng ngay khi khách hàng được bạn giới thiệu kích hoạt bảo vệ Silence AI."
+      }
+    },
+    "commission": {
+      "heading": "Phần thưởng số dư",
+      "highlight": {
+        "label": "Vì sao đối tác yêu thích"
+      },
+      "reward": {
+        "title": "Thưởng 10% cho mỗi lần nạp",
+        "description": "Khi đội ngũ được mời nạp ví Silence AI, 10% giá trị ròng sẽ được cộng ngay cho bạn."
+      },
+      "settlement": {
+        "title": "Hạch toán thời gian thực",
+        "description": "Phần thưởng xuất hiện trên số dư đối tác trong vòng một phút sau giao dịch—không cần duyệt thủ công."
+      },
+      "withdrawal": {
+        "title": "Rút tiền trong 2 ngày làm việc",
+        "description": "Yêu cầu rút tiền được kiểm tra tự động và chuyển vào tài khoản ngân hàng của bạn trong hai ngày làm việc."
+      },
+      "sample": {
+        "label": "Ví dụ nạp tiền",
+        "caption": "Thu nhập đối tác tăng lên theo mỗi lần nạp—không cần đặt lại cấp độ hay ánh xạ sản phẩm.",
+        "topup": "$250 nạp → $25 thưởng",
+        "topupHigher": "$1,000 nạp → $100 thưởng"
+      },
+      "note": "Hoa hồng được tính trên giá trị ròng sau khi trừ phí xử lý thanh toán."
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp",
+      "payments": {
+        "question": "Tôi nhận tiền thế nào?",
+        "answer": "Thêm số thẻ VISA hoặc Mastercard vào hồ sơ. Phần thưởng sẽ được chuyển trực tiếp vào thẻ đó."
+      },
+      "discounts": {
+        "question": "Khách hàng được giới thiệu có nhận ưu đãi không?",
+        "answer": "Không. Khách hàng được giới thiệu không nhận ưu đãi cho việc mua hàng; chỉ đối tác nhận hoa hồng cho giới thiệu thành công."
+      },
+      "statistics": {
+        "question": "Khi nào tôi xem thống kê giới thiệu?",
+        "answer": "Khi người dùng đăng ký bằng mã hoặc liên kết của bạn, email và phần thưởng tương ứng sẽ hiển thị trong bảng điều khiển."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: An ninh mạng không còn đắt đỏ hay phức tạp",
     "subheading": "Giải pháp an ninh mạng toàn diện dựa trên AI, kết hợp các thành phần:",

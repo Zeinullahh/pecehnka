@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
 
 const EdgeGlowCard = ({
@@ -16,17 +16,56 @@ const EdgeGlowCard = ({
   bottomColor,
   leftColor,
   style,
+  animateOnView = true,
   ...rest
 }) => {
   const resolvedSecondary = secondaryGlowColor ?? glowColor;
+  const wrapperRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(!animateOnView);
+
+  useEffect(() => {
+    if (!animateOnView) {
+      return undefined;
+    }
+
+    const node = wrapperRef.current;
+    if (!node) {
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.3,
+        rootMargin: "0px 0px -10%",
+      }
+    );
+
+    observer.observe(node);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [animateOnView]);
+
+  const appearClasses = animateOnView ? clsx("card-appear", isVisible && "card-appear--visible") : "";
 
   if (mode === "static") {
     return (
       <div
         {...rest}
+        ref={wrapperRef}
         className={clsx(
           "edge-glow-static",
           spotlight && "edge-glow-static-spotlight",
+          appearClasses,
           outerClassName
         )}
         style={{
@@ -67,9 +106,11 @@ const EdgeGlowCard = ({
       onMouseEnter={handleMouseMove}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      ref={wrapperRef}
       className={clsx(
         "edge-glow",
         spotlight && "edge-glow-static-spotlight",
+        appearClasses,
         outerClassName
       )}
       style={{

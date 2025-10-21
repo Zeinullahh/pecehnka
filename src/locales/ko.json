@@ -12,6 +12,92 @@
     },
     "login": "로그인"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Silence AI 파트너 프로그램에 참여하세요",
+      "title": "초대를 수익으로 바꾸세요.",
+      "cta": "파트너 프로그램 참여하기",
+      "earnings": "$2,940.00",
+      "growth": "+18% (전월 대비)",
+      "snapshot": {
+        "label": "실시간 스냅샷",
+        "caption": "성과 데이터가 60초마다 업데이트되고, 확정된 지급금은 즉시 동기화됩니다."
+      },
+      "graph": {
+        "label": "수익 추이",
+        "title": "추천 수익 성장",
+        "window": "최근 30일",
+        "label0": "1주차",
+        "label1": "2주차",
+        "label2": "3주차",
+        "label3": "4주차",
+        "label4": "5주차",
+        "label5": "6주차",
+        "label6": "오늘"
+      },
+      "metric": {
+        "conversion": "활성화",
+        "conversionChange": "이번 달 신규 팀 24개",
+        "pending": "보류 중인 보상",
+        "pendingChange": "출금은 영업일 기준 2일 내 처리됩니다"
+      }
+    },
+    "howItWorks": {
+      "title": "작동 방식",
+      "create": {
+        "title": "링크 만들기",
+        "description": "Silence AI 대시보드에서 고유한 추천 링크 또는 프로모션 코드를 생성하세요."
+      },
+      "share": {
+        "title": "공유",
+        "description": "이메일, LinkedIn, 커뮤니티를 통해 팀을 초대하고 실시간으로 성과를 추적하세요."
+      },
+      "earn": {
+        "title": "수익 얻기",
+        "description": "추천한 고객이 Silence AI 보호를 활성화하는 즉시 커미션을 받습니다."
+      }
+    },
+    "commission": {
+      "heading": "잔액 리워드",
+      "highlight": {
+        "label": "파트너들이 좋아하는 이유"
+      },
+      "reward": {
+        "title": "충전 금액의 10% 리워드",
+        "description": "초대한 팀이 Silence AI 지갑을 충전하면 순금액의 10%가 즉시 적립됩니다."
+      },
+      "settlement": {
+        "title": "실시간 장부 반영",
+        "description": "거래가 완료되면 1분 이내에 리워드가 파트너 잔액에 반영되며, 수동 승인 대기열이 없습니다."
+      },
+      "withdrawal": {
+        "title": "출금은 영업일 2일 내 완료",
+        "description": "출금 요청은 자동으로 검토되며, 2 영업일 내에 은행 계좌로 입금됩니다."
+      },
+      "sample": {
+        "label": "충전 예시",
+        "caption": "각 충전마다 파트너 수익이 증가합니다—레벨 초기화나 제품 매핑은 필요 없습니다.",
+        "topup": "$250 충전 → $25 리워드",
+        "topupHigher": "$1,000 충전 → $100 리워드"
+      },
+      "note": "커미션은 결제 처리 수수료를 제외한 순금액을 기준으로 계산됩니다."
+    },
+    "faq": {
+      "title": "질문과 답변",
+      "payments": {
+        "question": "지급금은 어떻게 받나요?",
+        "answer": "프로필에 VISA 또는 Mastercard 번호를 추가하면 지정된 카드로 바로 출금할 수 있습니다."
+      },
+      "discounts": {
+        "question": "추천 고객에게 할인 혜택이 있나요?",
+        "answer": "아니요. 추천 고객에게는 할인이 제공되지 않으며, 성공적인 추천의 커미션은 파트너만 받습니다."
+      },
+      "statistics": {
+        "question": "추천 통계를 언제 볼 수 있나요?",
+        "answer": "사용자가 프로모션 코드 또는 추천 링크로 가입하면 해당 이메일과 보상이 대시보드에 표시됩니다."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: 사이버 보안은 더 이상 비싸지도 복잡하지도 않습니다",
     "subheading": "AI 기반 올인원 사이버 보안 시스템이 결합한 기능:",

@@ -12,6 +12,92 @@
     },
     "login": "Login"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Pridajte sa k partnerskému programu Silence AI",
+      "title": "Premeňte pozvánky na príjem.",
+      "cta": "Vstúpiť do partnerského programu",
+      "earnings": "$2,940.00",
+      "growth": "+18% oproti minulému mesiacu",
+      "snapshot": {
+        "label": "Živý prehľad",
+        "caption": "Výsledky sa aktualizujú každých 60 sekúnd a potvrdené platby sa okamžite synchronizujú."
+      },
+      "graph": {
+        "label": "Trend príjmov",
+        "title": "Rast príjmov z odporúčaní",
+        "window": "Posledných 30 dní",
+        "label0": "Týždeň 1",
+        "label1": "Týždeň 2",
+        "label2": "Týždeň 3",
+        "label3": "Týždeň 4",
+        "label4": "Týždeň 5",
+        "label5": "Týždeň 6",
+        "label6": "Dnes"
+      },
+      "metric": {
+        "conversion": "Aktivácie",
+        "conversionChange": "24 nových tímov tento mesiac",
+        "pending": "Čakajúce odmeny",
+        "pendingChange": "Výplaty sú spracované do 2 pracovných dní"
+      }
+    },
+    "howItWorks": {
+      "title": "Ako to funguje",
+      "create": {
+        "title": "Vytvorte svoj odkaz",
+        "description": "Vytvorte si jedinečný odporúčací odkaz alebo promo kód v paneli Silence AI."
+      },
+      "share": {
+        "title": "Zdieľajte",
+        "description": "Pozvite tímy cez e-mail, LinkedIn a komunity. Sledujte výsledky v reálnom čase."
+      },
+      "earn": {
+        "title": "Zarábajte",
+        "description": "Získajte províziu hneď, ako vaši odporúčaní klienti aktivujú ochranu Silence AI."
+      }
+    },
+    "commission": {
+      "heading": "Saldo odmeny",
+      "highlight": {
+        "label": "Prečo to partneri milujú"
+      },
+      "reward": {
+        "title": "10 % odmena pri každom dobití",
+        "description": "Keď pozvaný tím dobije peňaženku Silence AI, 10 % z čistej sumy sa okamžite pripíše vám."
+      },
+      "settlement": {
+        "title": "Zaúčtovanie v reálnom čase",
+        "description": "Odmeny sa zobrazia na partnerskom zostatku do minúty po transakcii — bez manuálneho schvaľovania."
+      },
+      "withdrawal": {
+        "title": "Výplaty do 2 pracovných dní",
+        "description": "Žiadosti o výplatu sa kontrolujú automaticky a dorazia na váš bankový účet do dvoch pracovných dní."
+      },
+      "sample": {
+        "label": "Príklady dobíjania",
+        "caption": "Príjmy partnera rastú s každým dobitím — bez resetovania úrovní a mapovania produktov.",
+        "topup": "$250 dobitie → $25 odmena",
+        "topupHigher": "$1,000 dobitie → $100 odmena"
+      },
+      "note": "Provízia sa počíta z čistej sumy po odrátaní poplatkov za spracovanie platby."
+    },
+    "faq": {
+      "title": "Otázky a odpovede",
+      "payments": {
+        "question": "Ako dostanem platby?",
+        "answer": "Pridajte do profilu číslo svojej karty VISA alebo Mastercard. Výplaty môžu byť poslané priamo na túto kartu."
+      },
+      "discounts": {
+        "question": "Dostanú odporúčaní klienti zľavu?",
+        "answer": "Nie. Odporúčaní klienti nedostávajú zľavu na nákupy; províziu za úspešné odporúčania dostáva iba partner."
+      },
+      "statistics": {
+        "question": "Kedy uvidím štatistiky odporúčaní?",
+        "answer": "Hneď ako sa používateľ zaregistruje pomocou vášho promo kódu alebo odkazu, jeho e-mail a odmena sa zobrazia v paneli."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore",
     "subheading": "The all in one, AI-based cybersecurity system that combines:",

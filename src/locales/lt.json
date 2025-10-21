@@ -12,6 +12,92 @@
     },
     "login": "Login"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Prisijunkite prie Silence AI partnerių programos",
+      "title": "Paverskite kvietimus pajamomis.",
+      "cta": "Prisijungti prie partnerių programos",
+      "earnings": "$2,940.00",
+      "growth": "+18% lyginant su praėjusiu mėnesiu",
+      "snapshot": {
+        "label": "Tiesioginė suvestinė",
+        "caption": "Rezultatai atnaujinami kas 60 sekundžių, o patvirtinti mokėjimai sinchronizuojami iš karto."
+      },
+      "graph": {
+        "label": "Pajamų tendencija",
+        "title": "Rekomendacijų pajamų augimas",
+        "window": "Paskutinės 30 dienų",
+        "label0": "1 savaitė",
+        "label1": "2 savaitė",
+        "label2": "3 savaitė",
+        "label3": "4 savaitė",
+        "label4": "5 savaitė",
+        "label5": "6 savaitė",
+        "label6": "Šiandien"
+      },
+      "metric": {
+        "conversion": "Aktyvacijos",
+        "conversionChange": "24 naujos komandos šį mėnesį",
+        "pending": "Laukiamos išmokos",
+        "pendingChange": "Išmokos apdorojamos per 2 darbo dienas"
+      }
+    },
+    "howItWorks": {
+      "title": "Kaip tai veikia",
+      "create": {
+        "title": "Sukurkite savo nuorodą",
+        "description": "Silence AI valdymo skydelyje sugeneruokite unikalią rekomendacijų nuorodą arba promo kodą."
+      },
+      "share": {
+        "title": "Dalinkitės",
+        "description": "Kvietimus siųskite el. paštu, LinkedIn ir bendruomenėse. Stebėkite rezultatus realiu laiku."
+      },
+      "earn": {
+        "title": "Uždirbkite",
+        "description": "Gaukite komisinį atlyginimą vos tik jūsų rekomenduoti klientai suaktyvina Silence AI apsaugą."
+      }
+    },
+    "commission": {
+      "heading": "Saldo atlygis",
+      "highlight": {
+        "label": "Kodėl partneriai tai vertina"
+      },
+      "reward": {
+        "title": "10% atlygis už kiekvieną papildymą",
+        "description": "Kai pakviesta komanda papildo Silence AI piniginę, 10% nuo grynosios sumos iškart priskiriama jums."
+      },
+      "settlement": {
+        "title": "Apskaita realiu laiku",
+        "description": "Atlygis į partnerio balansą įrašomas per minutę po operacijos — be rankinio patvirtinimo."
+      },
+      "withdrawal": {
+        "title": "Išmokos per 2 darbo dienas",
+        "description": "Išmokų prašymai automatiškai tikrinami ir pasiekia jūsų banko sąskaitą per dvi darbo dienas."
+      },
+      "sample": {
+        "label": "Papildymo pavyzdžiai",
+        "caption": "Partnerio pajamos didėja su kiekvienu papildymu — nereikia atstatyti lygių ar žemėlapių produktų.",
+        "topup": "$250 papildymas → $25 atlygis",
+        "topupHigher": "$1,000 papildymas → $100 atlygis"
+      },
+      "note": "Komisinis skaičiuojamas nuo grynosios sumos atėmus mokėjimo apdorojimo mokesčius."
+    },
+    "faq": {
+      "title": "Klausimai ir atsakymai",
+      "payments": {
+        "question": "Kaip gausiu mokėjimus?",
+        "answer": "Į profilyje pridėkite savo VISA arba Mastercard numerį. Išmokas galima pervesti tiesiai į pasirinktą kortelę."
+      },
+      "discounts": {
+        "question": "Ar rekomenduoti klientai gauna nuolaidas?",
+        "answer": "Ne. Rekomenduoti klientai negauna nuolaidų savo pirkiniams; komisiją už sėkmingas rekomendacijas gauna tik partneris."
+      },
+      "statistics": {
+        "question": "Kada matysiu rekomendacijų statistiką?",
+        "answer": "Kai naudotojas užsiregistruoja su jūsų promo kodu arba nuoroda, jo el. paštas ir atitinkama išmoka pasirodo jūsų skydelyje."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore",
     "subheading": "The all in one, AI-based cybersecurity system that combines:",

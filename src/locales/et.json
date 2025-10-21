@@ -12,6 +12,92 @@
     },
     "login": "Login"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Liitu Silence AI partnerprogrammiga",
+      "title": "Muuda kutsed sissetulekuks.",
+      "cta": "Liitu partnerprogrammiga",
+      "earnings": "$2,940.00",
+      "growth": "+18% võrreldes eelmise kuuga",
+      "snapshot": {
+        "label": "Reaalajas ülevaade",
+        "caption": "Tulemused uuenevad iga 60 sekundi järel ja kinnitatud väljamaksed sünkroonitakse koheselt."
+      },
+      "graph": {
+        "label": "Tulude trend",
+        "title": "Soovitustest saadava tulu kasv",
+        "window": "Viimased 30 päeva",
+        "label0": "Nädal 1",
+        "label1": "Nädal 2",
+        "label2": "Nädal 3",
+        "label3": "Nädal 4",
+        "label4": "Nädal 5",
+        "label5": "Nädal 6",
+        "label6": "Täna"
+      },
+      "metric": {
+        "conversion": "Aktiveerimised",
+        "conversionChange": "Sel kuul 24 uut meeskonda",
+        "pending": "Ootel preemiad",
+        "pendingChange": "Väljamaksed töödeldakse 2 tööpäeva jooksul"
+      }
+    },
+    "howItWorks": {
+      "title": "Kuidas see töötab",
+      "create": {
+        "title": "Loo oma link",
+        "description": "Loo Silence AI juhtpaneelis ainulaadne soovituslink või sooduskood."
+      },
+      "share": {
+        "title": "Jaga",
+        "description": "Kutsu meeskondi e-posti, LinkedIni ja kogukondade kaudu. Jälgi tulemusi reaalajas."
+      },
+      "earn": {
+        "title": "Teeni",
+        "description": "Teeni vahendustasu kohe, kui sinu viidatud kliendid aktiveerivad Silence AI kaitse."
+      }
+    },
+    "commission": {
+      "heading": "Saldo preemiad",
+      "highlight": {
+        "label": "Miks partnerid seda armastavad"
+      },
+      "reward": {
+        "title": "10% preemia igale saldo laadimisele",
+        "description": "Kui kutsutud meeskond laeb oma Silence AI rahakotti, kantakse 10% netosummast kohe sinule."
+      },
+      "settlement": {
+        "title": "Päeviku reaalajas tasaarveldus",
+        "description": "Preemiad kantakse partneri saldole ühe minuti jooksul pärast tehingu kinnitamist – käsitsi heakskiitu pole tarvis."
+      },
+      "withdrawal": {
+        "title": "Väljamaksed klaaritakse 2 tööpäevaga",
+        "description": "Esitatud väljamakse taotlused kontrollitakse automaatselt ja jõuavad sinu panka kahe tööpäeva jooksul."
+      },
+      "sample": {
+        "label": "Näidislaadimised",
+        "caption": "Partneri tulu kasvab iga laadimisega – tasemed ei lähtestu ja tootekaarte pole vaja.",
+        "topup": "$250 laadimine → $25 preemia",
+        "topupHigher": "$1,000 laadimine → $100 preemia"
+      },
+      "note": "Komisjon arvutatakse maksetöötlustasud maha arvestatud netosummalt."
+    },
+    "faq": {
+      "title": "Küsimused ja vastused",
+      "payments": {
+        "question": "Kuidas ma maksed kätte saan?",
+        "answer": "Lisa oma profiili VISA või Mastercardi number. Väljamakseid saab kanda otse valitud kaardile."
+      },
+      "discounts": {
+        "question": "Kas viidatud kliendid saavad allahindlusi?",
+        "answer": "Ei. Viidatud kliendid ei saa oma ostudelt allahindlust. Komisjonitasu teenib ainult partner."
+      },
+      "statistics": {
+        "question": "Millal näen oma soovitusstatistikat?",
+        "answer": "Kui kasutaja registreerub sinu sooduskoodi või soovituslingi kaudu, kuvatakse tema e-post ja vastav preemia sinu juhtpaneelis."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore",
     "subheading": "The all in one, AI-based cybersecurity system that combines:",

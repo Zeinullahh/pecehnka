@@ -12,6 +12,92 @@
     },
     "login": "Login"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Pridružite se Silence AI partnerskom programu",
+      "title": "Pretvorite pozivnice u prihod.",
+      "cta": "Pridružite se partnerskom programu",
+      "earnings": "$2,940.00",
+      "growth": "+18% u odnosu na prošli mjesec",
+      "snapshot": {
+        "label": "Trenutni pregled",
+        "caption": "Performanse se ažuriraju svakih 60 sekundi, a potvrđene isplate sinkroniziraju se odmah."
+      },
+      "graph": {
+        "label": "Trend prihoda",
+        "title": "Rast prihoda od preporuka",
+        "window": "Zadnjih 30 dana",
+        "label0": "Tjedan 1",
+        "label1": "Tjedan 2",
+        "label2": "Tjedan 3",
+        "label3": "Tjedan 4",
+        "label4": "Tjedan 5",
+        "label5": "Tjedan 6",
+        "label6": "Danas"
+      },
+      "metric": {
+        "conversion": "Aktivacije",
+        "conversionChange": "24 nova tima ovog mjeseca",
+        "pending": "Neraspodijeljene nagrade",
+        "pendingChange": "Isplate se obrađuju u roku od 2 radna dana"
+      }
+    },
+    "howItWorks": {
+      "title": "Kako funkcionira",
+      "create": {
+        "title": "Kreirajte svoj link",
+        "description": "Generirajte jedinstveni referral link ili promo kod u Silence AI nadzornoj ploči."
+      },
+      "share": {
+        "title": "Podijelite",
+        "description": "Pozovite timove putem e-pošte, LinkedIna i zajednica. Pratite rezultate u stvarnom vremenu."
+      },
+      "earn": {
+        "title": "Zaradite",
+        "description": "Primite proviziju čim vaši preporučeni klijenti aktiviraju Silence AI zaštitu."
+      }
+    },
+    "commission": {
+      "heading": "Nagrade za saldo",
+      "highlight": {
+        "label": "Zašto ga partneri vole"
+      },
+      "reward": {
+        "title": "10% nagrada na svako punjenje salda",
+        "description": "Kada pozvani tim dopuni svoj Silence AI novčanik, 10% neto iznosa odmah se pripisuje vama."
+      },
+      "settlement": {
+        "title": "Knjiženje u stvarnom vremenu",
+        "description": "Nagrade se knjiže na vaš partnerski saldo unutar jedne minute nakon završetka transakcije—bez ručne obrade."
+      },
+      "withdrawal": {
+        "title": "Isplate u roku od 2 radna dana",
+        "description": "Podneseni zahtjevi za isplatu automatski se provjeravaju i stižu na vaš bankovni račun u roku od dva radna dana."
+      },
+      "sample": {
+        "label": "Primjeri punjenja",
+        "caption": "Zarada partnera raste sa svakim punjenjem—bez resetiranja razina i bez mapiranja proizvoda.",
+        "topup": "$250 punjenje → $25 nagrada",
+        "topupHigher": "$1,000 punjenje → $100 nagrada"
+      },
+      "note": "Provizija se obračunava na neto iznos nakon troškova obrade plaćanja."
+    },
+    "faq": {
+      "title": "Pitanja i odgovori",
+      "payments": {
+        "question": "Kako primam isplate?",
+        "answer": "U profilu možete dodati broj svoje VISA ili Mastercard kartice. Isplate se mogu povući izravno na odabranu karticu."
+      },
+      "discounts": {
+        "question": "Dobivaju li preporučeni kupci popuste?",
+        "answer": "Ne. Preporučeni kupci ne dobivaju popuste na svoje kupnje. Samo partner ostvaruje proviziju od uspješnih preporuka."
+      },
+      "statistics": {
+        "question": "Kada ću vidjeti statistiku preporuka?",
+        "answer": "Čim se korisnik registrira putem vašeg promo koda ili referral linka, njegov e-mail i pripadajuća nagrada pojave se na vašoj nadzornoj ploči."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: Cybersecurity is neither expensive nor complicated anymore",
     "subheading": "The all in one, AI-based cybersecurity system that combines:",

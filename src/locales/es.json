@@ -12,6 +12,92 @@
     },
     "login": "Iniciar sesión"
   },
+  "affiliate": {
+    "hero": {
+      "tagline": "Únete al programa de socios de Silence AI",
+      "title": "Convierte las invitaciones en ingresos.",
+      "cta": "Unirme al programa de socios",
+      "earnings": "$2,940.00",
+      "growth": "+18% frente al mes anterior",
+      "snapshot": {
+        "label": "Resumen en vivo",
+        "caption": "Los resultados se actualizan cada 60 segundos y los pagos confirmados se sincronizan al instante."
+      },
+      "graph": {
+        "label": "Tendencia de ingresos",
+        "title": "Crecimiento del ingreso por referencias",
+        "window": "Últimos 30 días",
+        "label0": "Semana 1",
+        "label1": "Semana 2",
+        "label2": "Semana 3",
+        "label3": "Semana 4",
+        "label4": "Semana 5",
+        "label5": "Semana 6",
+        "label6": "Hoy"
+      },
+      "metric": {
+        "conversion": "Activaciones",
+        "conversionChange": "24 equipos nuevos este mes",
+        "pending": "Recompensas pendientes",
+        "pendingChange": "Los retiros se procesan en 2 días hábiles"
+      }
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "create": {
+        "title": "Crea tu enlace",
+        "description": "Genera un enlace de referencia o código promocional único desde tu panel de Silence AI."
+      },
+      "share": {
+        "title": "Comparte",
+        "description": "Invita equipos por correo, LinkedIn y comunidades. Controla el rendimiento en tiempo real."
+      },
+      "earn": {
+        "title": "Gana",
+        "description": "Recibe comisión en cuanto los clientes referidos activen la protección Silence AI."
+      }
+    },
+    "commission": {
+      "heading": "Recompensas de saldo",
+      "highlight": {
+        "label": "Por qué a los socios les encanta"
+      },
+      "reward": {
+        "title": "10% de recompensa en cada recarga",
+        "description": "Cuando el equipo invitado recarga su monedero de Silence AI, el 10% del importe neto se acredita de inmediato."
+      },
+      "settlement": {
+        "title": "Registro en tiempo real",
+        "description": "Las recompensas se registran en tu saldo de socio en menos de un minuto tras la transacción, sin cola de aprobación manual."
+      },
+      "withdrawal": {
+        "title": "Retiros en 2 días hábiles",
+        "description": "Las solicitudes de retiro se revisan automáticamente y llegan a tu cuenta bancaria en un máximo de dos días hábiles."
+      },
+      "sample": {
+        "label": "Ejemplos de recarga",
+        "caption": "Los ingresos del socio crecen con cada recarga; no hay reinicio de niveles ni mapeo de productos.",
+        "topup": "$250 recarga → $25 recompensa",
+        "topupHigher": "$1,000 recarga → $100 recompensa"
+      },
+      "note": "La comisión se calcula sobre el importe neto tras las comisiones de procesamiento de pago."
+    },
+    "faq": {
+      "title": "Preguntas y respuestas",
+      "payments": {
+        "question": "¿Cómo recibo los pagos?",
+        "answer": "Añade el número de tu tarjeta VISA o Mastercard en tu perfil. Las recompensas se transfieren directamente a esa tarjeta."
+      },
+      "discounts": {
+        "question": "¿Los clientes referidos reciben descuentos?",
+        "answer": "No. Los clientes referidos no reciben descuentos en sus compras; solo el socio obtiene comisión por las referencias exitosas."
+      },
+      "statistics": {
+        "question": "¿Cuándo veré mis estadísticas de referencia?",
+        "answer": "Cuando un usuario se registre con tu código o enlace, su correo y la recompensa correspondiente aparecerán en tu panel."
+      }
+    }
+  },
   "hero": {
     "headline": "AI-SOC 1: La ciberseguridad ya no es cara ni complicada",
     "subheading": "La plataforma integral basada en IA que combina:",

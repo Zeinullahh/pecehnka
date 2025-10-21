@@ -186,10 +186,25 @@
 
 .glass-card {
   background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(9px);
   border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+.card-appear {
+  opacity: 0;
+  transform: translateY(32px) scale(0.98);
+  filter: brightness(0.85);
+  transition: opacity 0.65s ease, transform 0.65s ease, filter 0.65s ease;
+  will-change: opacity, transform, filter;
+}
+
+.card-appear.card-appear--visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: brightness(1);
 }
 
 .pricing-card {
@@ -201,180 +216,160 @@
 .affiliate-card {
   position: relative;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.7);
-  border: 1px solid transparent;
+  background: rgba(0, 0, 0, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(18px);
   box-shadow: 0 18px 44px rgba(6, 12, 30, 0.45);
-  --affiliate-glow-top: rgba(255, 0, 183, 0.92);
-  --affiliate-glow-bottom: rgba(32, 140, 255, 0.78);
-  --affiliate-glow-left: rgba(255, 0, 183, 0.86);
-  --affiliate-glow-right: rgba(32, 140, 255, 0.7);
-  --affiliate-glow-core: rgba(255, 255, 255, 0.35);
-  --affiliate-glow-opacity: 0.7;
-  --affiliate-glow-hover-opacity: 0.97;
-  --affiliate-border-start: rgba(255, 0, 183, 0.58);
-  --affiliate-border-end: rgba(32, 140, 255, 0.36);
-  --affiliate-border-hover-opacity: 0.65;
-  transition:
-    border-color 0.35s ease,
-    box-shadow 0.35s ease,
-    background 0.35s ease;
+  --affiliate-glow-top: rgba(255, 0, 183, 0.42);
+  --affiliate-glow-bottom: rgba(32, 140, 255, 0.3);
+  --affiliate-glow-left: rgba(255, 0, 183, 0.38);
+  --affiliate-glow-right: rgba(32, 140, 255, 0.24);
+  --affiliate-glow-core: rgba(255, 255, 255, 0.4);
+  --affiliate-glow-opacity: 0.55;
+  --affiliate-glow-hover-opacity: 0.99;
+  transition: box-shadow 0.85s ease;
 }
 
-.affiliate-card::before {
-  content: "";
-  position: absolute;
-  inset: -8px;
-  border-radius: inherit;
-  pointer-events: none;
-  padding: 4px;
-  background:
-    radial-gradient(120% 70% at 50% -28%, var(--affiliate-glow-core) 0%, var(--affiliate-glow-top) 38%, transparent 72%),
-    radial-gradient(120% 70% at 50% 128%, var(--affiliate-glow-core) 0%, var(--affiliate-glow-bottom) 38%, transparent 72%),
-    radial-gradient(70% 120% at -28% 50%, var(--affiliate-glow-core) 0%, var(--affiliate-glow-left) 38%, transparent 72%),
-    radial-gradient(70% 120% at 128% 50%, var(--affiliate-glow-core) 0%, var(--affiliate-glow-right) 38%, transparent 72%);
-  mix-blend-mode: screen;
-  opacity: var(--affiliate-glow-opacity);
-  filter: blur(20px);
-  transition: opacity 0.35s ease;
-  -webkit-mask:
-    linear-gradient(#000 0 0) padding-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask:
-    linear-gradient(#000 0 0) padding-box,
-    linear-gradient(#000 0 0);
-  mask-composite: exclude;
-}
 
+.affiliate-card::before,
 .affiliate-card::after {
   content: "";
   position: absolute;
-  inset: 0;
-  box-sizing: border-box;
+  inset: -12px;
   border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(
-    135deg,
-    var(--affiliate-border-start),
-    var(--affiliate-border-end)
-  );
   pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+
+.affiliate-card::before {
+  padding: 6px;
+  background:
+    radial-gradient(360px circle at 18% 14%, rgba(255, 0, 183, 0.4), transparent 70%),
+    radial-gradient(380px circle at 82% 86%, rgba(32, 140, 255, 0.32), transparent 72%);
+  opacity: 0.85;
+  filter: blur(18px);
+}
+
+.affiliate-card::after {
+  inset: -8px;
+  padding: 6px;
+  background:
+    radial-gradient(42% 70% at 50% -12%, rgba(255, 0, 183, 0.38), transparent 68%),
+    radial-gradient(42% 70% at 50% 112%, rgba(32, 140, 255, 0.34), transparent 68%),
+    radial-gradient(70% 42% at -12% 50%, rgba(255, 0, 183, 0.32), transparent 66%),
+    radial-gradient(70% 42% at 112% 50%, rgba(32, 140, 255, 0.3), transparent 66%);
   opacity: 0;
-  transition: opacity 0.4s ease, transform 0.35s ease;
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  mask-composite: exclude;
-  z-index: 1;
+  filter: blur(14px);
+  transition: opacity 0.28s ease, transform 0.42s ease;
 }
 
 .group:hover .affiliate-card {
-  border-color: rgba(255, 255, 255, 0.2);
   box-shadow:
-    -16px -16px 48px rgba(255, 0, 183, 0.26),
-    16px 16px 52px rgba(32, 140, 255, 0.18),
-    0 26px 60px rgba(6, 12, 30, 0.65);
-}
-
-.group:hover .affiliate-card::after {
-  opacity: var(--affiliate-border-hover-opacity);
-  transform: scale(1.01);
+    0 -32px 65px -28px rgba(255, 0, 183, 0.68),
+    0 32px 65px -28px rgba(32, 140, 255, 0.6),
+    -32px 0 65px -28px rgba(255, 0, 183, 0.62),
+    32px 0 65px -28px rgba(32, 140, 255, 0.56),
+    0 26px 60px rgba(6, 12, 30, 0.72);
 }
 
 .group:hover .affiliate-card::before {
   opacity: var(--affiliate-glow-hover-opacity);
 }
 
+.group:hover .affiliate-card::after {
+  opacity: 0.85;
+  transform: scale(1.02);
+}
+
 .affiliate-card--hero {
-  --affiliate-glow-top: rgba(255, 0, 183, 0.98);
-  --affiliate-glow-bottom: rgba(55, 255, 139, 0.82);
-  --affiliate-glow-left: rgba(255, 0, 183, 0.9);
-  --affiliate-glow-right: rgba(55, 255, 139, 0.68);
-  --affiliate-glow-core: rgba(255, 255, 255, 0.45);
-  --affiliate-glow-opacity: 0.76;
-  --affiliate-glow-hover-opacity: 0.99;
-  --affiliate-border-end: rgba(55, 255, 139, 0.32);
-  --affiliate-border-hover-opacity: 0.7;
+  --affiliate-glow-top: rgba(255, 0, 183, 0);
+  --affiliate-glow-bottom: rgba(55, 255, 139, 0);
+  --affiliate-glow-left: rgba(255, 0, 183, 0);
+  --affiliate-glow-right: rgba(55, 255, 139, 0);
+  --affiliate-glow-core: rgba(255, 255, 255, 0);
+  --affiliate-glow-opacity: 0;
 }
 
 .affiliate-card--default {
-  --affiliate-glow-top: rgba(255, 0, 183, 0.94);
-  --affiliate-glow-bottom: rgba(32, 140, 255, 0.76);
-  --affiliate-glow-left: rgba(255, 0, 183, 0.86);
-  --affiliate-glow-right: rgba(32, 140, 255, 0.66);
-  --affiliate-glow-core: rgba(255, 255, 255, 0.32);
-  --affiliate-glow-opacity: 0.72;
-  --affiliate-glow-hover-opacity: 0.97;
-  --affiliate-border-hover-opacity: 0.55;
+  --affiliate-glow-top: rgba(255, 0, 183, 0.45);
+  --affiliate-glow-bottom: rgba(32, 140, 255, 0.32);
+  --affiliate-glow-left: rgba(255, 0, 183, 0.4);
+  --affiliate-glow-right: rgba(32, 140, 255, 0.26);
+  --affiliate-glow-core: rgba(255, 255, 255, 0.24);
+  --affiliate-glow-opacity: 0.6;
+}
+
+.affiliate-card--faq {
+  --affiliate-glow-top: rgba(255, 0, 183, 0.32);
+  --affiliate-glow-bottom: rgba(32, 140, 255, 0.24);
+  --affiliate-glow-left: rgba(255, 0, 183, 0.28);
+  --affiliate-glow-right: rgba(32, 140, 255, 0.2);
+  --affiliate-glow-core: rgba(255, 255, 255, 0.16);
+  --affiliate-glow-opacity: 0.45;
+}
+
+.affiliate-card--faq::before {
+  background:
+    radial-gradient(320px circle at 14% 12%, rgba(255, 0, 183, 0.38), transparent 70%),
+    radial-gradient(340px circle at 86% 88%, rgba(32, 140, 255, 0.3), transparent 72%);
+}
+
+.affiliate-card--faq::after {
+  inset: -6px;
+  background:
+    radial-gradient(34% 54% at 50% -8%, rgba(255, 0, 183, 0.28), transparent 62%),
+    radial-gradient(34% 54% at 50% 108%, rgba(32, 140, 255, 0.24), transparent 62%),
+    radial-gradient(54% 34% at -8% 50%, rgba(255, 0, 183, 0.22), transparent 60%),
+    radial-gradient(54% 34% at 108% 50%, rgba(32, 140, 255, 0.2), transparent 60%);
+  opacity: 0;
+  filter: blur(12px);
+  transition: opacity 0.3s ease, transform 0.4s ease;
+}
+
+.group:hover .affiliate-card--faq::after {
+  opacity: 0.7;
+  transform: scale(1.018);
 }
 
 .affiliate-subcard {
   position: relative;
-  background: rgba(0, 0, 0, 0.86);
-  border: 1px solid transparent;
+  background: rgba(0, 0, 0, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.04);
   border-radius: 18px;
-  --affiliate-inner-glow-size: 160px;
-  --affiliate-inner-glow-top: rgba(255, 0, 183, 0.34);
+  --affiliate-inner-glow-top: rgba(255, 0, 183, 0.32);
   --affiliate-inner-glow-bottom: rgba(32, 140, 255, 0.24);
-  --affiliate-inner-glow-left: rgba(255, 0, 183, 0.26);
-  --affiliate-inner-glow-right: rgba(32, 140, 255, 0.18);
-  --affiliate-inner-glow-opacity: 0.35;
-  --affiliate-inner-glow-hover-opacity: 0.72;
-  --affiliate-inner-border-start: rgba(255, 0, 183, 0.3);
-  --affiliate-inner-border-end: rgba(32, 140, 255, 0.22);
-  --affiliate-inner-border-hover-opacity: 0.35;
+  --affiliate-inner-glow-left: rgba(255, 0, 183, 0.28);
+  --affiliate-inner-glow-right: rgba(32, 140, 255, 0.2);
+  --affiliate-inner-glow-core: rgba(255, 255, 255, 0.18);
+  --affiliate-inner-glow-opacity: 0.45;
+  --affiliate-inner-glow-hover-opacity: 0.95;
+  --affiliate-inner-border-hover-opacity: 0.42;
+  box-shadow: 0 12px 28px rgba(6, 12, 30, 0.48);
   transition:
     background 0.35s ease,
     border-color 0.35s ease,
     box-shadow 0.35s ease;
 }
 
-.affiliate-subcard::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  box-sizing: border-box;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(
-    140deg,
-    var(--affiliate-inner-border-start),
-    var(--affiliate-inner-border-end)
-  );
-  opacity: 0;
-  transition: opacity 0.35s ease;
-  pointer-events: none;
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  mask-composite: exclude;
+.group:hover .affiliate-subcard {
+  box-shadow:
+    0 -24px 45px -24px rgba(255, 0, 183, 0.52),
+    0 24px 45px -24px rgba(32, 140, 255, 0.42),
+    -24px 0 45px -24px rgba(255, 0, 183, 0.46),
+    24px 0 45px -24px rgba(32, 140, 255, 0.35),
+    0 16px 40px rgba(6, 12, 30, 0.55);
 }
 
+.affiliate-subcard::before,
 .affiliate-subcard::after {
   content: "";
   position: absolute;
-  inset: -6px;
+  inset: -10px;
   border-radius: inherit;
   pointer-events: none;
-  opacity: var(--affiliate-inner-glow-opacity);
-  transition: opacity 0.35s ease;
-  padding: 3px;
-  background:
-    radial-gradient(110% 70% at 50% -24%, rgba(255, 255, 255, 0.3) 0%, var(--affiliate-inner-glow-top) 38%, transparent 72%),
-    radial-gradient(110% 70% at 50% 124%, rgba(255, 255, 255, 0.28) 0%, var(--affiliate-inner-glow-bottom) 38%, transparent 72%),
-    radial-gradient(70% 110% at -24% 50%, rgba(255, 255, 255, 0.28) 0%, var(--affiliate-inner-glow-left) 38%, transparent 72%),
-    radial-gradient(70% 110% at 124% 50%, rgba(255, 255, 255, 0.28) 0%, var(--affiliate-inner-glow-right) 38%, transparent 72%);
   mix-blend-mode: screen;
-  filter: blur(16px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
   -webkit-mask:
     linear-gradient(#000 0 0) padding-box,
     linear-gradient(#000 0 0);
@@ -385,35 +380,53 @@
   mask-composite: exclude;
 }
 
-.group:hover .affiliate-subcard::before {
-  opacity: var(--affiliate-inner-border-hover-opacity);
+.affiliate-subcard::before {
+  padding: 5px;
+  background:
+    radial-gradient(280px circle at 20% 18%, rgba(255, 0, 183, 0.34), transparent 68%),
+    radial-gradient(300px circle at 80% 84%, rgba(32, 140, 255, 0.28), transparent 70%);
+  opacity: 0.7;
+  filter: blur(16px);
 }
 
-.group:hover .affiliate-subcard::after {
+.affiliate-subcard::after {
+  inset: -4px;
+  padding: 3px;
+  background:
+    radial-gradient(38% 60% at 50% -10%, rgba(255, 0, 183, 0.32), transparent 60%),
+    radial-gradient(38% 60% at 50% 110%, rgba(32, 140, 255, 0.28), transparent 60%),
+    radial-gradient(60% 38% at -10% 50%, rgba(255, 0, 183, 0.26), transparent 60%),
+    radial-gradient(60% 38% at 110% 50%, rgba(32, 140, 255, 0.24), transparent 60%);
+  opacity: 0;
+  filter: blur(10px);
+  transition: opacity 0.28s ease, transform 0.42s ease;
+}
+
+.group:hover .affiliate-subcard::before {
   opacity: var(--affiliate-inner-glow-hover-opacity);
 }
 
+.group:hover .affiliate-subcard::after {
+  opacity: 0.82;
+  transform: scale(1.016);
+}
+
 .affiliate-subcard--hero {
-  --affiliate-inner-glow-size: 180px;
-  --affiliate-inner-glow-top: rgba(255, 0, 183, 0.46);
-  --affiliate-inner-glow-bottom: rgba(55, 255, 139, 0.34);
-  --affiliate-inner-glow-left: rgba(255, 0, 183, 0.4);
-  --affiliate-inner-glow-right: rgba(55, 255, 139, 0.28);
-  --affiliate-inner-glow-opacity: 0.45;
-  --affiliate-inner-glow-hover-opacity: 0.85;
-  --affiliate-inner-border-end: rgba(55, 255, 139, 0.32);
-  --affiliate-inner-border-hover-opacity: 0.48;
+  --affiliate-inner-glow-top: rgba(255, 0, 183, 0);
+  --affiliate-inner-glow-bottom: rgba(55, 255, 139, 0);
+  --affiliate-inner-glow-left: rgba(255, 0, 183, 0);
+  --affiliate-inner-glow-right: rgba(55, 255, 139, 0);
+  --affiliate-inner-glow-core: rgba(255, 255, 255, 0);
+  --affiliate-inner-glow-opacity: 0;
 }
 
 .affiliate-subcard--default {
-  --affiliate-inner-glow-size: 150px;
-  --affiliate-inner-glow-top: rgba(255, 0, 183, 0.38);
-  --affiliate-inner-glow-bottom: rgba(32, 140, 255, 0.26);
-  --affiliate-inner-glow-left: rgba(255, 0, 183, 0.32);
-  --affiliate-inner-glow-right: rgba(32, 140, 255, 0.22);
-  --affiliate-inner-glow-opacity: 0.3;
-  --affiliate-inner-glow-hover-opacity: 0.68;
-  --affiliate-inner-border-hover-opacity: 0.38;
+  --affiliate-inner-glow-top: rgba(255, 0, 183, 0.48);
+  --affiliate-inner-glow-bottom: rgba(32, 140, 255, 0.32);
+  --affiliate-inner-glow-left: rgba(255, 0, 183, 0.4);
+  --affiliate-inner-glow-right: rgba(32, 140, 255, 0.26);
+  --affiliate-inner-glow-core: rgba(255, 255, 255, 0.24);
+  --affiliate-inner-glow-opacity: 0.28;
 }
 
 .edge-glow-card--default {
@@ -428,12 +441,12 @@
 
 .affiliate-metric-row {
   background: rgba(0, 0, 0, 0.82);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.04);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
 }
 
 .affiliate-metric-icon {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .affiliate-card > *,
@@ -444,11 +457,11 @@
 
 .affiliate-graph {
   position: relative;
-  background: radial-gradient(circle at 20% 0%, rgba(255, 0, 183, 0.18), transparent 55%),
+  background: radial-gradient(circle at 20% 0%, rgba(255, 0, 183, 0.12), transparent 55%),
     radial-gradient(circle at 85% 120%, rgba(55, 255, 139, 0.2), transparent 65%),
     rgba(0, 0, 0, 0.85);
   border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.04);
   overflow: hidden;
 }
 
@@ -460,7 +473,7 @@
     linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
     linear-gradient(to top, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 28px 28px;
-  opacity: 0.55;
+  opacity: 0.35;
   pointer-events: none;
 }
 
@@ -513,7 +526,7 @@
   pointer-events: none;
   border-radius: 999px;
   filter: blur(120px);
-  opacity: 0.65;
+  opacity: 0.25;
   mix-blend-mode: screen;
   z-index: 0;
 }
@@ -536,8 +549,8 @@
 
 .glass-card-glow {
   position: relative;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(9px);
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -625,7 +638,7 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s, visibility 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
   z-index: 50; /* Increased z-index to appear above all elements */
 }
@@ -703,7 +716,7 @@
   border-radius: inherit;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.35s ease;
+  transition: opacity 0.6s ease;
 }
 
 .edge-glow-static::before {
@@ -773,10 +786,40 @@
 .edge-glow-card--default.edge-glow-static-spotlight::after,
 .edge-glow-card--hero.edge-glow-static-spotlight::after {
   opacity: 0;
-  transition: opacity 0.35s ease;
+  transition: opacity 0.6s ease;
 }
 
 .group:hover .edge-glow-card--default.edge-glow-static-spotlight::after,
 .group:hover .edge-glow-card--hero.edge-glow-static-spotlight::after {
   opacity: 1;
+}
+
+.glass-card-spot {
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.72);
+  border-radius: inherit;
+}
+
+.glass-card-spot::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(320px circle at 18% 12%, rgba(255, 0, 183, 0.45), transparent 68%),
+    radial-gradient(340px circle at 82% 88%, rgba(32, 140, 255, 0.4), transparent 70%);
+  mix-blend-mode: screen;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.glass-card-spot::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: inherit;
+  background: linear-gradient(145deg, rgba(255, 0, 183, 0.08), rgba(32, 140, 255, 0.06));
+  opacity: 0.25;
+  pointer-events: none;
 }
