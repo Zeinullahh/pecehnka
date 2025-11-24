@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '@/components/Header.jsx';
 import Hero from '@/components/Hero.jsx';
 import Pricing from '@/components/Pricing.jsx';
@@ -11,10 +11,19 @@ import { CybersecurityLamp } from '@/components/CybersecurityLamp.jsx';
 import Spotlights from '@/components/Spotlights.jsx';
 import BackToTopButton from '@/components/BackToTopButton';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { solutionContent } from '@/lib/solutionContent';
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { t } = useLanguage();
+
+  useEffect(() => {
+    // Preload solution section imagery so assets are cached before scrolling
+    solutionContent.forEach(({ imagePath }) => {
+      const img = new window.Image();
+      img.src = imagePath;
+    });
+  }, []);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);

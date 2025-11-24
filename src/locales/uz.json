@@ -71,7 +71,7 @@
         "description": "Tranzaksiya tugaganidan keyin bir daqiqa ichida mukofotlar hamkor balansiga yoziladi—qo‘lda tasdiqlash navbati yo‘q."
       },
       "withdrawal": {
-        "title": "To‘lovlar 2 ish kunida",
+        "title": "Withdrawals processed in 2 business days",
         "description": "To‘lovni yechib olish so‘rovlari avtomatik ko‘rib chiqiladi va ikki ish kuni ichida bank hisobingizga yetib boradi."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Web xavfsizligi va trafik boshqaruvi",
-      "emailSecurity": "Email xavfsizligi",
-      "vulnerabilityFinder": "Zaifliklarni aniqlash"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "Faol ishlab chiqilmoqda",
-    "body": "Tizimni 10 oktyabr kuni ishga tushirish rejalashtirilgan"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "Kiber hujumlarning haqiqatlari"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Xavfsiz webmail mijoz",
       "description": "Administrator qo‘shgan hisoblar uchun spoofing, spam, fishing va malware-ni aniqlaydigan eng xavfsiz webmail mijoz"
-    },
-    "aiVulnerability": {
-      "title": "AI asosidagi zaiflik testeri: 1 daqiqada sozlanadi",
-      "description": "Odamlarga nisbatan 10 000 marta tezroq. Server sozlamalari, kod, DNS va email tarmog‘idagi zaifliklarni aniqlaydi."
-    },
-    "intelligenceInsights": {
-      "title": "Razvedkaga asoslangan ma’lumotlar",
-      "description": "Tizim subdomenlarni, ochiq portlarni va ularda ishlayotgan xizmatlarni topishi mumkin"
     }
   },
   "footer": {

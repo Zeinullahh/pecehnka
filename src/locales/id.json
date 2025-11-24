@@ -71,7 +71,7 @@
         "description": "Reward masuk ke saldo mitra Anda dalam satu menit setelah transaksi selesai—tanpa antrean persetujuan manual."
       },
       "withdrawal": {
-        "title": "Penarikan selesai dalam 2 hari kerja",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Permintaan penarikan ditinjau otomatis dan tiba di rekening bank Anda dalam dua hari kerja."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Keamanan web & manajemen trafik",
-      "emailSecurity": "Keamanan email",
-      "vulnerabilityFinder": "Pencari kerentanan"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "Sedang dalam pengembangan",
-    "body": "Peluncuran sistem dijadwalkan pada 10 Oktober"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "Realitas serangan siber"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Klien webmail aman",
       "description": "Untuk akun yang ditambahkan admin tersedia klien web sangat aman yang mendeteksi spoofing, spam, phishing, dan malware."
-    },
-    "aiVulnerability": {
-      "title": "Penguji kerentanan AI: siap dalam 1 menit",
-      "description": "10.000 kali lebih cepat daripada manusia. Mendeteksi kerentanan pada konfigurasi server, kode, DNS, dan jaringan email."
-    },
-    "intelligenceInsights": {
-      "title": "Wawasan berbasis intelijen",
-      "description": "Sistem dapat menemukan subdomain, port terbuka, dan layanan yang berjalan"
     }
   },
   "footer": {

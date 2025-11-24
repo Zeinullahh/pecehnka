@@ -71,7 +71,7 @@
         "description": "Belønninger bogføres på din partnerkonto inden for ét minut efter, at transaktionen er afsluttet – ingen manuel godkendelse nødvendig."
       },
       "withdrawal": {
-        "title": "Udbetalinger på 2 arbejdsdage",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Indsendte udbetalingsanmodninger valideres automatisk og når din bankkonto inden for to arbejdsdage."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Websikkerhed og trafikstyring",
-      "emailSecurity": "E-mail-sikkerhed",
-      "vulnerabilityFinder": "Sårbarhedssøger"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "Under aktiv udvikling",
-    "body": "Systemet forventes lanceret 10. oktober"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "Virkeligheden bag cyberangreb"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Sikker webmail-klient",
       "description": "For konti, der er tilføjet af administratoren, findes en meget sikker webmail-klient, der registrerer og kategoriserer trusler som spoofing, spam, phishing og malware."
-    },
-    "aiVulnerability": {
-      "title": "AI-baseret sårbarhedstester: klar på 1 minut",
-      "description": "10.000 gange hurtigere end mennesker. Finder sårbarheder i serveropsætning, kode, DNS og e-mailnetværk."
-    },
-    "intelligenceInsights": {
-      "title": "Indsigt drevet af intelligens",
-      "description": "Systemet kan finde subdomæner, åbne porte og de tjenester, der kører på dem"
     }
   },
   "footer": {

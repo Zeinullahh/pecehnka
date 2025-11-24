@@ -71,7 +71,7 @@
         "description": "Nagrody trafiają na saldo partnera w ciągu minuty od zakończenia transakcji — bez ręcznej akceptacji."
       },
       "withdrawal": {
-        "title": "Wypłaty w 2 dni robocze",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Zgłoszenia wypłat są automatycznie weryfikowane i trafiają na konto bankowe w maksymalnie dwa dni robocze."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Bezpieczeństwo webowe i zarządzanie ruchem",
-      "emailSecurity": "Bezpieczeństwo e-mail",
-      "vulnerabilityFinder": "Wyszukiwarka podatności"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "Aktywnie rozwijane",
-    "body": "System ma zostać uruchomiony 10 października"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "Rzeczywistość cyberataków"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Bezpieczny klient webmail",
       "description": "Dla kont dodanych przez administratora dostępny jest najbezpieczniejszy klient webmail, wykrywający i kategoryzujący zagrożenia takie jak spoofing, spam, phishing i malware."
-    },
-    "aiVulnerability": {
-      "title": "Tester podatności oparty na AI: gotowy w 1 minutę",
-      "description": "10 000 razy szybszy niż człowiek. Wykrywa podatności w konfiguracji serwera, kodzie, DNS i sieci e-mail."
-    },
-    "intelligenceInsights": {
-      "title": "Wnioski oparte na danych wywiadowczych",
-      "description": "System znajduje subdomeny, otwarte porty oraz uruchomione na nich usługi"
     }
   },
   "footer": {

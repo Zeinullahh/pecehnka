@@ -71,7 +71,7 @@
         "description": "Recompensele apar în soldul de partener în mai puțin de un minut după tranzacție — fără coadă de aprobare manuală."
       },
       "withdrawal": {
-        "title": "Plăți în 2 zile lucrătoare",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Cererea de retragere este verificată automat și ajunge în contul tău bancar în cel mult două zile lucrătoare."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Securitate web & management trafic",
-      "emailSecurity": "Securitate email",
-      "vulnerabilityFinder": "Detector de vulnerabilități"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "În curs de dezvoltare",
-    "body": "Lansarea sistemului este planificată pentru 10 octombrie"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "Realitatea atacurilor cibernetice"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Client webmail securizat",
       "description": "Pentru conturile adăugate de administrator, există un client webmail extrem de sigur care detectează și clasifică amenințări precum spoofing, spam, phishing și malware."
-    },
-    "aiVulnerability": {
-      "title": "Tester de vulnerabilități bazat pe AI: configurare în 1 minut",
-      "description": "De 10.000 de ori mai rapid decât oamenii. Poate detecta vulnerabilități în configurarea serverului, cod, DNS și rețeaua de email."
-    },
-    "intelligenceInsights": {
-      "title": "Informații bazate pe inteligență",
-      "description": "Sistemul poate găsi subdomenii, porturi deschise și serviciile care rulează pe acestea"
     }
   },
   "footer": {

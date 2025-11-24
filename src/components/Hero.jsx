@@ -32,13 +32,6 @@ const Hero = ({ onOpenModal }) => {
         "System can protect against ALL types of email attacks, such as phishing, malware attachment, dangerous links, etc."
       ),
     },
-    "vulnerability-finder": {
-      title: t("hero.tooltips.vulnerability.title", "Vulnerability Finder"),
-      content: t(
-        "hero.tooltips.vulnerability.content",
-        "System can find the vulnerabilities within the code of the application and by dynamically interacting with your website/API, including the way of finding vulnerabilities through the intelligence system"
-      ),
-    },
   };
 
   const adjustPlaygroundHeadingSize = useCallback(() => {
@@ -127,10 +120,6 @@ const Hero = ({ onOpenModal }) => {
             {
               key: "email-attack-protection",
               label: t("hero.bullets.email", "Email attacks protection"),
-            },
-            {
-              key: "vulnerability-finder",
-              label: t("hero.bullets.vulnerability", "Vulnerability-finder"),
             },
           ].map((item) => (
             <div key={item.key} className="flex items-start sm:items-center gap-2 text-sm sm:text-base">

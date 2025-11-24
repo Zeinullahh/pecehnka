@@ -71,7 +71,7 @@
         "description": "取引完了から1分以内にリワードがパートナー残高へ反映され、手動承認は不要です。"
       },
       "withdrawal": {
-        "title": "出金は営業日2日で完了",
+        "title": "Withdrawals processed in 2 business days",
         "description": "出金リクエストは自動で審査され、営業日2日以内に銀行口座へ入金されます。"
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Webセキュリティとトラフィック管理",
-      "emailSecurity": "メールセキュリティ",
-      "vulnerabilityFinder": "脆弱性ファインダー"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "開発中",
-    "body": "システムは10月10日のリリースを予定しています"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "サイバー攻撃の現実"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "安全なWebメールクライアント",
       "description": "管理者が追加したアカウント向けの高セキュリティWebメールで、スプーフィングやスパム、フィッシング、マルウェアを検知します。"
-    },
-    "aiVulnerability": {
-      "title": "AI脆弱性テスター：1分で稼働",
-      "description": "人間の1万倍の速度でサーバー構成、コード、DNS、メールネットワークの脆弱性を検出します。"
-    },
-    "intelligenceInsights": {
-      "title": "インテリジェンスから得られる洞察",
-      "description": "サブドメインや開放ポート、そのポートで稼働するサービスを特定"
     }
   },
   "footer": {

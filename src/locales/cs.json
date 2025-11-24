@@ -71,7 +71,7 @@
         "description": "Odměny se připisují na partnerský zůstatek do jedné minuty po dokončení transakce – bez ručního schvalování."
       },
       "withdrawal": {
-        "title": "Výplaty do 2 pracovních dnů",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Žádosti o výplatu se zpracují automaticky a prostředky dorazí na váš účet do dvou pracovních dnů."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Webová bezpečnost a řízení provozu",
-      "emailSecurity": "E-mailová bezpečnost",
-      "vulnerabilityFinder": "Vyhledávač zranitelností"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "Aktivní vývoj",
-    "body": "Systém má být spuštěn 10. října"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "Realita kybernetických útoků"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Bezpečný webmail klient",
       "description": "Pro účty přidané administrátorem je dostupný vysoce bezpečný webmail klient, který detekuje a kategorizuje hrozby jako spoofing, spam, phishing a malware."
-    },
-    "aiVulnerability": {
-      "title": "AI tester zranitelností: připraven za 1 minutu",
-      "description": "10 000krát rychlejší než člověk. Dokáže odhalit zranitelnosti v serverové konfiguraci, kódu, DNS i v e-mailové síti."
-    },
-    "intelligenceInsights": {
-      "title": "Zpravodajské přehledy",
-      "description": "Systém najde subdomény, otevřené porty a služby, které na nich běží"
     }
   },
   "footer": {

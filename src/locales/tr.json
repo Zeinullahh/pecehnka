@@ -71,7 +71,7 @@
         "description": "Ödüller işlem tamamlandıktan sonra bir dakika içinde ortak bakiyenize yansır—manuel onay kuyruğu yok."
       },
       "withdrawal": {
-        "title": "Ödemeler 2 iş gününde tamamlanır",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Çekim talepleri otomatik olarak incelenir ve iki iş günü içinde banka hesabınıza ulaşır."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Web güvenliği ve trafik yönetimi",
-      "emailSecurity": "E-posta güvenliği",
-      "vulnerabilityFinder": "Zafiyet bulucu"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "Aktif geliştirme aşamasında",
-    "body": "Sistemin 10 Ekim'de kullanıma sunulması planlanıyor"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "Siber saldırıların gerçekliği"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Güvenli web posta istemcisi",
       "description": "Yönetici tarafından eklenen hesaplar için, spoofing, spam, phishing ve malware'i tespit eden son derece güvenli bir web istemcisi bulunur."
-    },
-    "aiVulnerability": {
-      "title": "AI tabanlı zafiyet test cihazı: 1 dakikada devrede",
-      "description": "İnsanlardan 10.000 kat daha hızlıdır. Sunucu kurulumu, kod, DNS ve e-posta ağındaki zafiyetleri tespit eder."
-    },
-    "intelligenceInsights": {
-      "title": "İstihbarat kaynaklı içgörüler",
-      "description": "Sistem alt alan adlarını, açık portları ve üzerinde çalışan servisleri belirleyebilir"
     }
   },
   "footer": {

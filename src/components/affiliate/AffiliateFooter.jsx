@@ -39,16 +39,13 @@ const AffiliateFooter = () => {
           <p className="text-gray-500 text-sm mb-4 sm:mb-0">{copyright}</p>
           <div className="flex space-x-4 items-center text-gray-400">
             <a
-              href="/policies/terms_of_use"
+              href="/affiliate/terms-of-service-affiliate"
               className="hover:text-white transition-colors duration-300"
             >
-              {t("footer.links.termsUse", "Terms of Use")}
-            </a>
-            <a
-              href="/policies/terms_of_service"
-              className="hover:text-white transition-colors duration-300"
-            >
-              {t("footer.links.termsService", "Terms of Service")}
+              {t(
+                "footer.links.affiliateTerms",
+                "Affiliate Terms of Service"
+              )}
             </a>
             <a
               href="/policies/privacy"

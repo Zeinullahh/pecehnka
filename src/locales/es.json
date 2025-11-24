@@ -71,7 +71,7 @@
         "description": "Las recompensas se registran en tu saldo de socio en menos de un minuto tras la transacción, sin cola de aprobación manual."
       },
       "withdrawal": {
-        "title": "Retiros en 2 días hábiles",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Las solicitudes de retiro se revisan automáticamente y llegan a tu cuenta bancaria en un máximo de dos días hábiles."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Seguridad web y gestión del tráfico",
-      "emailSecurity": "Seguridad del correo electrónico",
-      "vulnerabilityFinder": "Buscador de vulnerabilidades"
+      "emailSecurity": "Seguridad del correo electrónico y visualización"
     }
   },
   "cookie": {
@@ -191,7 +190,7 @@
         }
       },
       "emailProtector": {
-        "title": "Seguridad del correo electrónico",
+        "title": "Seguridad del correo electrónico y visualización",
         "price": "$10/mes/cuenta",
         "description": "Hasta 10 correos al día\nCorreos adicionales: $0.035 cada uno",
         "button": "Proteger correo",
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "En desarrollo activo",
-    "body": "El lanzamiento del sistema está previsto para el 10 de octubre"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "La realidad de los ciberataques"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Cliente web seguro",
       "description": "Para las cuentas añadidas por el administrador se ofrece el cliente web más seguro, que detecta y clasifica amenazas como suplantación, spam, phishing y malware"
-    },
-    "aiVulnerability": {
-      "title": "Probador de vulnerabilidades con IA: listo en 1 minuto",
-      "description": "10 000 veces más rápido que un humano. Detecta vulnerabilidades en la configuración del servidor, el código, DNS y red de correo"
-    },
-    "intelligenceInsights": {
-      "title": "Información basada en inteligencia",
-      "description": "El sistema identifica subdominios, puertos abiertos y los servicios que se ejecutan en cada puerto"
     }
   },
   "footer": {

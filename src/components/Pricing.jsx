@@ -36,19 +36,6 @@ const PLAN_CONFIG = [
       { id: "fakeSender" },
     ],
   },
-  {
-    id: "securityTester",
-    priceKey: "pricing.plans.securityTester.price",
-    descriptionKey: "pricing.plans.securityTester.description",
-    buttonKey: "pricing.plans.securityTester.button",
-    descriptionTooltip: "full-vulnerability-check",
-    features: [
-      { id: "dynamic", tooltip: "dynamic-vulnerability" },
-      { id: "codeAnalyzer", tooltip: "code-analyzer" },
-      { id: "reports" },
-      { id: "intelligence", tooltip: "intelligence-report" },
-    ],
-  },
 ];
 
 const TOOLTIP_KEYS = [
@@ -56,10 +43,6 @@ const TOOLTIP_KEYS = [
   "country-blacklisting",
   "port-management",
   "cmc-email-visualizer",
-  "dynamic-vulnerability",
-  "code-analyzer",
-  "intelligence-report",
-  "full-vulnerability-check",
 ];
 
 const Pricing = ({ onOpenModal }) => {
@@ -94,7 +77,7 @@ const Pricing = ({ onOpenModal }) => {
       </h2>
 
       <div className="container mx-auto max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 relative z-10 justify-items-center">
           {PLAN_CONFIG.map((plan, index) => {
             const title = t(`pricing.plans.${plan.id}.title`, plan.id);
             const price = t(plan.priceKey, "");
@@ -105,8 +88,15 @@ const Pricing = ({ onOpenModal }) => {
               <EdgeGlowCard
                 key={plan.id}
                 mode="static"
+                animateOnView={false}
                 outerClassName={`rounded-3xl p-[2px] transition-all duration-300 no-hover-glow ${activeCardIndex === index ? "z-20" : ""}`}
                 innerClassName="glass-card pricing-card p-6 flex flex-col h-full relative rounded-3xl"
+                innerStyle={{
+                  backdropFilter: "blur(8px)",
+                  WebkitBackdropFilter: "blur(8px)",
+                  backgroundColor: "rgba(0, 0, 0, 0.55)",
+                  border: "1px solid rgba(255, 255, 255, 0.12)",
+                }}
                 glowColor="#FF00B7"
                 secondaryGlowColor="rgba(0,191,255,0.7)"
                 topColor="#FF00B7"
@@ -226,7 +216,11 @@ const Pricing = ({ onOpenModal }) => {
                   </ul>
                 </div>
 
-                <GlowButton className="mt-auto" onClick={onOpenModal}>
+                <GlowButton
+                  className="mt-auto self-center w-[80%] max-w-[320px]"
+                  innerClassName="w-full justify-center px-10 py-4"
+                  onClick={onOpenModal}
+                >
                   {buttonText}
                 </GlowButton>
               </EdgeGlowCard>

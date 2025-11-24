@@ -71,7 +71,7 @@
         "description": "Le ricompense vengono registrate sul saldo partner entro un minuto dal completamento della transazione, senza approvazioni manuali."
       },
       "withdrawal": {
-        "title": "Prelievi completati in 2 giorni lavorativi",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Le richieste di prelievo vengono verificate automaticamente e accreditate sul tuo conto bancario entro due giorni lavorativi."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Sicurezza web e gestione del traffico",
-      "emailSecurity": "Sicurezza email",
-      "vulnerabilityFinder": "Ricerca vulnerabilità"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "In fase di sviluppo",
-    "body": "Il sistema è previsto al lancio il 10 ottobre"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "La realtà degli attacchi informatici"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Client webmail sicuro",
       "description": "Per gli account aggiunti dall'amministratore, è disponibile un client webmail altamente sicuro che individua spoofing, spam, phishing e malware."
-    },
-    "aiVulnerability": {
-      "title": "Test di vulnerabilità AI: pronto in 1 minuto",
-      "description": "Diecimila volte più veloce dell'uomo, rileva vulnerabilità nella configurazione server, nel codice, nel DNS e nella rete email."
-    },
-    "intelligenceInsights": {
-      "title": "Insight basati sull'intelligence",
-      "description": "Il sistema identifica sottodomini, porte aperte e servizi attivi"
     }
   },
   "footer": {

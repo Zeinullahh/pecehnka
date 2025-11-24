@@ -71,7 +71,7 @@
         "description": "Les récompenses sont créditées sur votre solde partenaire en moins d'une minute après la transaction, sans file d'attente manuelle."
       },
       "withdrawal": {
-        "title": "Retraits traités en 2 jours ouvrés",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Les demandes de retrait sont vérifiées automatiquement et arrivent sur votre compte bancaire sous deux jours ouvrés."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Sécurité web et gestion du trafic",
-      "emailSecurity": "Sécurité des e-mails",
-      "vulnerabilityFinder": "Détection des vulnérabilités"
+      "emailSecurity": "Sécurité des e-mails et visualisation"
     }
   },
   "cookie": {
@@ -191,7 +190,7 @@
         }
       },
       "emailProtector": {
-        "title": "Sécurité des e-mails",
+        "title": "Sécurité des e-mails et visualisation",
         "price": "$10/mois/compte",
         "description": "Jusqu'à 10 e-mails par jour\nE-mails supplémentaires : 0,035 $ chacun",
         "button": "Sécuriser la messagerie",
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "En cours de développement",
-    "body": "Le lancement du système est prévu pour le 10 octobre"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "La réalité des cyberattaques"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Client webmail sécurisé",
       "description": "Pour les comptes ajoutés par l'admin, un client web hautement sécurisé qui détecte et classe spoofing, spam, phishing et malware."
-    },
-    "aiVulnerability": {
-      "title": "Testeur de vulnérabilités IA : opérationnel en 1 minute",
-      "description": "10 000 fois plus rapide qu'un humain. Détecte les failles dans la configuration serveur, le code, le DNS et le réseau e-mail."
-    },
-    "intelligenceInsights": {
-      "title": "Informations issues du renseignement",
-      "description": "Le système découvre sous-domaines, ports ouverts et services associés"
     }
   },
   "footer": {

@@ -187,6 +187,7 @@
 .glass-card {
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.06);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -209,7 +210,46 @@
 
 .pricing-card {
   background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .pricing-card {
+    position: relative;
+    overflow: hidden;
+    background: rgba(2, 4, 12, 0.82);
+    isolation: isolate;
+  }
+
+  .pricing-card::before {
+    content: "";
+    position: absolute;
+    inset: -35%;
+    background:
+      radial-gradient(120% 110% at 20% 10%, rgba(255, 0, 183, 0.32), transparent 72%),
+      radial-gradient(110% 120% at 80% 90%, rgba(32, 140, 255, 0.26), transparent 70%),
+      linear-gradient(160deg, rgba(255, 255, 255, 0.04), transparent 70%);
+    filter: blur(32px);
+    opacity: 0.9;
+    z-index: -2;
+    pointer-events: none;
+  }
+
+  .pricing-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(170deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.6));
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .pricing-card > * {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 
@@ -822,4 +862,21 @@
   background: linear-gradient(145deg, rgba(255, 0, 183, 0.08), rgba(32, 140, 255, 0.06));
   opacity: 0.25;
   pointer-events: none;
+}
+
+body.not-found-page {
+  background-color: #000 !important;
+}
+
+body.not-found-page .parallax-globe,
+body.not-found-page .layout-background {
+  display: none !important;
+}
+
+body.not-found-page .default-content-wrapper {
+  padding-top: 0 !important;
+}
+
+body.not-found-page footer {
+  display: none !important;
 }

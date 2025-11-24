@@ -71,7 +71,7 @@
         "description": "Phần thưởng xuất hiện trên số dư đối tác trong vòng một phút sau giao dịch—không cần duyệt thủ công."
       },
       "withdrawal": {
-        "title": "Rút tiền trong 2 ngày làm việc",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Yêu cầu rút tiền được kiểm tra tự động và chuyển vào tài khoản ngân hàng của bạn trong hai ngày làm việc."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "An ninh web & quản lý lưu lượng",
-      "emailSecurity": "An ninh email",
-      "vulnerabilityFinder": "Trình tìm lỗ hổng"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "Đang phát triển",
-    "body": "Hệ thống dự kiến ra mắt vào ngày 10 tháng 10"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "Thực trạng tấn công mạng"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Khách webmail bảo mật cao",
       "description": "Các tài khoản do quản trị viên thêm có thể dùng webmail siêu an toàn phát hiện giả mạo, spam, phishing và malware."
-    },
-    "aiVulnerability": {
-      "title": "Kiểm tra lỗ hổng AI: sẵn sàng trong 1 phút",
-      "description": "Nhanh hơn con người 10.000 lần, phát hiện lỗ hổng trong cấu hình máy chủ, mã nguồn, DNS và mạng email."
-    },
-    "intelligenceInsights": {
-      "title": "Insight dựa trên tình báo",
-      "description": "Hệ thống tìm ra subdomain, port mở và dịch vụ đang chạy"
     }
   },
   "footer": {

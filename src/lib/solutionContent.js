@@ -23,12 +23,4 @@ export const solutionContent = [
     id: "secureWebmail",
     imagePath: "/solution/page6.png",
   },
-  {
-    id: "aiVulnerability",
-    imagePath: "/solution/page7.png",
-  },
-  {
-    id: "intelligenceInsights",
-    imagePath: "/solution/page8.png",
-  },
 ];

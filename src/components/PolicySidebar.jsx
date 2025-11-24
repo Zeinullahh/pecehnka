@@ -100,7 +100,7 @@ const PolicySidebar = ({ sections }) => {
 
   return (
     <motion.aside 
-      className="sticky top-40 h-[80vh] w-full md:w-80 md:mr-8 mb-8"
+      className="sticky top-40 h-[70vh] w-full md:w-80 md:mr-8 mb-8"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}

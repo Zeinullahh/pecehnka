@@ -4,11 +4,13 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import clsx from "clsx";
 import GlowButton from "./GlowButton";
 import LanguageSelector from "./LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const SCROLL_THRESHOLD = 10;
+const DESKTOP_WIDTH = 1130;
 
 const Header = ({ onOpenModal }) => {
   const [isCondensed, setIsCondensed] = useState(false);
@@ -18,7 +20,7 @@ const Header = ({ onOpenModal }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024);
+      setIsDesktop(window.innerWidth >= DESKTOP_WIDTH);
     };
 
     const handleScroll = () => {
@@ -38,13 +40,9 @@ const Header = ({ onOpenModal }) => {
 
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
 
-  const widthTarget = isDesktop
-    ? isCondensed
-      ? "70%"
-      : "100%"
-    : isCondensed
-    ? "90%"
-    : "100%";
+  const widthTarget = "100%";
+
+  const condensedShift = isCondensed ? (isDesktop ? 24 : 16) : 0;
 
   const navItems = [
     { key: "mail", label: t("header.nav.mail", "Mail"), opensModal: true },
@@ -65,7 +63,7 @@ const Header = ({ onOpenModal }) => {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            className="fixed inset-0 z-40 bg-black/70 backdrop-blur-lg lg:hidden"
+            className="fixed inset-0 z-40 bg-black/70 backdrop-blur-lg"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -125,7 +123,9 @@ const Header = ({ onOpenModal }) => {
 
       <motion.header
         className="fixed left-0 top-2 z-50 w-full px-3"
-        initial={false}
+        initial={{ opacity: 0, y: -16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.35, ease: "easeOut" }}
       >
         <motion.div
           className="mx-auto w-full max-w-7xl rounded-full border border-transparent transition-colors"
@@ -137,19 +137,22 @@ const Header = ({ onOpenModal }) => {
             backdropFilter: isCondensed ? "blur(16px)" : "blur(0px)",
           }}
           transition={{
-            width: { duration: 0.4, ease: [0.4, 0, 0.2, 1] },
-            borderRadius: { duration: 0.4, ease: [0.4, 0, 0.2, 1] },
-            backgroundColor: { duration: 0.5 },
-            borderColor: { duration: 0.5 },
-            backdropFilter: { duration: 0.5 },
+            width: { duration: 0.3, ease: "easeOut" },
+            borderRadius: { duration: 0.3, ease: "easeOut" },
+            backgroundColor: { duration: 0.3, ease: "easeOut" },
+            borderColor: { duration: 0.3, ease: "easeOut" },
+            backdropFilter: { duration: 0.3, ease: "easeOut" },
           }}
-          style={{ minWidth: isDesktop ? undefined : "100%" }}
+          style={{ minWidth: isDesktop || isCondensed ? undefined : "100%" }}
         >
-          <div className="flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+          <motion.div
+            className="flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8"
+            transition={{ duration: 0.3, ease: "easeOut" }}
+          >
             <motion.div
               className="flex items-center"
-              animate={{ x: isDesktop && isCondensed ? 40 : 0 }}
-              transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+              animate={{ x: condensedShift }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
             >
               <Link href="/" className="flex items-center">
                 <Image
@@ -162,7 +165,12 @@ const Header = ({ onOpenModal }) => {
               </Link>
             </motion.div>
 
-            <nav className="relative hidden items-center space-x-8 lg:flex">
+            <nav
+              className={clsx(
+                "relative items-center space-x-8",
+                isDesktop ? "flex" : "hidden"
+              )}
+            >
               {navItems.map((item) =>
                 item.href ? (
                   <Link
@@ -185,38 +193,51 @@ const Header = ({ onOpenModal }) => {
               )}
             </nav>
 
-            <motion.button
-              className="p-2 text-white lg:hidden"
-              onClick={toggleMobileMenu}
-              animate={{ x: isDesktop && isCondensed ? -40 : 0 }}
-              transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
-            >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+            <div className="flex items-center gap-3">
+              <motion.div
+                className="flex items-center gap-3"
+                animate={{ x: -condensedShift }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </motion.button>
+                <div
+                  className="flex-shrink-0"
+                  style={
+                    !isDesktop
+                      ? { transform: "scale(0.9)", transformOrigin: "right center" }
+                      : undefined
+                  }
+                >
+                  <LanguageSelector align={isDesktop ? "right" : "left"} />
+                </div>
+                {isDesktop && (
+                  <GlowButton onClick={onOpenModal}>
+                    {t("header.login", "Login")}
+                  </GlowButton>
+                )}
+              </motion.div>
 
-            <motion.div
-              className="hidden items-center gap-3 lg:flex"
-              animate={{ x: isDesktop && isCondensed ? -40 : 0 }}
-              transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
-            >
-              <LanguageSelector />
-              <GlowButton onClick={onOpenModal}>
-                {t("header.login", "Login")}
-              </GlowButton>
-            </motion.div>
-          </div>
+              <motion.button
+                className={clsx("p-2 text-white", isDesktop ? "hidden" : "inline-flex")}
+                onClick={toggleMobileMenu}
+                animate={{ x: -condensedShift }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+              >
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </motion.button>
+            </div>
+          </motion.div>
         </motion.div>
       </motion.header>
     </>

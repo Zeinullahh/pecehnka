@@ -71,7 +71,7 @@
         "description": "Əməliyyat təsdiqləndikdən sonra mükafatlar bir dəqiqə ərzində tərəfdaş balansınıza yazılır — əl təsdiqi tələb olunmur."
       },
       "withdrawal": {
-        "title": "Nağdlaşdırmalar 2 iş günündə tamamlanır",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Göndərilən çıxarış sorğuları avtomatik yoxlanılır və iki iş günü ərzində bank hesabınıza çatır."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Veb təhlükəsizliyi və trafik idarəetməsi",
-      "emailSecurity": "E-poçt təhlükəsizliyi",
-      "vulnerabilityFinder": "Zəiflik axtarışı"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "Aktiv inkişaf mərhələsindədir",
-    "body": "Sistemin 10 oktyabrda istifadəyə verilməsi planlaşdırılır"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "Kiberhücumların reallığı"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Təhlükəsiz webmail müştərisi",
       "description": "Admin tərəfindən əlavə olunan hesablar üçün spoofing, spam, phishing və malware təhlükələrini aşkar edən ən təhlükəsiz webmail müştərisi"
-    },
-    "aiVulnerability": {
-      "title": "AI əsaslı zəiflik testeri: 1 dəqiqədə hazır",
-      "description": "İnsanlardan 10 000 dəfə sürətli. Server tənzimləməsi, kod, DNS və e-poçt şəbəkəsindəki zəiflikləri aşkarlayır."
-    },
-    "intelligenceInsights": {
-      "title": "Kəşfiyyata əsaslanan analitika",
-      "description": "Sistem subdomenləri, açıq portları və orada çalışan xidmətləri aşkar edə bilir"
     }
   },
   "footer": {

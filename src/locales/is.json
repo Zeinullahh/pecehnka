@@ -71,7 +71,7 @@
         "description": "Umbanir bætast á samstarfsreikninginn innan einnar mínútu eftir að færslan klárast — engin handvirk samþykkt."
       },
       "withdrawal": {
-        "title": "Úttektir ljúka á 2 virkum dögum",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Úttektarbeiðnir eru yfirfarnar sjálfkrafa og berast inn á bankareikninginn innan tveggja virkra daga."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Web Security & Traffic Management",
-      "emailSecurity": "Email Security",
-      "vulnerabilityFinder": "Vulnerability Finder"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Secure Webmail Client",
       "description": "For email accounts added by admin, there is the most secure webmail client. Detects and categorizes threats like spoofing, spam, phishing, and malware."
-    },
-    "aiVulnerability": {
-      "title": "AI-based vulnerability tester: Can be set in 1 minute",
-      "description": "10,000 times faster than humans. Can detect vulnerabilities within the server setup, code, DNS, and email network."
-    },
-    "intelligenceInsights": {
-      "title": "Intelligence-driven insights",
-      "description": "The system can find subdomains, and open ports, and which services are running on those ports"
     }
   },
   "footer": {

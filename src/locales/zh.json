@@ -71,7 +71,7 @@
         "description": "交易完成后一分种内奖励会计入你的合作余额——无需手动审核。"
       },
       "withdrawal": {
-        "title": "提现在 2 个工作日内完成",
+        "title": "Withdrawals processed in 2 business days",
         "description": "提现申请将自动审核，并在两个工作日内到达你的银行账户。"
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "网络安全与流量管控",
-      "emailSecurity": "邮件安全",
-      "vulnerabilityFinder": "漏洞侦测"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "正在积极开发",
-    "body": "系统预计于 10 月 10 日上线"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "网络攻击的真实面貌"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "安全 Web 邮件客户端",
       "description": "为管理员添加的邮箱提供最安全的 Web 客户端，可检测并分类伪造、垃圾、钓鱼与恶意邮件。"
-    },
-    "aiVulnerability": {
-      "title": "AI 漏洞测试：1 分钟部署",
-      "description": "速度比人工快 10,000 倍，可检测服务器配置、代码、DNS 与邮件网络中的漏洞。"
-    },
-    "intelligenceInsights": {
-      "title": "情报驱动洞察",
-      "description": "系统可发现子域名、开放端口及其运行服务"
     }
   },
   "footer": {

@@ -71,7 +71,7 @@
         "description": "Beloningen worden binnen een minuut na afronding van de transactie toegevoegd aan je partnerbalans—zonder handmatige goedkeuring."
       },
       "withdrawal": {
-        "title": "Uitbetalingen binnen 2 werkdagen",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Ingediende uitbetalingsverzoeken worden automatisch gecontroleerd en bereikt je bankrekening binnen twee werkdagen."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Webbeveiliging & verkeersbeheer",
-      "emailSecurity": "E-mailbeveiliging",
-      "vulnerabilityFinder": "Kwetsbaarheidsscanner"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "Actief in ontwikkeling",
-    "body": "Het systeem staat gepland voor lancering op 10 oktober"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "De realiteit van cyberaanvallen"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Beveiligde webmailclient",
       "description": "Voor accounts die door de admin zijn toegevoegd, is er een zeer veilige webmailclient die spoofing, spam, phishing en malware detecteert en classificeert."
-    },
-    "aiVulnerability": {
-      "title": "AI-gebaseerde kwetsbaarheidstester: in 1 minuut ingesteld",
-      "description": "10.000 keer sneller dan mensen. Detecteert kwetsbaarheden in serverconfiguratie, code, DNS en e-mailnetwerk."
-    },
-    "intelligenceInsights": {
-      "title": "Intelligence-gedreven inzichten",
-      "description": "Het systeem vindt subdomeinen, open poorten en de services die daarop draaien"
     }
   },
   "footer": {

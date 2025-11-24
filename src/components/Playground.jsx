@@ -13,14 +13,21 @@ const Playground = React.forwardRef((_, ref) => {
   const [hoveredOption, setHoveredOption] = useState(null);
   const { t } = useLanguage();
 
-  const options = ["globeShield", "emailSecurity", "vulnerabilityFinder"];
+  const options = ["globeShield", "emailSecurity"];
 
   return (
     <div className="relative w-full" ref={ref}>
-      <div className="card-chopped relative z-20 -mt-3 sm:-mt-6 rounded-[28px] border border-white/20 bg-black/50 backdrop-blur-md shadow-[0_18px_55px_rgba(0,0,0,0.4)]">
+      <div
+        className="card-chopped relative z-20 -mt-3 sm:-mt-6 rounded-[28px] border border-white/20"
+        style={{
+          backgroundColor: "rgba(0, 0, 0, 0.7)",
+          backdropFilter: "blur(16px)",
+          WebkitBackdropFilter: "blur(16px)",
+        }}
+      >
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/10 via-white/0 to-black/20" />
         <div className="relative flex flex-col gap-3 px-5 pt-4 pb-9 sm:px-9 sm:pt-6 sm:pb-11">
-          <div className="flex items-end justify-between gap-1.5 pb-1 text-center">
+          <div className="flex items-end justify-center gap-4 pb-1 text-center">
             {options.map((optionKey) => {
               const isActive = selectedOption === optionKey;
               const isHovered = hoveredOption === optionKey;
@@ -52,7 +59,14 @@ const Playground = React.forwardRef((_, ref) => {
         </div>
       </div>
       <div className="pointer-events-none absolute inset-0 z-10 translate-y-5 sm:translate-y-8">
-        <div className="rounded-[28px] border border-white/10 bg-black/60 opacity-55 blur-sm" />
+        <div
+          className="rounded-[28px] border border-white/10"
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.55)",
+            backdropFilter: "blur(16px)",
+            WebkitBackdropFilter: "blur(16px)",
+          }}
+        />
       </div>
     </div>
   );

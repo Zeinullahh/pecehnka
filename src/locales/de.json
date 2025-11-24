@@ -71,7 +71,7 @@
         "description": "Belohnungen erscheinen innerhalb einer Minute nach Abschluss der Transaktion auf Ihrem Partnerkonto – ohne manuelle Freigabe."
       },
       "withdrawal": {
-        "title": "Auszahlungen in 2 Werktagen",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Auszahlungsanfragen werden automatisch geprüft und erreichen Ihr Bankkonto innerhalb von zwei Werktagen."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Websicherheit & Verkehrsmanagement",
-      "emailSecurity": "E-Mail-Sicherheit",
-      "vulnerabilityFinder": "Schwachstellen-Finder"
+      "emailSecurity": "E-Mail-Sicherheit & Visualisierung"
     }
   },
   "cookie": {
@@ -191,7 +190,7 @@
         }
       },
       "emailProtector": {
-        "title": "E-Mail-Sicherheit",
+        "title": "E-Mail-Sicherheit & Visualisierung",
         "price": "$10/Monat/Konto",
         "description": "Bis zu 10 E-Mails pro Tag\nWeitere E-Mails: $0.035 pro Stück",
         "button": "E-Mail schützen",
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "In aktiver Entwicklung",
-    "body": "Der Systemstart ist für den 10. Oktober geplant"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "Realität von Cyberangriffen"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Sicherer Webmail-Client",
       "description": "Für vom Admin hinzugefügte Konten steht der sicherste Webmail-Client bereit, der Spoofing, Spam, Phishing und Malware erkennt und klassifiziert"
-    },
-    "aiVulnerability": {
-      "title": "KI-basierter Schwachstellen-Tester: Einrichtung in 1 Minute",
-      "description": "10.000-mal schneller als Menschen. Erkennt Schwachstellen in Server-Setup, Code, DNS und E-Mail-Netzwerk"
-    },
-    "intelligenceInsights": {
-      "title": "Intelligence-gestützte Erkenntnisse",
-      "description": "Das System findet Subdomains, offene Ports und die darauf laufenden Dienste"
     }
   },
   "footer": {

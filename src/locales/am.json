@@ -71,7 +71,7 @@
         "description": "ብልጫዎች ግብይቱ ከተጠናቀቀ በኋላ በአንድ ደቂቃ ውስጥ በአጋር ሂሳብዎ ይመዘገባሉ—ምንም የእጅ ማፅደቅ አያስፈልግም።"
       },
       "withdrawal": {
-        "title": "የክፍያ ማስወገዶች በ2 የንግድ ቀናት ውስጥ",
+        "title": "Withdrawals processed in 2 business days",
         "description": "የተስማሙ የክፍያ ጥያቄዎች በራስ-ሰር ይተካሉ እና በሁለት የንግድ ቀናት ውስጥ ወደ ባንክ መለያዎ ይደርሳሉ።"
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "የድር ደህንነት እና የትራፊክ አስተዳደር",
-      "emailSecurity": "የኢሜይል ደህንነት",
-      "vulnerabilityFinder": "ድንጋጌ መፈለጊያ"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "በስራ ላይ ያለ",
-    "body": "ይህ ስርዓት በጥቅምት 10 መጀመሪያ ቀን እንዲጀምር ተጠባበቁ"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "የሳይበር ጥቃቶች እውነታ"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "የጥበቃ ድር መልእክት ደንበኛ",
       "description": "ለአስተዳዳሪው የጨመረው መለያ በጣም የተጠበቀ ድር መልእክት ፕሮግራም ይገኛል፣ እናም spoofing፣ spam፣ phishing፣ malware ያሉ አደጋዎችን ይለያል"
-    },
-    "aiVulnerability": {
-      "title": "የAI መሠረት የድንጋጌ መለያየት፡ በ1 ደቂቃ ውስጥ ዝግጁ",
-      "description": "ከሰዎች 10,000 ጊዜ ፈጣን። በሰርቨር ስብስብ፣ ኮድ፣ DNS እና በኢሜይል ኔትወርክ ውስጥ ድንጋጌዎችን ይገናኛል"
-    },
-    "intelligenceInsights": {
-      "title": "የመረጃ ግንዛቤዎች",
-      "description": "ስርዓቱ የሰብ ዶሜይኖችን፣ በተከፈቱ ፖርቶችን እና በላይም እየሰሩ ያሉ አገልግሎቶችን ይፈልጋል"
     }
   },
   "footer": {

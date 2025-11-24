@@ -58,16 +58,16 @@ export default function LayoutWrapper({ children }) {
     <LanguageProvider>
       <LoadingSpinner isLoading={isLoading} />
       {!isPolicyPage && !isAffiliatePage && <ParallaxGlobe />}
-      <div className={!isPolicyPage ? "pt-20" : ""}>
+      <div className={!isPolicyPage ? "default-content-wrapper pt-20" : "default-content-wrapper"}>
         {children}
       </div>
       <div className={isPolicyPage ? "bg-black" : "relative w-full"}>
         {!isPolicyPage && !isAffiliatePage && (
-          <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 -z-10 layout-background">
             <img
               src="/moonrise.webp"
               alt="Moonrise"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-top layout-background-image"
             />
           </div>
         )}

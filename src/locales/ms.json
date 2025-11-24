@@ -71,7 +71,7 @@
         "description": "Ganjaran dimasukkan ke dalam baki rakan kongsi anda dalam masa seminit selepas transaksi selesai—tanpa giliran kelulusan manual."
       },
       "withdrawal": {
-        "title": "Pengeluaran siap dalam 2 hari bekerja",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Permintaan pengeluaran disemak secara automatik dan masuk ke akaun bank anda dalam tempoh dua hari bekerja."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Keselamatan web & pengurusan trafik",
-      "emailSecurity": "Keselamatan emel",
-      "vulnerabilityFinder": "Pengesan kelemahan"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "Sedang dibangunkan aktif",
-    "body": "Sistem dijangka dilancarkan pada 10 Oktober"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "Realiti serangan siber"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Klien webmail selamat",
       "description": "Untuk akaun yang ditambah oleh pentadbir, terdapat klien webmail paling selamat yang mengesan serta mengelaskan ancaman seperti spoofing, spam, phishing dan malware."
-    },
-    "aiVulnerability": {
-      "title": "Penguji kelemahan AI: sedia dalam 1 minit",
-      "description": "10,000 kali lebih pantas daripada manusia. Mengesan kelemahan dalam persediaan pelayan, kod, DNS dan rangkaian emel."
-    },
-    "intelligenceInsights": {
-      "title": "Wawasan berpandukan intelijen",
-      "description": "Sistem boleh menemui subdomain, port terbuka dan perkhidmatan yang sedang berjalan"
     }
   },
   "footer": {

@@ -7,6 +7,7 @@ import Modal from "@/components/Modal";
 import BackToTopButton from "@/components/BackToTopButton";
 import GlowButton from "@/components/GlowButton";
 import EdgeGlowCard from "@/components/EdgeGlowCard";
+import { CybersecurityLamp } from "@/components/CybersecurityLamp.jsx";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const AffiliatePage = () => {
@@ -79,6 +80,7 @@ const AffiliatePage = () => {
             "affiliate.howItWorks.create.description",
             "Generate a unique referral link or promo code inside your Silence AI dashboard."
           ),
+          accent: "#FF00B7",
           icon: (
             <svg
               className="h-12 w-12 text-[#FF00B7]"
@@ -117,6 +119,7 @@ const AffiliatePage = () => {
             "affiliate.howItWorks.share.description",
             "Invite teams through email, LinkedIn, and communities. Track performance in real time."
           ),
+          accent: "#00BFFF",
           icon: (
             <svg
               className="h-12 w-12 text-[#00BFFF]"
@@ -161,6 +164,7 @@ const AffiliatePage = () => {
             "affiliate.howItWorks.earn.description",
             "Receive commissions as soon as your referred customers activate their Silence AI protection."
           ),
+          accent: "#37FF8B",
           icon: (
             <svg
               className="h-12 w-12 text-[#37FF8B]"
@@ -258,7 +262,7 @@ const AffiliatePage = () => {
         },
         {
           key: "withdrawal",
-          title: t("affiliate.commission.withdrawal.title", "Withdrawals clear in 2 business days"),
+          title: t("affiliate.commission.withdrawal.title", "Withdrawals processed in 2 business days"),
           accent: "#37FF8B",
           accentGlow: "rgba(55,255,139,0.28)",
           description: t(
@@ -549,20 +553,20 @@ const AffiliatePage = () => {
             </EdgeGlowCard>
           </section>
 
-          <section className="space-y-8">
-            <div className="space-y-3 text-center">
-              <h2 className="text-3xl font-semibold text-white sm:text-4xl">
+          <section className="relative space-y-8 overflow-visible pb-24">
+            <div className="space-y-3 text-center pt-6 sm:pt-10 -mb-6 sm:-mb-10">
+              <h2 className="text-4xl font-semibold text-white sm:text-5xl md:text-6xl">
                 {t("affiliate.howItWorks.title", "How it works")}
               </h2>
             </div>
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="relative z-30 grid translate-y-10 gap-6 md:translate-y-16 md:grid-cols-3">
               {howItWorksSteps.map((step) => (
                 <EdgeGlowCard
                   key={step.key}
                   mode="static"
                   spotlight
                   {...defaultGlowPalette}
-                  outerClassName="group relative z-10 rounded-[30px] p-[2px] edge-glow-card--default"
+                  outerClassName="group relative z-20 rounded-[30px] p-[2px] edge-glow-card--default"
                   innerClassName="affiliate-card affiliate-card--default rounded-[26px]"
                 >
 
@@ -573,7 +577,12 @@ const AffiliatePage = () => {
                       background: "linear-gradient(150deg, rgba(3,6,14,0.96), rgba(1,2,6,0.98))",
                     }}
                   >
-                    <div className="pointer-events-none absolute inset-0 rounded-[22px] opacity-0 transition-opacity duration-500 group-hover:opacity-100" style={{ background: "radial-gradient(90% 130% at 20% -10%, rgba(255, 0, 119, 0.2) 0%, transparent 70%)" }} />
+                    <div
+                      className="pointer-events-none absolute inset-0 rounded-[22px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                      style={{
+                        background: `radial-gradient(90% 130% at 20% -10%, ${step.accent}3d 0%, transparent 70%)`,
+                      }}
+                    />
                     <div className="relative mx-auto flex h-14 w-14 items-center justify-center rounded-[20px] bg-black/60 ring-2 ring-white/10 shadow-[0_12px_30px_rgba(5,12,32,0.6)]">
                       {step.icon}
                     </div>
@@ -589,12 +598,14 @@ const AffiliatePage = () => {
             </div>
           </section>
 
-          <section className="flex flex-col gap-6">
-            <div className="space-y-3 text-center">
-              <h3 className="text-3xl font-semibold text-white sm:text-4xl">
-                {t("affiliate.commission.heading", "Balance Rewards")}
-              </h3>
-            </div>
+          <CybersecurityLamp
+            translationKey="affiliate.balanceRewards.lampTitle"
+            fallbackTitle="Balance Rewards"
+            containerClassName="!-z-10 -mt-40 -mb-36 min-h-[52vh]"
+            headingClassName="mt-2 -mb-6 bg-gradient-to-br from-pink-400 to-purple-600 py-3 bg-clip-text text-center text-4xl font-bold tracking-tight text-transparent md:text-[3.25rem]"
+          />
+
+          <section className="relative z-10 -mt-8 flex flex-col gap-6">
             <div className="grid gap-6 md:grid-cols-3">
               {topUpHighlights.map((item) => (
                 <EdgeGlowCard
@@ -644,6 +655,8 @@ const AffiliatePage = () => {
                   background: "linear-gradient(150deg, rgba(2,5,12,0.97), rgba(0,1,4,0.98))",
                 }}
               >
+                <span className="pointer-events-none absolute -top-20 -left-20 h-56 w-56 rounded-full bg-[#FF00B7]/45 blur-[140px]" />
+                <span className="pointer-events-none absolute -bottom-24 -right-16 h-64 w-64 rounded-full bg-[#00BFFF]/40 blur-[150px]" />
                 <div className="relative flex flex-col gap-6 text-sm text-white/70 md:flex-row md:items-center md:justify-between">
                   <div className="max-w-md space-y-3">
                     <p className="text-xs uppercase tracking-[0.35em] text-white/35">

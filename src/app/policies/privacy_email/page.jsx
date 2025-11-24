@@ -6,7 +6,7 @@ import BackToTopButton from '@/components/BackToTopButton';
 import Modal from '@/components/Modal';
 import PolicyNotice from '@/components/PolicyNotice';
 
-const PrivacyPolicy = () => {
+const PrivacyEmailPolicy = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
     { id: 'cookies', title: '9. Cookies and Tracking Technologies' },
     { id: 'legal-basis', title: '10. Legal Basis for Processing' },
     { id: 'data-breach', title: '11. Data Breach Notification' },
-    { id: 'childrens-privacy', title: '12. Children\'s Privacy' },
+    { id: 'webmail-notice', title: '12. Webmail Client / Email Protector Additional Notice' },
     { id: 'changes', title: '13. Changes to This Privacy Policy' },
     { id: 'contact', title: '14. Contact Information' },
     { id: 'governing-law', title: '15. Governing Law' },
@@ -38,7 +38,7 @@ const PrivacyPolicy = () => {
         </div>
         <main className="flex-grow">
           <PolicyNotice />
-          <h1 className="text-4xl font-bold mb-8">Privacy Policy for AI-SOC 1</h1>
+          <h1 className="text-4xl font-bold mb-8">Privacy Policy - Email Component</h1>
           <div className="space-y-8">
             <section id="about">
               <h2 className="text-2xl font-semibold mb-4">1. About This Privacy Policy</h2>
@@ -128,4 +128,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default PrivacyEmailPolicy;

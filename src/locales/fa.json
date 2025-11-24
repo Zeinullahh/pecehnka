@@ -71,7 +71,7 @@
         "description": "پاداش‌ها ظرف کمتر از یک دقیقه پس از انجام تراکنش در موجودی شریک ثبت می‌شود—بدون صف تأیید دستی."
       },
       "withdrawal": {
-        "title": "برداشت ظرف ۲ روز کاری",
+        "title": "Withdrawals processed in 2 business days",
         "description": "درخواست‌های برداشت به صورت خودکار بررسی شده و ظرف دو روز کاری به حساب بانکی شما واریز می‌شود."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "امنیت وب و مدیریت ترافیک",
-      "emailSecurity": "امنیت ایمیل",
-      "vulnerabilityFinder": "یابنده آسیب‌پذیری"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "در حال توسعه",
-    "body": "سیستم قرار است ۱۰ اکتبر راه‌اندازی شود"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "واقعیت حملات سایبری"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "کلاینت وب‌میل ایمن",
       "description": "برای حساب‌های اضافه‌شده توسط مدیر، وب‌میل فوق امنی فراهم است که جعل هویت، اسپم، فیشینگ و بدافزار را شناسایی می‌کند."
-    },
-    "aiVulnerability": {
-      "title": "آزمون آسیب‌پذیری AI: در ۱ دقیقه فعال",
-      "description": "۱۰٬۰۰۰ برابر سریع‌تر از انسان، آسیب‌پذیری‌های تنظیمات سرور، کد، DNS و شبکه ایمیل را کشف می‌کند."
-    },
-    "intelligenceInsights": {
-      "title": "بینش مبتنی بر اطلاعات",
-      "description": "سیستم زیردامنه‌ها، پورت‌های باز و سرویس‌های در حال اجرا را پیدا می‌کند"
     }
   },
   "footer": {

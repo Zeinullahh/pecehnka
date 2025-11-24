@@ -71,7 +71,7 @@
         "description": "Rewards post to your partner balance within a minute after the transaction clears—no manual approval queue."
       },
       "withdrawal": {
-        "title": "Withdrawals clear in 2 business days",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Submitted payout requests are reviewed automatically and land in your bank account within two business days."
       },
       "sample": {
@@ -81,6 +81,60 @@
         "topupHigher": "$1,000 top-up → $100 reward"
       },
       "note": "Commission is calculated from the net top-up amount after payment processing fees."
+    },
+    "termsAff": {
+      "label": "Affiliate Program",
+      "title": "Affiliate Terms of Service",
+      "notice": "This policy is available only in English",
+      "intro": "These terms describe how rewards are issued and paid to partners participating in the Silence AI affiliate program.",
+      "meta": {
+        "effective": "Effective date: 10 November 2024",
+        "lastUpdated": "Last updated: 10 November 2024"
+      },
+      "sections": {
+        "overview": {
+          "title": "1. Program Overview",
+          "body1": "1.1 Agreement Scope: These Affiliate Terms of Service (\"Terms\") govern your participation in the Silence AI affiliate program operated by Silence AI LLC (\"Silence AI,\" \"we,\" \"us,\" or \"our\"). These Terms apply to you, the individual or entity enrolling as an affiliate partner (\"you\" or \"your\"), and, where applicable, your employer, principal, or organization if you act on their behalf.",
+          "body2": "1.2 Program Summary: Under this program, qualified partners earn commission-based rewards when referred customers purchase or top up the AI-SOC 1 product. Participation in the affiliate program also requires compliance with the general Silence AI Terms of Service."
+        },
+        "eligibility": {
+          "title": "2. Partner Eligibility",
+          "item1": "You must maintain an active Silence AI affiliate account with accurate business and payment details.",
+          "item2": "Referrals must complete registration through your issued link or promo code.",
+          "item3": "Accounts found to be fraudulent, self-referred, or in breach of applicable law are not eligible for rewards."
+        },
+        "commission": {
+          "title": "3. Commission Structure",
+          "body1": "You earn a 10% reward on every balance top-up completed by an account registered through your invitation.",
+          "body2": "Commission is calculated from the net top-up amount after payment processing fees are deducted."
+        },
+        "rewardPosting": {
+          "title": "4. Reward Posting",
+          "body1": "Rewards post to your partner balance within one minute after the transaction successfully clears. There is no manual approval queue.",
+          "body2": "Notifications appear in your affiliate dashboard alongside the customer identifier and top-up amount."
+        },
+        "withdrawals": {
+          "title": "5. Withdrawals",
+          "body1": "Withdrawal requests are processed within two business days and paid out using the settlement method on file.",
+          "body2": "Minimum withdrawal thresholds and supported payout networks are published inside the affiliate dashboard."
+        },
+        "productScope": {
+          "title": "6. Product Scope",
+          "body1": "Rewards are only provided for the AI-SOC 1 product. Other Silence AI services are excluded from the affiliate program unless explicitly stated otherwise in writing.",
+          "body2": "If additional products become eligible, Silence AI will publish an updated list inside these terms."
+        },
+        "compliance": {
+          "title": "7. Partner Conduct & Compliance",
+          "item1": "Partners must represent Silence AI accurately and avoid misleading claims about features or pricing.",
+          "item2": "Marketing communications must comply with applicable anti-spam, privacy, and advertising regulations.",
+          "item3": "Silence AI may suspend or terminate accounts that violate these obligations or harm the brand."
+        },
+        "changes": {
+          "title": "8. Changes & Contact",
+          "body1": "Silence AI may update these affiliate terms to reflect changes in the program or applicable law. Updated versions take effect upon publication on this page.",
+          "body2": "Questions about the affiliate program can be sent to info@silenceai.net."
+        }
+      }
     },
     "faq": {
       "title": "Questions & answers",
@@ -129,8 +183,7 @@
   "playground": {
     "options": {
       "globeShield": "Web Security & Traffic Management",
-      "emailSecurity": "Email Security",
-      "vulnerabilityFinder": "Vulnerability Finder"
+      "emailSecurity": "Email Security & Visualization"
     }
   },
   "cookie": {
@@ -191,7 +244,7 @@
         }
       },
       "emailProtector": {
-        "title": "Email Security",
+        "title": "Email Security & Visualization",
         "price": "$10/month/account",
         "description": "Up to 10 emails per day\nAdditional emails: $0.035 each email",
         "button": "Secure Email",
@@ -308,14 +361,6 @@
     "secureWebmail": {
       "title": "Secure Webmail Client",
       "description": "For email accounts added by admin, there is the most secure webmail client. Detects and categorizes threats like spoofing, spam, phishing, and malware."
-    },
-    "aiVulnerability": {
-      "title": "AI-based vulnerability tester: Can be set in 1 minute",
-      "description": "10,000 times faster than humans. Can detect vulnerabilities within the server setup, code, DNS, and email network."
-    },
-    "intelligenceInsights": {
-      "title": "Intelligence-driven insights",
-      "description": "The system can find subdomains, and open ports, and which services are running on those ports"
     }
   },
   "footer": {
@@ -326,6 +371,7 @@
     "links": {
       "termsUse": "Terms of Use",
       "termsService": "Terms of Service",
+      "affiliateTerms": "Affiliate Terms of Service",
       "privacy": "Privacy Policy",
       "cookies": "Cookies Policy"
     },

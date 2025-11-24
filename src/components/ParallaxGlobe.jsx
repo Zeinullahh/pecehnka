@@ -17,7 +17,7 @@ const ParallaxGlobe = () => {
   }, []);
 
   return (
-    <div className="fixed -top-12 left-0 w-full -z-10 pointer-events-none">
+    <div className="parallax-globe fixed -top-12 left-0 w-full -z-10 pointer-events-none">
       <img
         src="/globe_edge_optimized.svg"
         alt=""

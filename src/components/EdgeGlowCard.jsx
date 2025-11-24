@@ -7,6 +7,7 @@ const EdgeGlowCard = ({
   children,
   outerClassName = "",
   innerClassName = "",
+  innerStyle = {},
   glowColor = "rgba(255,0,183,0.85)",
   secondaryGlowColor,
   mode = "follow",
@@ -78,7 +79,10 @@ const EdgeGlowCard = ({
           ...style,
         }}
       >
-        <div className={clsx("relative z-10 h-full w-full rounded-[inherit]", innerClassName)}>
+        <div
+          className={clsx("relative z-10 h-full w-full rounded-[inherit]", innerClassName)}
+          style={innerStyle}
+        >
           {children}
         </div>
       </div>
@@ -123,7 +127,10 @@ const EdgeGlowCard = ({
         ...style,
       }}
     >
-      <div className={clsx("relative z-10 h-full w-full rounded-[inherit]", innerClassName)}>
+      <div
+        className={clsx("relative z-10 h-full w-full rounded-[inherit]", innerClassName)}
+        style={innerStyle}
+      >
         {children}
       </div>
     </div>

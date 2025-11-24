@@ -71,7 +71,7 @@
         "description": "As recompensas são lançadas no saldo do parceiro em até um minuto após a transação — sem fila de aprovação manual."
       },
       "withdrawal": {
-        "title": "Saques concluídos em 2 dias úteis",
+        "title": "Withdrawals processed in 2 business days",
         "description": "Os pedidos de saque são revisados automaticamente e chegam à sua conta bancária em até dois dias úteis."
       },
       "sample": {
@@ -129,8 +129,7 @@
   "playground": {
     "options": {
       "globeShield": "Segurança web e gestão de tráfego",
-      "emailSecurity": "Segurança de e-mail",
-      "vulnerabilityFinder": "Detector de vulnerabilidades"
+      "emailSecurity": "Email Security"
     }
   },
   "cookie": {
@@ -279,7 +278,7 @@
   },
   "modal": {
     "title": "Em desenvolvimento ativo",
-    "body": "O lançamento do sistema está previsto para 10 de outubro"
+    "body": "The system is expected to be launched on October 10"
   },
   "lamp": {
     "title": "Realidade dos ciberataques"
@@ -308,14 +307,6 @@
     "secureWebmail": {
       "title": "Cliente webmail seguro",
       "description": "Para contas adicionadas pelo administrador há um cliente web altamente seguro que detecta spoofing, spam, phishing e malware."
-    },
-    "aiVulnerability": {
-      "title": "Testador de vulnerabilidades com IA: ativo em 1 minuto",
-      "description": "10.000 vezes mais rápido que humanos. Detecta falhas na configuração do servidor, código, DNS e rede de e-mail."
-    },
-    "intelligenceInsights": {
-      "title": "Insights orientados por inteligência",
-      "description": "O sistema identifica subdomínios, portas abertas e serviços em execução"
     }
   },
   "footer": {

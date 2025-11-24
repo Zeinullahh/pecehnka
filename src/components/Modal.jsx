@@ -32,10 +32,12 @@ const Modal = ({ isOpen, onClose }) => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            <div className="text-2xl font-bold mb-4">
-              {t("modal.title", "Under active development")}
+            <div className="text-2xl font-bold text-center leading-relaxed">
+              {t(
+                "modal.message",
+                "Under active development, planned release date - November 10"
+              )}
             </div>
-            <p>{t("modal.body", "The system is expected to be launched on October 10")}</p>
           </motion.div>
         </motion.div>
       )}
